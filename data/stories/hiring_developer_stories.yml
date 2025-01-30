@@ -1,0 +1,9 @@
+#version: "3.1"
+#
+#stories:
+#
+#  - story: User asking to hire a developer
+#    steps:
+#      - intent: hiring_developers
+#      - action: hiring_developer_form
+#      - active_loop: hiring_developer_form

@@ -1,0 +1,266 @@
+version: "3.1"
+
+stories:
+
+
+  - story: User selects native app development with android from main menu
+    steps:
+      - intent: mobile_development
+      - action: utter_mobile_development_desc
+      - action: action_mobile_development
+      - intent: native_app_development
+      - action: action_native_app_development
+      - action: utter_native_app_development_selection
+      - intent: android_development
+      - action: action_set_slot_native_development_type
+      - action: utter_select_app_category_desc_android
+      - intent: provided_category
+        entities:
+          - category: Social Networking
+      - slot_was_set:
+          - app_category: Social Networking
+      - action: utter_selected_category
+      - action: native_development_form
+      - active_loop: native_development_form
+
+  - story: User selects native app development with android from main menu
+    steps:
+      - intent: native_app_development
+      - action: action_native_app_development
+      - action: utter_native_app_development_selection
+      - intent: android_development
+      - action: action_set_slot_native_development_type
+      - action: utter_select_app_category_desc_android
+      - intent: provided_category
+        entities:
+          - category: Social Networking
+      - slot_was_set:
+          - app_category: Social Networking
+      - action: utter_selected_category
+      - action: native_development_form
+      - active_loop: native_development_form
+
+  - story: User selects native app development with android from main menu
+    steps:
+      - intent: android_development
+      - action: action_set_slot_native_development_type
+      - action: utter_select_app_category_desc_android
+      - intent: provided_category
+        entities:
+          - category: Social Networking
+      - slot_was_set:
+          - app_category: Social Networking
+      - action: utter_selected_category
+      - action: native_development_form
+      - active_loop: native_development_form
+
+
+  - story: User selects native app development with ios from main menu
+    steps:
+      - intent: mobile_development
+      - action: utter_mobile_development_desc
+      - action: action_mobile_development
+      - intent: native_app_development
+      - action: action_native_app_development
+      - action: utter_native_app_development_selection
+      - intent: ios_development
+      - action: action_set_slot_native_development_type
+      - action: utter_select_app_category_desc_ios
+      - intent: provided_category
+        entities:
+          - category: Social Networking
+      - slot_was_set:
+          - app_category: Social Networking
+      - action: utter_selected_category
+      - action: native_development_form
+      - active_loop: native_development_form
+
+  - story: User selects native app development with ios from main menu
+    steps:
+      - intent: native_app_development
+      - action: action_native_app_development
+      - action: utter_native_app_development_selection
+      - intent: ios_development
+      - action: action_set_slot_native_development_type
+      - action: utter_select_app_category_desc_ios
+      - intent: provided_category
+        entities:
+          - category: Social Networking
+      - slot_was_set:
+          - app_category: Social Networking
+      - action: utter_selected_category
+      - action: native_development_form
+      - active_loop: native_development_form
+
+  - story: User selects native app development with ios from main menu
+    steps:
+      - intent: ios_development
+      - action: action_set_slot_native_development_type
+      - action: utter_select_app_category_desc_ios
+      - intent: provided_category
+        entities:
+          - category: Social Networking
+      - slot_was_set:
+          - app_category: Social Networking
+      - action: utter_selected_category
+      - action: native_development_form
+      - active_loop: native_development_form
+
+  - story: User selects native app development with both android and ios
+    steps:
+      - intent: mobile_development
+      - action: utter_mobile_development_desc
+      - action: action_mobile_development
+      - intent: native_app_development
+      - action: action_native_app_development
+      - action: utter_native_app_development_selection
+      - intent: both_android_ios_development
+      - action: action_set_slot_native_development_type
+      - action: utter_select_app_category_desc_both_android_ios
+      - intent: provided_category
+        entities:
+          - category: Social Networking
+      - slot_was_set:
+          - app_category: Social Networking
+      - action: utter_selected_category
+      - action: native_development_form
+      - active_loop: native_development_form
+
+  - story: User selects native app development with both android and ios
+    steps:
+      - intent: native_app_development
+      - action: action_native_app_development
+      - action: utter_native_app_development_selection
+      - intent: both_android_ios_development
+      - action: action_set_slot_native_development_type
+      - action: utter_select_app_category_desc_both_android_ios
+      - intent: provided_category
+        entities:
+          - category: Social Networking
+      - slot_was_set:
+          - app_category: Social Networking
+      - action: utter_selected_category
+      - action: native_development_form
+      - active_loop: native_development_form
+
+  - story: User selects native app development with both android and ios
+    steps:
+      - intent: both_android_ios_development
+      - action: action_set_slot_native_development_type
+      - action: utter_select_app_category_desc_both_android_ios
+      - intent: provided_category
+        entities:
+          - category: Social Networking
+      - slot_was_set:
+          - app_category: Social Networking
+      - action: utter_selected_category
+      - action: native_development_form
+      - active_loop: native_development_form
+
+
+  - story: User selects cross platform app development with flutter from main menu
+    steps:
+      - intent: mobile_development
+      - action: utter_mobile_development_desc
+      - action: action_mobile_development
+      - intent: cross_platform_development
+      - action: utter_cross_platform_development_selection
+      - action: action_cross_platform_app_development
+      - intent: flutter_development
+      - action: action_set_slot_cross_platform_development_type
+      - action: utter_select_app_category_desc_flutter
+      - intent: provided_category
+        entities:
+          - category: Social Networking
+      - slot_was_set:
+          - app_category: Social Networking
+      - action: utter_selected_category
+      - action: native_development_form
+      - active_loop: native_development_form
+
+  - story: User selects cross platform app development with flutter from main menu
+    steps:
+      - intent: cross_platform_development
+      - action: utter_cross_platform_development_selection
+      - action: action_cross_platform_app_development
+      - intent: flutter_development
+      - action: action_set_slot_cross_platform_development_type
+      - action: utter_select_app_category_desc_flutter
+      - intent: provided_category
+        entities:
+          - category: Social Networking
+      - slot_was_set:
+          - app_category: Social Networking
+      - action: utter_selected_category
+      - action: native_development_form
+      - active_loop: native_development_form
+
+
+  - story: User selects cross platform app development with flutter from main menu
+    steps:
+      - intent: flutter_development
+      - action: action_set_slot_cross_platform_development_type
+      - action: utter_select_app_category_desc_flutter
+      - intent: provided_category
+        entities:
+          - category: Social Networking
+      - slot_was_set:
+          - app_category: Social Networking
+      - action: utter_selected_category
+      - action: native_development_form
+      - active_loop: native_development_form
+
+
+
+  - story: User selects cross platform app development with react native from main menu
+    steps:
+      - intent: mobile_development
+      - action: utter_mobile_development_desc
+      - action: action_mobile_development
+      - intent: cross_platform_development
+      - action: utter_cross_platform_development_selection
+      - action: action_cross_platform_app_development
+      - intent: react_native_development
+      - action: action_set_slot_cross_platform_development_type
+      - action: utter_select_app_category_desc_react
+      - intent: provided_category
+        entities:
+          - category: Social Networking
+      - slot_was_set:
+          - app_category: Social Networking
+      - action: utter_selected_category
+      - action: native_development_form
+      - active_loop: native_development_form
+
+
+  - story: User selects cross platform app development with react native from main menu
+    steps:
+      - intent: cross_platform_development
+      - action: utter_cross_platform_development_selection
+      - action: action_cross_platform_app_development
+      - intent: react_native_development
+      - action: action_set_slot_cross_platform_development_type
+      - action: utter_select_app_category_desc_react
+      - intent: provided_category
+        entities:
+          - category: Social Networking
+      - slot_was_set:
+          - app_category: Social Networking
+      - action: utter_selected_category
+      - action: native_development_form
+      - active_loop: native_development_form
+
+
+  - story: User selects cross platform app development with react native from main menu
+    steps:
+      - intent: react_native_development
+      - action: action_set_slot_cross_platform_development_type
+      - action: utter_select_app_category_desc_react
+      - intent: provided_category
+        entities:
+          - category: Social Networking
+      - slot_was_set:
+          - app_category: Social Networking
+      - action: utter_selected_category
+      - action: native_development_form
+      - active_loop: native_development_form

@@ -1,0 +1,342 @@
+[
+  {
+    "title": "How much does healthcare app development cost in 2023?",
+    "subtitle": "2023 Healthcare App Development Cost: Stay informed on current prices & key factors influencing the digital health revolution. Expert analysis inside.",
+    "image_url": "https://digimonksolutions.com/wp-content/uploads/2023/07/healthcare-app-development-cost-1024x576.jpg",
+    "buttons": [
+      {
+        "title": "❤️ Read more",
+        "url": "https://digimonksolutions.com/healthcare-app-development-cost/",
+        "type": "web_url"
+      },
+      {
+        "title": "👈 Go to Main Menu",
+        "payload": "/main_menu",
+        "type": "postback"
+      }
+    ]
+  },
+  {
+    "title": "The Price of Food Delivery App Development in 2023",
+    "subtitle": "Want to know the food delivery app development cost? Checkout this article to know the all the necessary details and make informed decision.",
+    "image_url": "https://digimonksolutions.com/wp-content/uploads/2023/06/Food-Delivery-App-Development-Cost-1024x576.jpg",
+    "buttons": [
+      {
+        "title": "💙 Read more",
+        "url": "https://digimonksolutions.com/food-delivery-app-development-cost/",
+        "type": "web_url"
+      },
+      {
+        "title": "👈 Go to Main Menu",
+        "payload": "/main_menu",
+        "type": "postback"
+      }
+    ]
+  },
+  {
+    "title": "How much does Fintech App Development Cost in 2023?",
+    "subtitle": "Discover the crucial factors influencing fintech app development cost in 2023. Explore the various types of fintech apps and gain insights for informed decision-making.",
+    "image_url": "https://digimonksolutions.com/wp-content/uploads/2023/06/Fintech-app-development-cost-1024x576.jpg",
+    "buttons": [
+      {
+        "title": "\uD83D\uDC9A Read more",
+        "url": "https://digimonksolutions.com/fintech-app-development-cost/",
+        "type": "web_url"
+      },
+      {
+        "title": "👈 Go to Main Menu",
+        "payload": "/main_menu",
+        "type": "postback"
+      }
+    ]
+  },
+  {
+    "title": "Social Media App Development Cost in 2023: All you need to know",
+    "subtitle": "Know the social media app development cost along with the factors that affect it. Know all the details and get the estimate as well.",
+    "image_url": "https://digimonksolutions.com/wp-content/uploads/2023/06/Social-Media-App-Development-Cost-1024x576.jpg",
+    "buttons": [
+      {
+        "title": "\uD83D\uDC9B Read more",
+        "url": "https://digimonksolutions.com/social-media-app-development-cost/",
+        "type": "web_url"
+      },
+      {
+        "title": "👈 Go to Main Menu",
+        "payload": "/main_menu",
+        "type": "postback"
+      }
+    ]
+  },
+  {
+    "title": "Fitness App Development Cost 2023: All you need to know",
+    "subtitle": "Looking for fitness app development costs? Checkout this article, to find all the answers related to costs of creating a fitness app.",
+    "image_url": "https://digimonksolutions.com/wp-content/uploads/2023/06/Fitness-App-Development-Cost-1024x576.jpg",
+    "buttons": [
+      {
+        "title": "\uD83D\uDC9C Read more",
+        "url": "https://digimonksolutions.com/fitness-app-development-cost/",
+        "type": "web_url"
+      },
+      {
+        "title": "👈 Go to Main Menu",
+        "payload": "/main_menu",
+        "type": "postback"
+      }
+    ]
+  },
+  {
+    "title": "How much does app maintenance cost in 2023 and Why it’s needed?",
+    "subtitle": "Curious about app maintenance costs? Here we have break down everything you need to know about keeping your app running smoothly.",
+    "image_url": "https://digimonksolutions.com/wp-content/uploads/2023/06/App-Maintenance-Cost-1024x576.jpg",
+    "buttons": [
+      {
+        "title": "\uD83D\uDDA4 Read more",
+        "url": "https://digimonksolutions.com/app-maintenance-costs/",
+        "type": "web_url"
+      },
+      {
+        "title": "👈 Go to Main Menu",
+        "payload": "/main_menu",
+        "type": "postback"
+      }
+    ]
+  },
+  {
+    "title": "Web App Development Cost for 2023: Full Breakdown",
+    "subtitle": "Discover the cost breakdowns for different types of web apps and gain insights into effective strategies for managing web app development costs.",
+    "image_url": "https://digimonksolutions.com/wp-content/uploads/2023/06/web-app-development-cost-1024x576.jpg",
+    "buttons": [
+      {
+        "title": "\uD83D\uDC96 Read more",
+        "url": "https://digimonksolutions.com/web-app-development-cost/",
+        "type": "web_url"
+      },
+      {
+        "title": "👈 Go to Main Menu",
+        "payload": "/main_menu",
+        "type": "postback"
+      }
+    ]
+  },
+  {
+    "title": "E-commerce Website Development Cost in 2023: Ultimate Guide",
+    "subtitle": "Looking to create e-commerce website? Check our guide to get the full understanding of e-commerce website development cost.",
+    "image_url": "https://digimonksolutions.com/wp-content/uploads/2023/05/E-commerce-Website-Development-Cost-1024x576.jpg",
+    "buttons": [
+      {
+        "title": "\uD83D\uDC96 Read more",
+        "url": "https://digimonksolutions.com/e-commerce-website-development-cost/",
+        "type": "web_url"
+      },
+      {
+        "title": "👈 Go to Main Menu",
+        "payload": "/main_menu",
+        "type": "postback"
+      }
+    ]
+  },
+  {
+    "title": "How much does it cost to build an MVP in 2023?",
+    "subtitle": "Wondering about the cost of building an MVP? Checkout the article to get a clear understanding of how much you need to invest.",
+    "image_url": "https://digimonksolutions.com/wp-content/uploads/2023/05/How-much-does-it-cost-to-build-an-MVP-in-2023-1024x576.jpg",
+    "buttons": [
+      {
+        "title": "❤\uFE0F Read more",
+        "url": "https://digimonksolutions.com/cost-to-build-an-mvp/",
+        "type": "web_url"
+      },
+      {
+        "title": "👈 Go to Main Menu",
+        "payload": "/main_menu",
+        "type": "postback"
+      }
+    ]
+  },
+  {
+    "title": "How to Choose Right Tech Stack For Mobile App Development (2023)",
+    "subtitle": "Want to create the best app but don't know which is the best tech stack for mobile app development? Checkout the article to clear your",
+    "image_url": "https://digimonksolutions.com/wp-content/uploads/2023/05/How-to-Choose-Right-Tech-Stack-For-Mobile-App-Development-1024x576.jpg",
+    "buttons": [
+      {
+        "title": "❤\uFE0F Read more",
+        "url": "https://digimonksolutions.com/tech-stack-for-mobile-app-development/",
+        "type": "web_url"
+      },
+      {
+        "title": "👈 Go to Main Menu",
+        "payload": "/main_menu",
+        "type": "postback"
+      }
+    ]
+  },
+  {
+    "title": "How To Do Mobile App Market Research in 2023",
+    "subtitle": "Master mobile app market research in 2023 with our expert guide. Gain insights, stay ahead, and maximize success.",
+    "image_url": "https://digimonksolutions.com/wp-content/uploads/2023/05/mobile-app-market-research-1024x575.png",
+    "buttons": [
+      {
+        "title": "❤\uFE0F Read more",
+        "url": "https://digimonksolutions.com/mobile-app-market-research/",
+        "type": "web_url"
+      },
+      {
+        "title": "👈 Go to Main Menu",
+        "payload": "/main_menu",
+        "type": "postback"
+      }
+    ]
+  },
+  {
+    "title": "6 Best Programming Languages For iOS App Development in 2023",
+    "subtitle": "Discover the top 6 programming languages for iOS app development in 2023. Choose the right language to build amazing apps.",
+    "image_url": "https://digimonksolutions.com/wp-content/uploads/2023/05/Best-Programming-Languages-For-iOS-1024x576.jpg",
+    "buttons": [
+      {
+        "title": "❤\uFE0F Read more",
+        "url": "https://digimonksolutions.com/best-programming-languages-for-ios-app-development/",
+        "type": "web_url"
+      },
+      {
+        "title": "👈 Go to Main Menu",
+        "payload": "/main_menu",
+        "type": "postback"
+      }
+    ]
+  },
+  {
+    "title": "Top 10 Mobile App Security Best Practices in 2023",
+    "subtitle": "Protect your mobile app with these top security best practices in 2023. Learn how to safeguard user data and prevent breaches.",
+    "image_url": "https://digimonksolutions.com/wp-content/uploads/2023/05/mobile-app-security-best-practices-1024x576.jpg",
+    "buttons": [
+      {
+        "title": "❤\uFE0F Read more",
+        "url": "https://digimonksolutions.com/mobile-app-security-best-practices/",
+        "type": "web_url"
+      },
+      {
+        "title": "👈 Go to Main Menu",
+        "payload": "/main_menu",
+        "type": "postback"
+      }
+    ]
+  },
+  {
+    "title": "Native Vs Cross Platform: Which is Best For Your App in 2023?",
+    "subtitle": "Native or Cross Platform: Which suits your app better in 2023? Get all the details you need to make an informed decision.",
+    "image_url": "https://digimonksolutions.com/wp-content/uploads/2023/05/native-vs-cross-platform-1-1024x576.jpg",
+    "buttons": [
+      {
+        "title": "❤\uFE0F Read more",
+        "url": "https://digimonksolutions.com/native-vs-cross-platform/",
+        "type": "web_url"
+      },
+      {
+        "title": "👈 Go to Main Menu",
+        "payload": "/main_menu",
+        "type": "postback"
+      }
+    ]
+  },
+  {
+    "title": "Flutter Vs React Native: Which is the best for 2023?",
+    "subtitle": "Confused between Flutter vs React Native? Checkout our article to figure out which is the best for your app development project.",
+    "image_url": "https://digimonksolutions.com/wp-content/uploads/2019/06/flutter-vs-react-native-1024x576.jpg",
+    "buttons": [
+      {
+        "title": "❤\uFE0F Read more",
+        "url": "https://digimonksolutions.com/flutter-vs-react-native/",
+        "type": "web_url"
+      },
+      {
+        "title": "👈 Go to Main Menu",
+        "payload": "/main_menu",
+        "type": "postback"
+      }
+    ]
+  },
+  {
+    "title": "WordPress Vs Shopify: Choosing the Best for Your Online Store in 2023",
+    "subtitle": "When it comes to building an online store, selecting the right platform is crucial for your business's success. WordPress and Shopify are two popular platforms",
+    "image_url": "https://digimonksolutions.com/wp-content/uploads/2023/04/wordpress-vs-shopify-1024x576.jpg",
+    "buttons": [
+      {
+        "title": "❤\uFE0F Read more",
+        "url": "https://digimonksolutions.com/wordpress-vs-shopify/",
+        "type": "web_url"
+      },
+      {
+        "title": "👈 Go to Main Menu",
+        "payload": "/main_menu",
+        "type": "postback"
+      }
+    ]
+  },
+  {
+    "title": "16 Common App Development Mistakes To Avoid In 2023",
+    "subtitle": "Are you developing new app for your business or client? Here are the list of common app development mistakes you should avoid.",
+    "image_url": "https://digimonksolutions.com/wp-content/uploads/2023/04/03-App-Development-2-1024x576.jpg",
+    "buttons": [
+      {
+        "title": "❤\uFE0F Read more",
+        "url": "https://digimonksolutions.com/app-development-mistakes/",
+        "type": "web_url"
+      },
+      {
+        "title": "👈 Go to Main Menu",
+        "payload": "/main_menu",
+        "type": "postback"
+      }
+    ]
+  },
+  {
+    "title": "How much does it cost to develop an App in 2023?",
+    "subtitle": "When developing an app, whether for business requirements or to kickstart a side hustle, the first thing that strikes the mind is the cost of",
+    "image_url": "https://digimonksolutions.com/wp-content/uploads/2023/02/Blog-Image-01-min-1024x576.jpg",
+    "buttons": [
+      {
+        "title": "❤\uFE0F Read more",
+        "url": "https://digimonksolutions.com/app-development-cost/",
+        "type": "web_url"
+      },
+      {
+        "title": "👈 Go to Main Menu",
+        "payload": "/main_menu",
+        "type": "postback"
+      }
+    ]
+  },
+  {
+    "title": "How much does it cost to develop a Website in 2023\u200B?",
+    "subtitle": "Right from the beginning of the 21st century, there have been tremendous advancements in the IT industry, attracting everyone to the world of the internet.",
+    "image_url": "https://digimonksolutions.com/wp-content/uploads/2023/02/Website-development-cost-scaled.jpg",
+    "buttons": [
+      {
+        "title": "❤\uFE0F Read more",
+        "url": "https://digimonksolutions.com/website-development-cost/",
+        "type": "web_url"
+      },
+      {
+        "title": "👈 Go to Main Menu",
+        "payload": "/main_menu",
+        "type": "postback"
+      }
+    ]
+  },
+  {
+    "title": "How much does it cost to make an android or ios app",
+    "subtitle": "Be it ordering food online, booking a cab or checking flight rates for business travel, the one thing that makes this all possible at your",
+    "image_url": "https://digimonksolutions.com/wp-content/uploads/2019/06/image_1.jpg",
+    "buttons": [
+      {
+        "title": "❤\uFE0F Read more",
+        "url": "https://digimonksolutions.com/how-much-does-it-cost-to-make-an-android-or-ios-app/",
+        "type": "web_url"
+      },
+      {
+        "title": "👈 Go to Main Menu",
+        "payload": "/main_menu",
+        "type": "postback"
+      }
+    ]
+  }
+]

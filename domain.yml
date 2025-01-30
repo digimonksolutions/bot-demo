@@ -1,0 +1,1042 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - bot_challenge
+  - start_chat
+  - free_trial
+  - pricing
+  - out_of_scope
+  - main_menu
+  - how_are_you
+  - who_made_you
+  - give_information
+  - contact_us
+  - mobile_development
+  - native_app_development
+  - cross_platform_development
+  - ios_development
+  - android_development
+  - both_android_ios_development
+  - flutter_development
+  - react_native_development
+  - provided_email
+  - provided_name
+  - provided_category
+  - submit_form
+  - restart_form
+  - web_development
+  - website_development
+  - create_new_website
+  - create_new_webapp
+  - provided_website_category
+  - update_already_existing_website
+  - update_already_existing_webapp
+  - wordpress_development
+  - suggest_wordpress_development
+  - react_js_development
+  - suggest_react_js_development
+  - web_app_development
+  - provided_backend_tech_web_app
+  - provided_frontend_tech_web_app
+  - provided_both_tech_web_app
+  - not_sure
+  - portfolio
+  - blogs
+  - native_vs_cross_platform
+  - flutter_vs_react_native
+  - wordpress_vs_shopify
+  - app_development_cost
+  - android_development_cost
+  - ios_development_cost
+  - web_development_cost
+  - hiring_developers
+
+actions:
+  - action_mobile_development
+  - action_native_app_development
+  - action_cross_platform_app_development
+  - validate_native_development_form
+  - action_set_slot_native_development_type
+  - action_set_slot_cross_platform_development_type
+  - action_send_details
+  - action_restart_native_development_form
+  - action_show_website_tech_list
+  - action_set_slot_web_development_tech
+  - validate_web_development_form
+  - validate_website_update_form
+  - action_show_portfolio
+  - action_show_blogs
+  - action_show_backend_tech_list
+  - action_show_frontend_tech_list
+  - action_set_backend_tech_not_sure
+  - action_set_frontend_tech_not_sure
+  - validate_web_app_form
+  - action_reset_all_slots
+  - action_show_app_development_cost
+  - action_show_android_app_development_cost
+  - action_show_ios_app_development_cost
+  - action_show_website_development_cost
+  - action_show_native_vs_cross_platform
+  - action_show_flutter_vs_react_native
+  - action_show_wordpress_vs_shopify
+  - action_save_conversation
+  - action_set_slot_for_hiring_developer
+  - validate_hiring_developer_form
+
+entities:
+  - email
+  - duration
+  - category
+  - website_category
+  - backend_tech_web_app
+  - frontend_tech_web_app
+  - hiring_development_type
+  - hiring_tech_type
+  - hiring_project_timeline
+  - hiring_mobile_platform
+
+
+slots:
+
+  hiring_development_type:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: hiring_development_type
+        intent: hiring_developers
+
+  hiring_tech_type:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: hiring_tech_type
+        intent: hiring_developers
+
+  hiring_project_timeline:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: duration
+        intent: hiring_developers
+
+  hiring_mobile_platform:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: hiring_mobile_platform
+        intent: hiring_developers
+
+  hiring_development_type_value:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_text
+        conditions:
+          - active_loop: hiring_developer_form
+            requested_slot: hiring_development_type_value
+
+  hiring_tech_type_value:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_text
+        conditions:
+          - active_loop: hiring_developer_form
+            requested_slot: hiring_tech_type_value
+
+  hiring_project_timeline_value:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_text
+        conditions:
+          - active_loop: hiring_developer_form
+            requested_slot: hiring_project_timeline_value
+
+  hiring_mobile_platform_value:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_text
+        conditions:
+          - active_loop: hiring_developer_form
+            requested_slot: hiring_mobile_platform_value
+
+  hiring_name_value:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_text
+        conditions:
+          - active_loop: hiring_developer_form
+            requested_slot: hiring_name_value
+
+  hiring_email_value:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_text
+        conditions:
+          - active_loop: hiring_developer_form
+            requested_slot: hiring_email_value
+
+
+  app_description:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_text
+        conditions:
+          - active_loop: native_development_form
+            requested_slot: app_description
+
+  name_for_app_dev:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_text
+        conditions:
+          - active_loop: native_development_form
+            requested_slot: name_for_app_dev
+
+  email_for_app_dev:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_text
+        conditions:
+          - active_loop: native_development_form
+            requested_slot: email_for_app_dev
+
+  email:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: email
+
+  backend_tech_web_app:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: backend_tech_web_app
+
+  frontend_tech_web_app:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: frontend_tech_web_app
+
+
+  app_category:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: category
+
+  website_category:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: website_category
+
+  development_type:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: custom
+
+  native_development_type:
+    type: text
+    initial_value: ""
+    influence_conversation: false
+    mappings:
+      - type: custom
+
+  cross_platform_development_type:
+    type: text
+    initial_value: ""
+    influence_conversation: false
+    mappings:
+      - type: custom
+
+  web_development_type:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: custom
+
+  web_development_tech:
+    type: text
+    initial_value: ""
+    influence_conversation: false
+    mappings:
+      - type: custom
+
+  web_development_design_preference:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_text
+        conditions:
+          - active_loop: web_development_form
+            requested_slot: web_development_design_preference
+
+  web_development_features:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_text
+        conditions:
+          - active_loop: web_development_form
+            requested_slot: web_development_features
+
+  web_development_budget:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_text
+        conditions:
+          - active_loop: web_development_form
+            requested_slot: web_development_budget
+
+  web_development_timeline:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_text
+        conditions:
+          - active_loop: web_development_form
+            requested_slot: web_development_timeline
+
+  web_development_already_have_domain:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_text
+        conditions:
+          - active_loop: web_development_form
+            requested_slot: web_development_already_have_domain
+
+  name_for_web_dev:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_text
+        conditions:
+          - active_loop: web_development_form
+            requested_slot: name_for_web_dev
+
+  email_for_web_dev:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_text
+        conditions:
+          - active_loop: web_development_form
+            requested_slot: email_for_web_dev
+
+  url_of_website_to_update:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_text
+        conditions:
+          - active_loop: website_update_form
+            requested_slot: url_of_website_to_update
+
+  improvement_in_website:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_text
+        conditions:
+          - active_loop: website_update_form
+            requested_slot: improvement_in_website
+
+  improvement_in_website_design:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_text
+        conditions:
+          - active_loop: website_update_form
+            requested_slot: improvement_in_website_design
+
+  old_website_domain:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_text
+        conditions:
+          - active_loop: website_update_form
+            requested_slot: old_website_domain
+
+  website_update_budget:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_text
+        conditions:
+          - active_loop: website_update_form
+            requested_slot: website_update_budget
+
+  website_update_timeline:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_text
+        conditions:
+          - active_loop: website_update_form
+            requested_slot: website_update_timeline
+
+  website_update_user_name:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_text
+        conditions:
+          - active_loop: website_update_form
+            requested_slot: website_update_user_name
+
+  website_update_user_email:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_text
+        conditions:
+          - active_loop: website_update_form
+            requested_slot: website_update_user_email
+
+  web_app_design_preference:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_text
+        conditions:
+          - active_loop: web_app_form
+            requested_slot: web_app_design_preference
+
+  web_app_features:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_text
+        conditions:
+          - active_loop: web_app_form
+            requested_slot: web_app_features
+
+  web_app_budget:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_text
+        conditions:
+          - active_loop: web_app_form
+            requested_slot: web_app_budget
+
+  web_app_timeline:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_text
+        conditions:
+          - active_loop: web_app_form
+            requested_slot: web_app_timeline
+
+  web_app_already_have_domain:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_text
+        conditions:
+          - active_loop: web_app_form
+            requested_slot: web_app_already_have_domain
+
+  name_for_web_app:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_text
+        conditions:
+          - active_loop: web_app_form
+            requested_slot: name_for_web_app
+
+  email_for_web_app:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_text
+        conditions:
+          - active_loop: web_app_form
+            requested_slot: email_for_web_app
+
+
+forms:
+  native_development_form:
+    required_slots:
+      - app_description
+      - name_for_app_dev
+      - email_for_app_dev
+
+  web_development_form:
+    required_slots:
+      - web_development_design_preference
+      - web_development_features
+      - web_development_budget
+      - web_development_timeline
+      - web_development_already_have_domain
+      - name_for_web_dev
+      - email_for_web_dev
+
+  website_update_form:
+    required_slots:
+      - url_of_website_to_update
+      - improvement_in_website
+      - improvement_in_website_design
+      - old_website_domain
+      - website_update_budget
+      - website_update_timeline
+      - website_update_user_name
+      - website_update_user_email
+
+  web_app_form:
+    required_slots:
+      - web_app_design_preference
+      - web_app_features
+      - web_app_budget
+      - web_app_timeline
+      - web_app_already_have_domain
+      - name_for_web_app
+      - email_for_web_app
+
+  hiring_developer_form:
+    required_slots:
+      - hiring_development_type_value
+      - hiring_mobile_platform_value
+      - hiring_tech_type_value
+      - hiring_project_timeline_value
+      - hiring_name_value
+      - hiring_email_value
+
+
+responses:
+
+  utter_how_are_you:
+    - text: "Thank you for asking! As a chatbot, I don't have feelings, but I'm here and ready to assist you. How can I help you today? 😊"
+
+  utter_who_made_you:
+    - text: "Thanks for asking! I'm a creation of Digimonk Solutions, developed by a skilled team of engineers. I use natural language processing (NLP) to understand and respond. Feel free to ask about a specific topic, and I'll provide information to the best of my abilities!"
+
+  utter_contact_us:
+    - text: "You can easily reach us through various channels:  \n
+    📧 Email us at [hello@digimonksoultions.com](mailto:hello@digimonksoultions.com).  \n
+    💬 Connect with us on Skype: [digimonksolutions](skype:mobisharnam?chat).  \n
+    📞 Give us a call at [+91 9924737030](tel:91%9924737030).  \n
+    🔗 Connect with our professionals on LinkedIn: [Digimonk Solutions Pvt Ltd](https://www.linkedin.com/company/digimonksolutions)  \n
+    🌐 Stay connected and follow us on social media:  \n
+        \t- Instagram: [Follow us](https://www.instagram.com/digimonksolutions/)  \n
+        \t- Facebook: [Like us](https://www.facebook.com/digimonksolutions)  \n
+        \t- Twitter: [Follow us](https://twitter.com/digimonksoln)  \n
+    We're here to assist you and look forward to hearing from you soon!"
+
+  utter_give_information:
+    - text: "Absolutely! I can assist you with a variety of topics, including:  \n
+    1. Web development inquiries  \n
+    2. App development queries  \n
+    3. Guidance on hiring a developer  \n
+    4. Showcasing our latest blogs  \n
+    5. Presenting our portfolio  \n
+    6. Discussing development costs for Android, iOS, and websites.  \n
+    Feel free to ask about any specific area, and I'll provide you with the information you're looking for!"
+
+
+  utter_confirm_user_info_for_update_website:
+    - text: "Thanks! 🎉 Let's ensure everything is crystal clear before we dive into the fantastic journey of creating your dream website! 💻🚀   \n
+    Here's a quick summary of your requirements:  \n
+    🌐 Website URL: {url_of_website_to_update}  \n
+    🌟 New Features: {improvement_in_website}  \n
+    🎨 Design Preference: {improvement_in_website_design}  \n
+    🌐 Already have Domain: {old_website_domain}  \n
+    💰 Budget: {website_update_budget}  \n
+    ⏳ Timeline: {website_update_timeline}  \n
+    📧 Email: {website_update_user_email}"
+
+  utter_ask_hiring_development_type_value:
+    - text: "Which Type of Developer you want? Mobile developer or Web Developer."
+
+  utter_ask_hiring_mobile_platform_value:
+    - text: "For which platform? Android, iOS or Both"
+
+  utter_ask_hiring_tech_type_value:
+    - text: "Could you specify the technologies or skills you're looking for."
+
+  utter_ask_hiring_project_timeline_value:
+    - text: "Could you specify the timeline for your project?"
+
+  utter_ask_hiring_name_value:
+    - text: "Before we proceed, may I have your name, please? 🌟📝"
+
+  utter_ask_hiring_email_value:
+    - text: "Thank you! Could you please provide your email address so we can contact you.📧📝"
+
+  utter_ask_website_update_form_website_update_budget:
+    - text: "Also, could you please provide your budget for the web development project? 💰"
+
+  utter_ask_website_update_form_website_update_timeline:
+    - text: "And, do you have a specific timeline in mind for the completion of the website? ⏳"
+
+  utter_ask_website_update_form_website_update_user_name:
+    - text: "Before we proceed, may I have your name, please? 🌟📝"
+
+  utter_ask_website_update_form_website_update_user_email:
+    - text: "Thank you! Could you please provide your email address so we can contact you.📧📝"
+
+
+  utter_ask_website_update_form_old_website_domain:
+    - text: "🌐 Do you already have a domain to host the website, or would you like assistance with domain registration as well? 💻"
+      buttons:
+        - title: "✅ Yes, I have a domain!"
+          payload: "✅ Yes, I have a domain!"
+        - title: "❌ No, I need assistance."
+          payload: "❌ No, I need assistance."
+
+
+  utter_ask_website_update_form_improvement_in_website_design:
+    - text: "That sounds like a great plan!✨ To update the design, are there any specific websites you like, or do you have any design preferences? 🎨✨"
+
+  utter_ask_website_update_form_improvement_in_website:
+    - text: "Thank you for sharing the link. Now, please tell me more about the changes or additional features you'd like to implement on your website. 💡"
+
+  utter_ask_website_update_form_url_of_website_to_update:
+    - text: "Perfect! Having an existing website will be helpful in understanding your current setup. Could you share the link to your current website, if possible? 🌐"
+
+  utter_greet:
+    - text: "Hey! How are you?"
+    - text: ""
+      image: "https://i.imgur.com/lopAtkn.gif"
+
+  utter_cheer_up:
+    - text: "Here is something to cheer you up:"
+      image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+    - text: "Did that help you?"
+
+  utter_happy:
+    - text: "Great, carry on!"
+
+  utter_goodbye:
+    - text: "Bye"
+
+  utter_iamabot:
+    - text: "Hello! I'm DigiBot, created by Digimonk Solutions. I operate using natural language processing (NLP) to understand and respond to your queries. How can I assist you today?"
+
+  utter_start_chat_greet:
+    - text: "Hi, Welcome to our website! 😊"
+
+  utter_portfolio:
+    - text: "Explore our portfolio to see our impressive projects. View now for a glimpse of our remarkable work."
+
+  utter_blogs:
+    - text: "Discover valuable insights in our web and mobile app development blogs. Explore featured articles for a wealth of knowledge. 📚💻"
+
+  utter_android_development_cost:
+    - text: "Explore the intricacies of app development costs in our latest blog post. Gain insights into influencing factors for a comprehensive understanding. Happy reading! 📖🚀"
+
+  utter_app_development_cost:
+    - text: "Understanding app development costs can be complex. Check out our latest blog post for in-depth insights into influencing factors and considerations. Happy reading! 📖🚀"
+
+  utter_ios_development_cost:
+    - text: "Explore iOS development costs in our latest blog post. Discover essential details for a comprehensive understanding. Enjoy the read! 📱📖"
+
+  utter_web_development_cost:
+    - text: "Discover web development costs in our insightful blog post. Gain valuable information to navigate expenses effectively. Happy exploring! 🖥️📚"
+
+  utter_native_vs_cross_platform:
+    - text: "Explore the differences between native and cross-platform app development in our blog post. It provides a comprehensive overview of the distinctions and factors to consider. Happy reading! 📖👩‍💻"
+
+  utter_flutter_vs_react_native:
+    - text: "Discover the distinctions between Flutter and React Native in our blog post. It offers valuable insights into their features, performance, and when to choose one over the other. Happy exploring! 📖✨"
+
+  utter_wordpress_vs_shopify:
+    - text: "Explore the distinctions between WordPress and Shopify in our blog post. Dive into their features, ease of use, and which might be a better fit for your online store. Happy reading! 📖🛒"
+
+  utter_ask_native_development_form_app_description:
+    - text: "For a precise estimate, please provide detailed information about your {app_category} app idea. The more details you share, the better we can understand your requirements. ❗️ Please refrain from sending incomplete messages."
+
+  utter_ask_native_development_form_email_for_app_dev:
+    - text: "Hello {name_for_app_dev}! Nice to meet you. 😊 Please share your email address for further communication."
+
+  utter_ask_native_development_form_name_for_app_dev:
+    - text: "Your {app_category} app idea is impressive! 📱🔥 May I have your name, please?"
+
+  utter_confirm_user_info:
+    - text: "Great! We have got your email address as {email_for_app_dev} and your name as {name_for_app_dev}. Before we proceed further, let's confirm the information. Just to make sure I got it right, you're looking to develop a {app_category} app for {native_development_type}{cross_platform_development_type}"
+
+  utter_confirm_app_description:
+    - text: "📝 Here's your app summary:\n {app_description}"
+
+  utter_form_submission:
+    - text: "Awesome! Thank you for confirming the details. Our team will review your requirements and get back to you soon with the estimate and next steps. If we have any further questions, we'll reach out to you via email. Have a great day! 😊🚀"
+      buttons:
+        - title: "👈 Go to main menu"
+          payload: "/main_menu"
+
+  utter_form_restart:
+    - text: "Restarting the form"
+
+  utter_confirm_submit:
+    - text: "👌 Can you please confirm if everything is correct?"
+      buttons:
+        - title: "✅ Yes, that's correct."
+          payload: "/submit_form"
+        - title: "↩️ No, try again"
+          payload: "/restart_form"
+        - title: "❌ Go back to menu"
+          payload: "/main_menu"
+
+  utter_start_chat_ask_for_information:
+    - text: "what information are you looking for?"
+      buttons:
+        - title: "📱 Mobile Development"
+          payload: "/mobile_development"
+        - title: "🌐 Web Development"
+          payload: "/web_development"
+        - title: "💼 Our Portfolio"
+          payload: "/portfolio"
+        - title: "📚 Blogs & Articles"
+          payload: "/blogs"
+        - title: "⚡️ Free trial"
+          payload: "/free_trial"
+        - title: "💲 Pricing"
+          payload: "/pricing"
+
+  utter_pricing_plans:
+    - text: "🧑‍💻 We offer 4 different plans: Starter, Team, Business, and Enterprise. You can subscribe to each plan in a monthly or an annual billing cycle."
+  utter_pricing_discount:
+    - text: "P.S. If you subscribe to an annual plan, you'll get a 15% discount! 💡"
+  utter_pricing_redirection:
+    - text: "Check out which plan fits your needs or contact our Sales Team. They'll help you find a suitable offer. 👇"
+      buttons:
+        - title: "👈 Go to main menu"
+          payload: "/main_menu"
+
+  utter_free_trial:
+    - text: "Give ChatBot a try!, Test ChatBot during a 14-day trial before you buy it. No credit card required."
+      buttons:
+        - title: "💲 Pricing"
+          payload: "/pricing"
+        - title: "👈 Go to main menu"
+          payload: "/main_menu"
+
+  utter_out_of_scope:
+    - text: "😵‍💫 Oops! Sorry, I didn't understand your question. Please rephrase it or click the button below to go back to the menu."
+      buttons:
+        - title: "👈 Go to main menu"
+          payload: "/main_menu"
+
+  utter_default:
+    - text: "😵‍💫 Oops! Sorry, I didn't understand your question. Please rephrase it or click the button below to go back to the menu."
+      buttons:
+        - title: "👈 Go to main menu"
+          payload: "/main_menu"
+
+  utter_mobile_development_desc:
+    - text: "We can bring your app dreams to life! Are you considering native or cross-platform development? 🚀📱"
+
+  utter_native_app_development_selection:
+    - text: "Native apps it is! Ready for the excitement of iOS, Android, or both? Which one sparks your interest? 📲❤️"
+      buttons:
+        - title: "Android"
+          payload: "/android_development"
+        - title: "IOS"
+          payload: "/ios_development"
+        - title: "Both Android & IOS"
+          payload: "/both_android_ios_development"
+
+  utter_cross_platform_development_selection:
+    - text: "Great choice! For cross-platform development, are you leaning towards Flutter or React Native for your app?"
+
+
+  utter_select_app_category_desc_android:
+    - text: "Android it is! Ready to dominate the Play Store! Choose a category below or share your specific idea. Let's make it legendary! 📱💥"
+      buttons:
+        - title: "Social Networking"
+          payload: "Social Networking"
+        - title: "E-commerce"
+          payload: "E-commerce"
+        - title: "Productivity"
+          payload: "Productivity"
+        - title: "Health and Fitness"
+          payload: "Health and Fitness"
+        - title: "Entertainment"
+          payload: "Entertainment"
+        - title: "Utilities"
+          payload: "Utilities"
+        - title: "Business"
+          payload: "Business"
+
+  utter_select_app_category_desc_ios:
+    - text: "iOS, the cool hangout! Choose a category below or type your idea. Let's make it epic! 💥📱"
+      buttons:
+        - title: "Social Networking"
+          payload: "Social Networking"
+        - title: "E-commerce"
+          payload: "E-commerce"
+        - title: "Productivity"
+          payload: "Productivity"
+        - title: "Health and Fitness"
+          payload: "Health and Fitness"
+        - title: "Entertainment"
+          payload: "Entertainment"
+        - title: "Utilities"
+          payload: "Utilities"
+        - title: "Business"
+          payload: "Business"
+
+  utter_select_app_category_desc_flutter:
+    - text: "Great choice with Flutter! Could you please specify the type of app you're considering? "
+      buttons:
+        - title: "Social Networking"
+          payload: "Social Networking"
+        - title: "E-commerce"
+          payload: "E-commerce"
+        - title: "Productivity"
+          payload: "Productivity"
+        - title: "Health and Fitness"
+          payload: "Health and Fitness"
+        - title: "Entertainment"
+          payload: "Entertainment"
+        - title: "Utilities"
+          payload: "Utilities"
+        - title: "Business"
+          payload: "Business"
+
+  utter_select_app_category_desc_react:
+    - text: "Excellent choice with React Native! Could you please share the type of app you have in mind? "
+      buttons:
+        - title: "Social Networking"
+          payload: "Social Networking"
+        - title: "E-commerce"
+          payload: "E-commerce"
+        - title: "Productivity"
+          payload: "Productivity"
+        - title: "Health and Fitness"
+          payload: "Health and Fitness"
+        - title: "Entertainment"
+          payload: "Entertainment"
+        - title: "Utilities"
+          payload: "Utilities"
+        - title: "Business"
+          payload: "Business"
+
+  utter_select_app_category_desc_both_android_ios:
+    - text: "Great decision! A powerful app for both iOS and Android awaits. Please choose a category below or specify your idea."
+      buttons:
+        - title: "Social Networking"
+          payload: "Social Networking"
+        - title: "E-commerce"
+          payload: "E-commerce"
+        - title: "Productivity"
+          payload: "Productivity"
+        - title: "Health and Fitness"
+          payload: "Health and Fitness"
+        - title: "Entertainment"
+          payload: "Entertainment"
+        - title: "Utilities"
+          payload: "Utilities"
+        - title: "Business"
+          payload: "Business"
+
+  utter_selected_category:
+    - text: "Absolutely! 🙌 I'm excited to learn more about your {development_type} {app_category} app for {native_development_type}{cross_platform_development_type}!"
+
+  utter_web_development_desc:
+    - text: "To bring your vision to life, are you interested in creating a website or a dynamic web application? 💻🚀"
+      buttons:
+        - title: "Website"
+          payload: "/website_development"
+        - title: "Web Application"
+          payload: "/web_app_development"
+
+
+  utter_new_or_already_create_website:
+    - text: "Before we start, do you have an existing website that needs improvements ✨, or are you looking to create a new one from scratch? 🌟"
+      buttons:
+        - title: "Create New"
+          payload: "/create_new_website"
+        - title: "Already Have One"
+          payload: "/update_already_existing_website"
+
+  utter_new_or_already_create_webapp:
+    - text: "Brilliant decision! If you already have a web application in need of technological enhancements ✨ or are eager to craft a new one from the ground up, let me know!"
+      buttons:
+        - title: "Create New"
+          payload: "/create_new_webapp"
+        - title: "Already Have One"
+          payload: "/update_already_existing_webapp"
+
+  utter_select_web_development_category:
+    - text: "🚀 Before we get into the details, let me know what kind of website you'd like to create? 💼✨"
+      buttons:
+        - title: "Personal"
+          payload: "personal website"
+        - title: "Business"
+          payload: "business website"
+        - title: "E-commerce"
+          payload: "e-commerce website"
+        - title: "News"
+          payload: "news website"
+        - title: "Blogs"
+          payload: "blogs website"
+        - title: "Social Media"
+          payload: "social media website"
+        - title: "Educational"
+          payload: "educational website"
+        - title: "Government"
+          payload: "government website"
+
+  utter_create_new_website_tech_selection:
+    - text: "Awesome! Let's begin with your website! 💻✨ Choose a tech stack from the options below, or if you're unsure, share your requirements, and I'll suggest the perfect tech stack."
+
+  utter_create_new_web_app_backend_tech_selection:
+    - text: "Awesome! 🎉 🚀 Which backend tech are you looking to use for your web app? Let me know your preference! 🛠️🔮
+      \nYou can choose from options like Node.js, ASP.NET, PHP and Laravel. And if you're not quite sure yet, no worries – just type \"not sure\"! 🤷‍♂️"
+
+  utter_create_new_web_app_frontend_tech_selection:
+    - text: "Great 🚀 Time to craft the frontend magic! Which frontend technology do you have in mind for your web app? Let me know your preference! 💻🔮
+      \nAre you interested in React.js or Angular.js? Let me know your preference! 💻🔮 And if you're still musing over it, don't worry – just type \"not sure\"! 🤷‍♀️"
+
+  utter_not_sure_for_backend_ask_frontend_tech:
+    - text: "No worries, we've got it covered!🎉 Which frontend technology do you have in mind for your web app? Let me know your preference! 💻🔮
+      \nAre you interested in React.js or Angular.js? Let me know your preference! 💻🔮 And if you're still musing over it, don't worry – just type \"not sure\"! 🤷‍♀️"
+
+  utter_not_sure_for_frontend_ask_backend_tech:
+    - text: "No problem at all! 🎉 We're here to help you out. Which backend tech are you looking to use for your web app? Let me know your preference! 🛠️🔮
+      \nYou can choose from options like Node.js, ASP.NET, PHP and Laravel. And if you're not quite sure yet, no worries – just type \"not sure\"! 🤷‍♂️"
+
+  utter_not_sure:
+    - text: "No problem at all! 🎉 We're here to help you out."
+
+
+  utter_wordpress_suggestion:
+    - text: "Got it! 😎 WordPress is recommended for your website. It's user-friendly and makes website building easy! 💻✨ Highly recommended for crafting your dream website!"
+      buttons:
+        - title: "💪 Let's Rock with WordPress!"
+          payload: "/affirm"
+        - title: "🙅‍♂️ Let's Explore Other Options."
+          payload: "/deny"
+        - title: "🏠 Go Back to Main Menu!"
+          payload: "/main_menu"
+
+  utter_reactjs_suggestion:
+    - text: "Got it! 😎 For your web development journey, React.js is recommended. It allows easy creation of dynamic and interactive user interfaces, making it efficient and scalable for top-notch web applications!"
+      buttons:
+        - title: "🚀 Let's Build with React.js!"
+          payload: "/affirm"
+        - title: "🙅‍♂️ Let's Explore Other Options."
+          payload: "/deny"
+        - title: "🏠 Go Back to Main Menu!"
+          payload: "/main_menu"
+
+  utter_wordpress_description:
+    - text: "Excellent choice! 🎉 WordPress is user-friendly and customizable. Create and manage your site effortlessly with a variety of themes and plugins! 🌟😎💻"
+
+  utter_react_js_description:
+    - text: "🚀 React.js is your ultimate choice! 💪 Create dynamic, interactive interfaces effortlessly. Highly efficient and scalable for top-notch web applications! 🌟💻 Get ready for an exhilarating coding adventure! 😎"
+
+  utter_ask_web_development_form_web_development_design_preference:
+    - text: "Design preferences or examples to share? 🎨💡 Feel free to provide specific ideas or styles, and share links or references for us to consider in your project's design! 😊"
+
+  utter_ask_web_development_form_web_development_features:
+    - text: "Great! What features do you want for your website? ❗️ Please avoid hitting enter until your message is complete"
+
+  utter_ask_web_development_form_web_development_budget:
+    - text: "Thank you for sharing your vision! Let's discuss the budget for your project to create an extraordinary solution. 💻"
+
+  utter_ask_web_development_form_web_development_timeline:
+    - text: "Thanks for sharing your budget! To ensure an exceptional website, could you please provide the timeline you have in mind for this project? ⏳"
+
+  utter_ask_web_development_form_web_development_already_have_domain:
+    - text: "🌐 Do you already have a domain to host the website, or would you like assistance with domain registration as well? 💻"
+      buttons:
+        - title: "✅ Yes, I have a domain!"
+          payload: "✅ Yes, I have a domain!"
+        - title: "❌ No, I need assistance."
+          payload: "❌ No, I need assistance."
+
+  utter_ask_web_development_form_name_for_web_dev:
+    - text: "Great! To better connect, may I have your name, please? 😊"
+
+  utter_ask_web_development_form_email_for_web_dev:
+    - text: "Thank you for sharing your name! 🌟💻 Next, could you please provide your email address for contact? 📧"
+
+  utter_confirm_user_info_web_development:
+    - text: "Thanks! 🎉 Let's ensure everything is crystal clear before we dive into the fantastic journey of creating your dream website! 💻🚀   \n
+    Here's a quick summary of your requirements:  \n
+    💼 Development Type: {web_development_type}  \n
+    🛠️ Tech: {web_development_tech}  \n
+    🌟 Website Category: {website_category}  \n
+    🎨 Design Preference: {web_development_design_preference}  \n
+    ✨ Features: {web_development_features}  \n
+    💰 Budget: {web_development_budget}  \n
+    ⏳ Timeline: {web_development_timeline}  \n
+    🌐 Already have Domain: {web_development_already_have_domain}  \n
+    📧 Email: {email_for_web_dev}"
+
+  utter_ask_web_app_form_web_app_design_preference:
+    - text: "Design ideas or examples? 🎨💡 Feel free to share styles, ideas, or links for your web app's design.️️ ❗ ️Type without hitting enter until you're done"
+
+  utter_ask_web_app_form_web_app_features:
+    - text: "Eager to know your web app features! 💻✨ Share ideas like interactive forms or real-time updates, and we'll make them a reality! ❗ ️Type without hitting enter until you're done"
+
+  utter_ask_web_app_form_web_app_budget:
+    - text: "Thank you! Let's discuss your project budget for crafting an exceptional solution. 💸"
+
+  utter_ask_web_app_form_web_app_timeline:
+    - text: "Thanks for your budget! 🎉 When do you envision your web app being ready? ⏳ Let us know your timeline!"
+
+  utter_ask_web_app_form_web_app_already_have_domain:
+    - text: "🌐 Do you already have a domain to host the web application, or would you like assistance with domain registration as well? 💻"
+      buttons:
+        - title: "✅ Yes, I have a domain!"
+          payload: "✅ Yes, I have a domain!"
+        - title: "❌ No, I need assistance."
+          payload: "❌ No, I need assistance."
+
+  utter_ask_web_app_form_name_for_web_app:
+    - text: "Great! 🎉 To get better acquainted, could you kindly share your name with us? 😊"
+
+  utter_ask_web_app_form_email_for_web_app:
+    - text: "Thanks for sharing your name! Please provide your email address for further communication. 📧"
+
+  utter_confirm_user_info_web_app:
+    - text: "Thanks! 🎉 Let's ensure everything is crystal clear before we dive into the fantastic journey of creating your dream website! 💻🚀  \n
+    Here's a quick summary of your requirements:  \n
+    💼 Development Type: {web_development_type}  \n
+    🔧 Backend Tech: {backend_tech_web_app}  \n
+    🛠️ Frontend Tech: {frontend_tech_web_app}  \n
+    🎨 Design Preference: {web_app_design_preference}  \n
+    ✨ Features: {web_app_features}  \n
+    💰 Budget: {web_app_budget}  \n
+    ⏳ Timeline: {web_app_timeline}  \n
+    🌐 Already have Domain: {web_app_already_have_domain}  \n
+    📧 Email: {email_for_web_app}"
+
+  utter_hiring_developer_type:
+    - text: "Of course! We offer skilled developers in both mobile and web development. What specific skills or expertise are you looking for in a developer?"
+
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

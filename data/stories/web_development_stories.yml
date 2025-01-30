@@ -1,0 +1,722 @@
+version: "3.1"
+
+stories:
+
+  - story: User selects web development from main menu to create new website by selecting wordpress
+    steps:
+      - intent: web_development
+      - action: utter_web_development_desc
+      - intent: website_development
+      - action: utter_new_or_already_create_website
+      - intent: create_new_website
+      - action: utter_select_web_development_category
+      - intent: provided_website_category
+        entities:
+          - website_category: Personal
+      - slot_was_set:
+          - website_category: Personal
+      - action: utter_create_new_website_tech_selection
+      - action: action_show_website_tech_list
+      - intent: wordpress_development
+      - action: action_set_slot_web_development_tech
+      - action: utter_wordpress_description
+      - action: web_development_form
+      - active_loop: web_development_form
+
+  - story: User selects web development from main menu to create new website by selecting wordpress
+    steps:
+      - intent: website_development
+      - action: utter_new_or_already_create_website
+      - intent: create_new_website
+      - action: utter_select_web_development_category
+      - intent: provided_website_category
+        entities:
+          - website_category: Personal
+      - slot_was_set:
+          - website_category: Personal
+      - action: utter_create_new_website_tech_selection
+      - action: action_show_website_tech_list
+      - intent: wordpress_development
+      - action: action_set_slot_web_development_tech
+      - action: utter_wordpress_description
+      - action: web_development_form
+      - active_loop: web_development_form
+
+  - story: User selects web development from main menu to create new website by selecting wordpress
+    steps:
+      - intent: create_new_website
+      - action: utter_select_web_development_category
+      - intent: provided_website_category
+        entities:
+          - website_category: Personal
+      - slot_was_set:
+          - website_category: Personal
+      - action: utter_create_new_website_tech_selection
+      - action: action_show_website_tech_list
+      - intent: wordpress_development
+      - action: action_set_slot_web_development_tech
+      - action: utter_wordpress_description
+      - action: web_development_form
+      - active_loop: web_development_form
+
+  - story: User selects web development from main menu to create new website by selecting wordpress
+    steps:
+      - intent: wordpress_development
+      - action: action_set_slot_web_development_tech
+      - action: utter_wordpress_description
+      - action: utter_select_web_development_category
+      - intent: provided_website_category
+        entities:
+          - website_category: Personal
+      - slot_was_set:
+          - website_category: Personal
+      - action: web_development_form
+      - active_loop: web_development_form
+
+
+  - story: User selects web development from main menu to create new website suggesting wordpress
+      according to requirements and user confirms the suggestion
+    steps:
+      - intent: web_development
+      - action: utter_web_development_desc
+      - intent: website_development
+      - action: utter_new_or_already_create_website
+      - intent: create_new_website
+      - action: utter_select_web_development_category
+      - intent: provided_website_category
+        entities:
+          - website_category: Personal
+      - slot_was_set:
+          - website_category: Personal
+      - action: utter_create_new_website_tech_selection
+      - action: action_show_website_tech_list
+      - intent: suggest_wordpress_development
+      - action: utter_wordpress_suggestion
+      - intent: affirm
+      - action: action_set_slot_web_development_tech #TODO: Change this custom action to set the slot value to Wordpress
+      - action: web_development_form
+      - active_loop: web_development_form
+
+  - story: User selects web development from main menu to create new website suggesting wordpress
+      according to requirements and user confirms the suggestion
+    steps:
+      - intent: website_development
+      - action: utter_new_or_already_create_website
+      - intent: create_new_website
+      - action: utter_select_web_development_category
+      - intent: provided_website_category
+        entities:
+          - website_category: Personal
+      - slot_was_set:
+          - website_category: Personal
+      - action: utter_create_new_website_tech_selection
+      - action: action_show_website_tech_list
+      - intent: suggest_wordpress_development
+      - action: utter_wordpress_suggestion
+      - intent: affirm
+      - action: action_set_slot_web_development_tech #TODO: Change this custom action to set the slot value to Wordpress
+      - action: web_development_form
+      - active_loop: web_development_form
+
+  - story: User selects web development from main menu to create new website suggesting wordpress
+      according to requirements and user confirms the suggestion
+    steps:
+      - intent: create_new_website
+      - action: utter_select_web_development_category
+      - intent: provided_website_category
+        entities:
+          - website_category: Personal
+      - slot_was_set:
+          - website_category: Personal
+      - action: utter_create_new_website_tech_selection
+      - action: action_show_website_tech_list
+      - intent: suggest_wordpress_development
+      - action: utter_wordpress_suggestion
+      - intent: affirm
+      - action: action_set_slot_web_development_tech #TODO: Change this custom action to set the slot value to Wordpress
+      - action: web_development_form
+      - active_loop: web_development_form
+
+  - story: User selects web development from main menu to create new website suggesting wordpress
+      according to requirements and user confirms the suggestion
+    steps:
+      - intent: suggest_wordpress_development
+      - action: utter_wordpress_suggestion
+      - intent: affirm
+      - action: action_set_slot_web_development_tech #TODO: Change this custom action to set the slot value to Wordpress
+      - action: utter_select_web_development_category
+      - intent: provided_website_category
+        entities:
+          - website_category: Personal
+      - slot_was_set:
+          - website_category: Personal
+      - action: web_development_form
+      - active_loop: web_development_form
+
+
+
+  - story: User selects web development from main menu to create new website by selecting React JS
+    steps:
+      - intent: web_development
+      - action: utter_web_development_desc
+      - intent: website_development
+      - action: utter_new_or_already_create_website
+      - intent: create_new_website
+      - action: utter_select_web_development_category
+      - intent: provided_website_category
+        entities:
+          - website_category: Personal
+      - slot_was_set:
+          - website_category: Personal
+      - action: utter_create_new_website_tech_selection
+      - action: action_show_website_tech_list
+      - intent: react_js_development
+      - action: action_set_slot_web_development_tech
+      - action: utter_react_js_description
+      - action: web_development_form
+      - active_loop: web_development_form
+
+
+  - story: User selects web development from main menu to create new website by selecting React JS
+    steps:
+      - intent: website_development
+      - action: utter_new_or_already_create_website
+      - intent: create_new_website
+      - action: utter_select_web_development_category
+      - intent: provided_website_category
+        entities:
+          - website_category: Personal
+      - slot_was_set:
+          - website_category: Personal
+      - action: utter_create_new_website_tech_selection
+      - action: action_show_website_tech_list
+      - intent: react_js_development
+      - action: action_set_slot_web_development_tech
+      - action: utter_react_js_description
+      - action: web_development_form
+      - active_loop: web_development_form
+
+
+  - story: User selects web development from main menu to create new website by selecting React JS
+    steps:
+      - intent: create_new_website
+      - action: utter_select_web_development_category
+      - intent: provided_website_category
+        entities:
+          - website_category: Personal
+      - slot_was_set:
+          - website_category: Personal
+      - action: utter_create_new_website_tech_selection
+      - action: action_show_website_tech_list
+      - intent: react_js_development
+      - action: action_set_slot_web_development_tech
+      - action: utter_react_js_description
+      - action: web_development_form
+      - active_loop: web_development_form
+
+
+  - story: User selects web development from main menu to create new website by selecting React JS
+    steps:
+      - intent: react_js_development
+      - action: action_set_slot_web_development_tech
+      - action: utter_react_js_description
+      - action: utter_select_web_development_category
+      - intent: provided_website_category
+        entities:
+          - website_category: Personal
+      - slot_was_set:
+          - website_category: Personal
+      - action: web_development_form
+      - active_loop: web_development_form
+
+
+  - story: User selects web development from main menu to create new website suggesting react js according to requirements
+      and user confirms the suggestion
+    steps:
+      - intent: web_development
+      - action: utter_web_development_desc
+      - intent: website_development
+      - action: utter_new_or_already_create_website
+      - intent: create_new_website
+      - action: utter_select_web_development_category
+      - intent: provided_website_category
+        entities:
+          - website_category: Personal
+      - slot_was_set:
+          - website_category: Personal
+      - action: utter_create_new_website_tech_selection
+      - action: action_show_website_tech_list
+      - intent: suggest_react_js_development
+      - action: utter_reactjs_suggestion
+      - intent: affirm
+      - action: action_set_slot_web_development_tech #TODO: Change this custom action to set the slot value to react js
+      - action: web_development_form
+      - active_loop: web_development_form
+
+
+  - story: User selects web development from main menu to create new website suggesting react js according to requirements
+      and user confirms the suggestion
+    steps:
+      - intent: website_development
+      - action: utter_new_or_already_create_website
+      - intent: create_new_website
+      - action: utter_select_web_development_category
+      - intent: provided_website_category
+        entities:
+          - website_category: Personal
+      - slot_was_set:
+          - website_category: Personal
+      - action: utter_create_new_website_tech_selection
+      - action: action_show_website_tech_list
+      - intent: suggest_react_js_development
+      - action: utter_reactjs_suggestion
+      - intent: affirm
+      - action: action_set_slot_web_development_tech #TODO: Change this custom action to set the slot value to react js
+      - action: web_development_form
+      - active_loop: web_development_form
+
+  - story: User selects web development from main menu to create new website suggesting react js according to requirements
+      and user confirms the suggestion
+    steps:
+      - intent: create_new_website
+      - action: utter_select_web_development_category
+      - intent: provided_website_category
+        entities:
+          - website_category: Personal
+      - slot_was_set:
+          - website_category: Personal
+      - action: utter_create_new_website_tech_selection
+      - action: action_show_website_tech_list
+      - intent: suggest_react_js_development
+      - action: utter_reactjs_suggestion
+      - intent: affirm
+      - action: action_set_slot_web_development_tech #TODO: Change this custom action to set the slot value to react js
+      - action: web_development_form
+      - active_loop: web_development_form
+
+  - story: User selects web development from main menu to create new website suggesting react js according to requirements
+      and user confirms the suggestion
+    steps:
+      - intent: suggest_react_js_development
+      - action: utter_reactjs_suggestion
+      - intent: affirm
+      - action: action_set_slot_web_development_tech #TODO: Change this custom action to set the slot value to react js
+      - action: utter_select_web_development_category
+      - intent: provided_website_category
+        entities:
+          - website_category: Personal
+      - slot_was_set:
+          - website_category: Personal
+      - action: web_development_form
+      - active_loop: web_development_form
+
+  - story: User selects web development from main menu to update already created website
+    steps:
+      - intent: web_development
+      - action: utter_web_development_desc
+      - intent: website_development
+      - action: utter_new_or_already_create_website
+      - or:
+          - intent: update_already_existing_webapp
+          - intent: update_already_existing_website
+      - action: website_update_form
+      - active_loop: website_update_form
+
+  - story: User selects web development from main menu to update already created website
+    steps:
+      - intent: website_development
+      - action: utter_new_or_already_create_website
+      - or:
+          - intent: update_already_existing_webapp
+          - intent: update_already_existing_website
+      - action: website_update_form
+      - active_loop: website_update_form
+
+  - story: User selects web development from main menu to update already created website
+    steps:
+      - intent: update_already_existing_website
+      - action: website_update_form
+      - active_loop: website_update_form
+
+  - story: User selects web development from main menu to create new web application by selecting front end backend
+    steps:
+      - intent: web_development
+      - action: utter_web_development_desc
+      - intent: web_app_development
+      - action: utter_new_or_already_create_webapp
+      - or:
+          - intent: create_new_webapp
+          - intent: create_new_website
+      - action: utter_create_new_web_app_backend_tech_selection
+      - action: action_show_backend_tech_list
+      - intent: provided_backend_tech_web_app
+        entities:
+          - backend_tech_web_app: Laravel
+      - slot_was_set:
+          - backend_tech_web_app: Laravel
+      - action: utter_create_new_web_app_frontend_tech_selection
+      - action: action_show_frontend_tech_list
+      - or:
+          - intent: provided_frontend_tech_web_app
+            entities:
+              - frontend_tech_web_app: Angular
+          - intent: react_js_development
+            entities:
+              - frontend_tech_web_app: React
+      - slot_was_set:
+          - frontend_tech_web_app: Angular
+      - action: web_app_form
+      - active_loop: web_app_form
+
+  - story: User selects web development from main menu to create new web application by selecting front end backend
+    steps:
+      - intent: web_development
+      - action: utter_web_development_desc
+      - intent: web_app_development
+      - action: utter_new_or_already_create_webapp
+      - or:
+          - intent: create_new_webapp
+          - intent: create_new_website
+      - action: utter_create_new_web_app_backend_tech_selection
+      - action: action_show_backend_tech_list
+      - intent: not_sure
+      - action: action_set_backend_tech_not_sure
+      - action: utter_not_sure_for_backend_ask_frontend_tech
+      - action: action_show_frontend_tech_list
+      - or:
+          - intent: provided_frontend_tech_web_app
+            entities:
+              - frontend_tech_web_app: Angular
+          - intent: react_js_development
+            entities:
+              - frontend_tech_web_app: React
+      - slot_was_set:
+          - frontend_tech_web_app: Angular
+      - action: web_app_form
+      - active_loop: web_app_form
+
+  - story: User selects web development from main menu to create new web application by selecting front end backend
+    steps:
+      - intent: web_development
+      - action: utter_web_development_desc
+      - intent: web_app_development
+      - action: utter_new_or_already_create_webapp
+      - or:
+          - intent: create_new_webapp
+          - intent: create_new_website
+      - action: utter_create_new_web_app_backend_tech_selection
+      - action: action_show_backend_tech_list
+      - intent: provided_backend_tech_web_app
+        entities:
+          - backend_tech_web_app: Laravel
+      - slot_was_set:
+          - backend_tech_web_app: Laravel
+      - action: utter_create_new_web_app_frontend_tech_selection
+      - action: action_show_frontend_tech_list
+      - intent: not_sure
+      - action: utter_not_sure
+      - action: action_set_frontend_tech_not_sure
+      - action: web_app_form
+      - active_loop: web_app_form
+
+  - story: User selects web development from main menu to create new web application by selecting front end backend
+    steps:
+      - intent: web_development
+      - action: utter_web_development_desc
+      - intent: web_app_development
+      - action: utter_new_or_already_create_webapp
+      - or:
+          - intent: create_new_webapp
+          - intent: create_new_website
+      - action: utter_create_new_web_app_backend_tech_selection
+      - action: action_show_backend_tech_list
+      - intent: not_sure
+      - action: action_set_backend_tech_not_sure
+      - action: utter_not_sure_for_backend_ask_frontend_tech
+      - action: action_show_frontend_tech_list
+      - intent: not_sure
+      - action: utter_not_sure
+      - action: action_set_frontend_tech_not_sure
+      - action: web_app_form
+      - active_loop: web_app_form
+
+  - story: User selects web development from main menu to create new web application by selecting front end backend
+    steps:
+      - intent: web_app_development
+      - action: utter_new_or_already_create_webapp
+      - or:
+          - intent: create_new_webapp
+          - intent: create_new_website
+      - action: utter_create_new_web_app_backend_tech_selection
+      - action: action_show_backend_tech_list
+      - intent: provided_backend_tech_web_app
+        entities:
+          - backend_tech_web_app: Laravel
+      - slot_was_set:
+          - backend_tech_web_app: Laravel
+      - action: utter_create_new_web_app_frontend_tech_selection
+      - action: action_show_frontend_tech_list
+      - or:
+          - intent: provided_frontend_tech_web_app
+            entities:
+              - frontend_tech_web_app: Angular
+          - intent: react_js_development
+            entities:
+              - frontend_tech_web_app: React
+      - slot_was_set:
+          - frontend_tech_web_app: Angular
+      - action: web_app_form
+      - active_loop: web_app_form
+
+  - story: User selects web development from main menu to create new web application by selecting front end backend
+    steps:
+      - intent: web_app_development
+      - action: utter_new_or_already_create_webapp
+      - or:
+          - intent: create_new_webapp
+          - intent: create_new_website
+      - action: utter_create_new_web_app_backend_tech_selection
+      - action: action_show_backend_tech_list
+      - intent: not_sure
+      - action: action_set_backend_tech_not_sure
+      - action: utter_not_sure_for_backend_ask_frontend_tech
+      - action: action_show_frontend_tech_list
+      - or:
+          - intent: provided_frontend_tech_web_app
+            entities:
+              - frontend_tech_web_app: Angular
+          - intent: react_js_development
+            entities:
+              - frontend_tech_web_app: React
+      - slot_was_set:
+          - frontend_tech_web_app: Angular
+      - action: web_app_form
+      - active_loop: web_app_form
+
+  - story: User selects web development from main menu to create new web application by selecting front end backend
+    steps:
+      - intent: web_app_development
+      - action: utter_new_or_already_create_webapp
+      - or:
+          - intent: create_new_webapp
+          - intent: create_new_website
+      - action: utter_create_new_web_app_backend_tech_selection
+      - action: action_show_backend_tech_list
+      - intent: provided_backend_tech_web_app
+        entities:
+          - backend_tech_web_app: Laravel
+      - slot_was_set:
+          - backend_tech_web_app: Laravel
+      - action: utter_create_new_web_app_frontend_tech_selection
+      - action: action_show_frontend_tech_list
+      - intent: not_sure
+      - action: utter_not_sure
+      - action: action_set_frontend_tech_not_sure
+      - action: web_app_form
+      - active_loop: web_app_form
+
+  - story: User selects web development from main menu to create new web application by selecting front end backend
+    steps:
+      - intent: web_app_development
+      - action: utter_new_or_already_create_webapp
+      - or:
+          - intent: create_new_webapp
+          - intent: create_new_website
+      - action: utter_create_new_web_app_backend_tech_selection
+      - action: action_show_backend_tech_list
+      - intent: not_sure
+      - action: action_set_backend_tech_not_sure
+      - action: utter_not_sure_for_backend_ask_frontend_tech
+      - action: action_show_frontend_tech_list
+      - intent: not_sure
+      - action: utter_not_sure
+      - action: action_set_frontend_tech_not_sure
+      - action: web_app_form
+      - active_loop: web_app_form
+
+  - story: User selects web development from main menu to create new web application by selecting front end backend
+    steps:
+      - intent: create_new_webapp
+      - action: utter_create_new_web_app_backend_tech_selection
+      - action: action_show_backend_tech_list
+      - intent: provided_backend_tech_web_app
+        entities:
+          - backend_tech_web_app: Laravel
+      - slot_was_set:
+          - backend_tech_web_app: Laravel
+      - action: utter_create_new_web_app_frontend_tech_selection
+      - action: action_show_frontend_tech_list
+      - or:
+          - intent: provided_frontend_tech_web_app
+            entities:
+              - frontend_tech_web_app: Angular
+          - intent: react_js_development
+            entities:
+              - frontend_tech_web_app: React
+      - slot_was_set:
+          - frontend_tech_web_app: Angular
+      - action: web_app_form
+      - active_loop: web_app_form
+
+  - story: User selects web development from main menu to create new web application by selecting front end backend
+    steps:
+      - intent: create_new_webapp
+      - action: utter_create_new_web_app_backend_tech_selection
+      - action: action_show_backend_tech_list
+      - intent: not_sure
+      - action: action_set_backend_tech_not_sure
+      - action: utter_not_sure_for_backend_ask_frontend_tech
+      - action: action_show_frontend_tech_list
+      - or:
+          - intent: provided_frontend_tech_web_app
+            entities:
+              - frontend_tech_web_app: Angular
+          - intent: react_js_development
+            entities:
+              - frontend_tech_web_app: React
+      - slot_was_set:
+          - frontend_tech_web_app: Angular
+      - action: web_app_form
+      - active_loop: web_app_form
+
+  - story: User selects web development from main menu to create new web application by selecting front end backend
+    steps:
+      - intent: create_new_webapp
+      - action: utter_create_new_web_app_backend_tech_selection
+      - action: action_show_backend_tech_list
+      - intent: provided_backend_tech_web_app
+        entities:
+          - backend_tech_web_app: Laravel
+      - slot_was_set:
+          - backend_tech_web_app: Laravel
+      - action: utter_create_new_web_app_frontend_tech_selection
+      - action: action_show_frontend_tech_list
+      - intent: not_sure
+      - action: utter_not_sure
+      - action: action_set_frontend_tech_not_sure
+      - action: web_app_form
+      - active_loop: web_app_form
+
+  - story: User selects web development from main menu to create new web application by selecting front end backend
+    steps:
+      - intent: create_new_webapp
+      - action: utter_create_new_web_app_backend_tech_selection
+      - action: action_show_backend_tech_list
+      - intent: not_sure
+      - action: action_set_backend_tech_not_sure
+      - action: utter_not_sure_for_backend_ask_frontend_tech
+      - action: action_show_frontend_tech_list
+      - intent: not_sure
+      - action: utter_not_sure
+      - action: action_set_frontend_tech_not_sure
+      - action: web_app_form
+      - active_loop: web_app_form
+
+  - story: User selects web development from main menu to create new web application by selecting front end backend
+    steps:
+      - intent: provided_backend_tech_web_app
+        entities:
+          - backend_tech_web_app: Laravel
+      - slot_was_set:
+          - backend_tech_web_app: Laravel
+      - action: utter_create_new_web_app_frontend_tech_selection
+      - action: action_show_frontend_tech_list
+      - or:
+          - intent: provided_frontend_tech_web_app
+            entities:
+              - frontend_tech_web_app: Angular
+          - intent: react_js_development
+            entities:
+              - frontend_tech_web_app: React
+      - slot_was_set:
+          - frontend_tech_web_app: Angular
+      - action: web_app_form
+      - active_loop: web_app_form
+
+  - story: User selects web development from main menu to create new web application by selecting front end backend
+    steps:
+      - intent: provided_backend_tech_web_app
+        entities:
+          - backend_tech_web_app: Laravel
+      - slot_was_set:
+          - backend_tech_web_app: Laravel
+      - action: utter_create_new_web_app_frontend_tech_selection
+      - action: action_show_frontend_tech_list
+      - intent: not_sure
+      - action: utter_not_sure
+      - action: action_set_frontend_tech_not_sure
+      - action: web_app_form
+      - active_loop: web_app_form
+
+  - story: User selects web development from main menu to create new web application by selecting front end backend
+    steps:
+      - intent: provided_frontend_tech_web_app
+        entities:
+          - frontend_tech_web_app: Angular
+      - slot_was_set:
+          - frontend_tech_web_app: Angular
+      - action: utter_create_new_web_app_backend_tech_selection
+      - action: action_show_backend_tech_list
+      - intent: provided_backend_tech_web_app
+        entities:
+          - backend_tech_web_app: Laravel
+      - slot_was_set:
+          - backend_tech_web_app: Laravel
+      - action: web_app_form
+      - active_loop: web_app_form
+
+  - story: User selects web development from main menu to create new web application by selecting front end backend
+    steps:
+      - intent: provided_frontend_tech_web_app
+        entities:
+          - frontend_tech_web_app: Angular
+      - slot_was_set:
+          - frontend_tech_web_app: Angular
+      - action: utter_create_new_web_app_backend_tech_selection
+      - action: action_show_backend_tech_list
+      - intent: not_sure
+      - action: utter_not_sure
+      - action: action_set_backend_tech_not_sure
+      - action: web_app_form
+      - active_loop: web_app_form
+
+  - story: User selects web development from main menu to create new web application by selecting front end backend
+    steps:
+      - intent: provided_both_tech_web_app
+        entities:
+          - frontend_tech_web_app: React
+          - backend_tech_web_app: Node.js
+      - slot_was_set:
+          - frontend_tech_web_app: React
+          - backend_tech_web_app: Node.js
+      - action: web_app_form
+      - active_loop: web_app_form
+
+  - story: User selects web development from main menu to create new web application by selecting front end backend
+    steps:
+      - intent: web_development
+      - action: utter_web_development_desc
+      - intent: web_app_development
+      - action: utter_new_or_already_create_webapp
+      - or:
+          - intent: update_already_existing_webapp
+          - intent: update_already_existing_website
+      - action: website_update_form
+      - active_loop: website_update_form
+
+  - story: User selects web development from main menu to create new web application by selecting front end backend
+    steps:
+      - intent: web_app_development
+      - action: utter_new_or_already_create_webapp
+      - or:
+          - intent: update_already_existing_webapp
+          - intent: update_already_existing_website
+      - action: website_update_form
+      - active_loop: website_update_form
+
+  - story: User selects web development from main menu to create new web application by selecting front end backend
+    steps:
+      - intent: update_already_existing_webapp
+      - action: website_update_form
+      - active_loop: website_update_form
+

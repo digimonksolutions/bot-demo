@@ -1,0 +1,407 @@
+version: "3.1"
+
+nlu:
+
+  - intent: provided_category
+    examples: |
+      - I'm looking for an [social networking]{"entity":"category","value":"Social Networking"} app
+      - Can you help me with a [social networking]{"entity":"category","value":"Social Networking"} app?
+      - I need assistance with an [social networking]{"entity":"category","value":"Social Networking"} app
+      - Is it possible to create a [social networking]{"entity":"category","value":"Social Networking"} app?
+      - I want to build a [social networking]{"entity":"category","value":"Social Networking"} app
+      - Do you develop [social networking]{"entity":"category","value":"Social Networking"} apps?
+      - Can you create an [social networking]{"entity":"category","value":"Social Networking"} app?
+      - I'm interested in a [social networking]{"entity":"category","value":"Social Networking"} app
+      - Could you build a [social networking]{"entity":"category","value":"Social Networking"} app?
+      - I want to develop a [social networking]{"entity":"category","value":"Social Networking"} app
+      - Is it possible to create a [social networking]{"entity":"category","value":"Social Networking"} app?
+      - Can you help with a [social networking]{"entity":"category","value":"Social Networking"} app?
+      - I'm interested in a [social networking]{"entity":"category","value":"Social Networking"} app
+      - How about an [social networking]{"entity":"category","value":"Social Networking"} app?
+      - [social networking]{"entity":"category","value":"Social Networking"}
+      - Looking for a [social networking]{"entity":"category","value":"Social Networking"} app development service
+      - Need assistance with building a [social networking]{"entity":"category","value":"Social Networking"} app
+      - Can you create a custom [social networking]{"entity":"category","value":"Social Networking"} app?
+      - [social networking]{"entity":"category","value":"Social Networking"} app development help required
+      - Interested in developing my own [social networking]{"entity":"category","value":"Social Networking"} app
+      - What is the cost of [social networking]{"entity":"category","value":"Social Networking"} app development?
+      - Are there any good [social networking]{"entity":"category","value":"Social Networking"} app developers?
+      - Can you recommend a [social networking]{"entity":"category","value":"Social Networking"} app development company?
+      - Looking for a reliable [social networking]{"entity":"category","value":"Social Networking"} app development service
+      - How long does it take to develop a [social networking]{"entity":"category","value":"Social Networking"} app?
+      - Any tips for designing a successful [social networking]{"entity":"category","value":"Social Networking"} app?
+      - [social networking]{"entity":"category","value":"Social Networking"} app development process explained
+      - Examples of popular [social networking]{"entity":"category","value":"Social Networking"} apps
+      - [social networking]{"entity":"category","value":"Social Networking"} app development for iOS and Android
+      - Is it possible to monetize a [social networking]{"entity":"category","value":"Social Networking"} app?
+      - What are the must-have features for a [social networking]{"entity":"category","value":"Social Networking"} app?
+      - Challenges in [social networking]{"entity":"category","value":"Social Networking"} app development
+      - Important factors to consider when building a [social networking]{"entity":"category","value":"Social Networking"} app
+      - Can you provide a timeline for [social networking]{"entity":"category","value":"Social Networking"} app development?
+      - [social networking]{"entity":"category","value":"Social Networking"} app development cost estimation
+      - Is it better to hire a team or outsource [social networking]{"entity":"category","value":"Social Networking"} app development?
+      - Can you create a prototype for a [social networking]{"entity":"category","value":"Social Networking"} app?
+      - How do I market my [social networking]{"entity":"category","value":"Social Networking"} app?
+      - Steps to secure a [social networking]{"entity":"category","value":"Social Networking"} app from vulnerabilities
+      - [social networking]{"entity":"category","value":"Social Networking"} app development trends in 2023
+      - I'm looking for a [social app]{"entity":"category","value":"Social Networking"}
+      - Can you help me with a [social app]{"entity":"category","value":"Social Networking"}?
+      - I need assistance with a [social app]{"entity":"category","value":"Social Networking"}
+      - Is it possible to create a [social app]{"entity":"category","value":"Social Networking"}?
+      - I want to build a [social app]{"entity":"category","value":"Social Networking"}
+      - Do you develop [social apps]{"entity":"category","value":"Social Networking"}?
+      - Can you create a [social app]{"entity":"category","value":"Social Networking"}?
+      - I'm interested in a [social app]{"entity":"category","value":"Social Networking"}
+      - Could you build a [social app]{"entity":"category","value":"Social Networking"}?
+      - I want to develop a [social app]{"entity":"category","value":"Social Networking"}
+      - Is it possible to create a [social app]{"entity":"category","value":"Social Networking"}?
+      - Can you help with a [social app]{"entity":"category","value":"Social Networking"}?
+      - I'm interested in a [social app]{"entity":"category","value":"Social Networking"}
+      - How about a [social app]{"entity":"category","value":"Social Networking"}?
+      - [social app]{"entity":"category","value":"Social Networking"}
+      - Looking for a [social network app]{"entity":"category","value":"Social Networking"} development service
+      - Need assistance with building a [social network app]{"entity":"category","value":"Social Networking"}
+      - Can you create a custom [social network app]{"entity":"category","value":"Social Networking"}?
+      - [social network app]{"entity":"category","value":"Social Networking"} development help required
+      - Interested in developing my own [social network app]{"entity":"category","value":"Social Networking"}
+      
+      - I'm looking for an [education]{"entity":"category","value":"Education"} app
+      - Can you help me with an [education]{"entity":"category","value":"Education"} app?
+      - I need assistance with an [education]{"entity":"category","value":"Education"} app
+      - Is it possible to create an [education]{"entity":"category","value":"Education"} app?
+      - I want to build an [education]{"entity":"category","value":"Education"} app
+      - Do you develop [education]{"entity":"category","value":"Education"} apps?
+      - Can you create an [education]{"entity":"category","value":"Education"} app?
+      - I'm interested in an [education]{"entity":"category","value":"Education"} app
+      - Could you build an [education]{"entity":"category","value":"Education"} app?
+      - I want to develop an [education]{"entity":"category","value":"Education"} app
+      - Is it possible to create an [education]{"entity":"category","value":"Education"} app?
+      - Can you help with an [education]{"entity":"category","value":"Education"} app?
+      - I'm interested in an [education]{"entity":"category","value":"Education"} app
+      - How about an [education]{"entity":"category","value":"Education"} app?
+      - [education]{"entity":"category","value":"Education"}
+      - [education]{"entity":"category","value":"Education"} app
+      
+      - I'm looking for an [productivity]{"entity":"category","value":"Productivity"} app
+      - Can you help me with an [productivity]{"entity":"category","value":"Productivity"} app?
+      - I need assistance with an [productivity]{"entity":"category","value":"Productivity"} app
+      - Is it possible to create an [productivity]{"entity":"category","value":"Productivity"} app?
+      - I want to build an [productivity]{"entity":"category","value":"Productivity"} app
+      - Do you develop [productivity]{"entity":"category","value":"Productivity"} apps?
+      - Can you create an [productivity]{"entity":"category","value":"Productivity"} app?
+      - I'm interested in an [productivity]{"entity":"category","value":"Productivity"} app
+      - Could you build an [productivity]{"entity":"category","value":"Productivity"} app?
+      - I want to develop an [productivity]{"entity":"category","value":"Productivity"} app
+      - Is it possible to create an [productivity]{"entity":"category","value":"Productivity"} app?
+      - Can you help with an [productivity]{"entity":"category","value":"Productivity"} app?
+      - I'm interested in an [productivity]{"entity":"category","value":"Productivity"} app
+      - How about an [productivity]{"entity":"category","value":"Productivity"} app?
+      - [productivity]{"entity":"category","value":"Productivity"}
+      - [productivity]{"entity":"category","value":"Productivity"} app
+      
+      - I'm looking for an [health and fitness]{"entity":"category","value":"Health and Fitness"} app
+      - Can you help me with an [health and fitness]{"entity":"category","value":"Health and Fitness"} app?
+      - I need assistance with an [health and fitness]{"entity":"category","value":"Health and Fitness"} app
+      - Is it possible to create an [health and fitness]{"entity":"category","value":"Health and Fitness"} app?
+      - I want to build an [health and fitness]{"entity":"category","value":"Health and Fitness"} app
+      - Do you develop [health and fitness]{"entity":"category","value":"Health and Fitness"} apps?
+      - Can you create an [health and fitness]{"entity":"category","value":"Health and Fitness"} app?
+      - I'm interested in an [health and fitness]{"entity":"category","value":"Health and Fitness"} app
+      - Could you build an [health and fitness]{"entity":"category","value":"Health and Fitness"} app?
+      - I want to develop an [health and fitness]{"entity":"category","value":"Health and Fitness"} app
+      - Is it possible to create an [health and fitness]{"entity":"category","value":"Health and Fitness"} app?
+      - Can you help with an [health and fitness]{"entity":"category","value":"Health and Fitness"} app?
+      - I'm interested in an [health and fitness]{"entity":"category","value":"Health and Fitness"} app
+      - How about an [health and fitness]{"entity":"category","value":"Health and Fitness"} app?
+      - [health and fitness]{"entity":"category","value":"Health and Fitness"}
+      - [health and fitness]{"entity":"category","value":"Health and Fitness"} app
+      
+      - I'm looking for an [gaming]{"entity":"category","value":"Gaming"} app
+      - Can you help me with an [gaming]{"entity":"category","value":"Gaming"} app?
+      - I need assistance with an [gaming]{"entity":"category","value":"Gaming"} app
+      - Is it possible to create an [gaming]{"entity":"category","value":"Gaming"} app?
+      - I want to build an [gaming]{"entity":"category","value":"Gaming"} app
+      - Do you develop [gaming]{"entity":"category","value":"Gaming"} apps?
+      - Can you create an [gaming]{"entity":"category","value":"Gaming"} app?
+      - I'm interested in an [gaming]{"entity":"category","value":"Gaming"} app
+      - Could you build an [gaming]{"entity":"category","value":"Gaming"} app?
+      - I want to develop an [gaming]{"entity":"category","value":"Gaming"} app
+      - Is it possible to create an [gaming]{"entity":"category","value":"Gaming"} app?
+      - Can you help with an [gaming]{"entity":"category","value":"Gaming"} app?
+      - How about an [gaming]{"entity":"category","value":"Gaming"} app?
+      - I'm interested in an [gaming]{"entity":"category","value":"Gaming"} app
+      - I'm interested in an [gaming]{"entity":"category","value":"Gaming"} app
+      - Could you build an [gaming]{"entity":"category","value":"Gaming"} app?
+      - I want to develop an [gaming]{"entity":"category","value":"Gaming"} app
+      - Is it possible to create an [gaming]{"entity":"category","value":"Gaming"} app?
+      - Can you help with an [gaming]{"entity":"category","value":"Gaming"} app?
+      - I'm interested in an [gaming]{"entity":"category","value":"Gaming"} app
+      - How about an [gaming]{"entity":"category","value":"Gaming"} app?
+      - [gaming]{"entity":"category","value":"Gaming"}
+      - [gaming]{"entity":"category","value":"Gaming"} app
+      
+      - I'm looking for an [travel and tourism]{"entity":"category","value":"Travel and Tourism"} app
+      - Can you help me with an [travel and tourism]{"entity":"category","value":"Travel and Tourism"} app?
+      - I need assistance with an [travel and tourism]{"entity":"category","value":"Travel and Tourism"} app
+      - Is it possible to create an [travel and tourism]{"entity":"category","value":"Travel and Tourism"} app?
+      - I want to build an [travel and tourism]{"entity":"category","value":"Travel and Tourism"} app
+      - Do you develop [travel and tourism]{"entity":"category","value":"Travel and Tourism"} apps?
+      - Can you create an [travel and tourism]{"entity":"category","value":"Travel and Tourism"} app?
+      - I'm interested in an [travel and tourism]{"entity":"category","value":"Travel and Tourism"} app
+      - Could you build an [travel and tourism]{"entity":"category","value":"Travel and Tourism"} app?
+      - I want to develop an [travel and tourism]{"entity":"category","value":"Travel and Tourism"} app
+      - Is it possible to create an [travel and tourism]{"entity":"category","value":"Travel and Tourism"} app?
+      - Can you help with an [travel and tourism]{"entity":"category","value":"Travel and Tourism"} app?
+      - How about an [travel and tourism]{"entity":"category","value":"Travel and Tourism"} app?
+      - I'm interested in an [travel and tourism]{"entity":"category","value":"Travel and Tourism"} app
+      - I'm interested in an [travel and tourism]{"entity":"category","value":"Travel and Tourism"} app
+      - Could you build an [travel and tourism]{"entity":"category","value":"Travel and Tourism"} app?
+      - I want to develop an [travel and tourism]{"entity":"category","value":"Travel and Tourism"} app
+      - Is it possible to create an [travel and tourism]{"entity":"category","value":"Travel and Tourism"} app?
+      - Can you help with an [travel and tourism]{"entity":"category","value":"Travel and Tourism"} app?
+      - I'm interested in an [travel and tourism]{"entity":"category","value":"Travel and Tourism"} app
+      - How about an [travel and tourism]{"entity":"category","value":"Travel and Tourism"} app?
+      - [travel and tourism]{"entity":"category","value":"Travel and Tourism"}
+      - [travel and tourism]{"entity":"category","value":"Travel and Tourism"} app
+      
+      - I'm looking for an [entertainment]{"entity":"category","value":"Entertainment"} app
+      - Can you help me with an [entertainment]{"entity":"category","value":"Entertainment"} app?
+      - I need assistance with an [entertainment]{"entity":"category","value":"Entertainment"} app
+      - Is it possible to create an [entertainment]{"entity":"category","value":"Entertainment"} app?
+      - I want to build an [entertainment]{"entity":"category","value":"Entertainment"} app
+      - Do you develop [entertainment]{"entity":"category","value":"Entertainment"} apps?
+      - Can you create an [entertainment]{"entity":"category","value":"Entertainment"} app?
+      - I'm interested in an [entertainment]{"entity":"category","value":"Entertainment"} app
+      - Could you build an [entertainment]{"entity":"category","value":"Entertainment"} app?
+      - I want to develop an [entertainment]{"entity":"category","value":"Entertainment"} app
+      - Is it possible to create an [entertainment]{"entity":"category","value":"Entertainment"} app?
+      - Can you help with an [entertainment]{"entity":"category","value":"Entertainment"} app?
+      - How about an [entertainment]{"entity":"category","value":"Entertainment"} app?
+      - I'm interested in an [entertainment]{"entity":"category","value":"Entertainment"} app
+      - I'm interested in an [entertainment]{"entity":"category","value":"Entertainment"} app
+      - Could you build an [entertainment]{"entity":"category","value":"Entertainment"} app?
+      - I want to develop an [entertainment]{"entity":"category","value":"Entertainment"} app
+      - Is it possible to create an [entertainment]{"entity":"category","value":"Entertainment"} app?
+      - Can you help with an [entertainment]{"entity":"category","value":"Entertainment"} app?
+      - I'm interested in an [entertainment]{"entity":"category","value":"Entertainment"} app
+      - How about an [entertainment]{"entity":"category","value":"Entertainment"} app?
+      - [entertainment]{"entity":"category","value":"Entertainment"}
+      - [entertainment]{"entity":"category","value":"Entertainment"} app
+      
+      - I'm looking for an [news and media]{"entity":"category","value":"News and Media"} app
+      - Can you help me with an [news and media]{"entity":"category","value":"News and Media"} app?
+      - I need assistance with an [news and media]{"entity":"category","value":"News and Media"} app
+      - Is it possible to create an [news and media]{"entity":"category","value":"News and Media"} app?
+      - I want to build an [news and media]{"entity":"category","value":"News and Media"} app
+      - Do you develop [news and media]{"entity":"category","value":"News and Media"} apps?
+      - Can you create an [news and media]{"entity":"category","value":"News and Media"} app?
+      - I'm interested in an [news and media]{"entity":"category","value":"News and Media"} app
+      - Could you build an [news and media]{"entity":"category","value":"News and Media"} app?
+      - I want to develop an [news and media]{"entity":"category","value":"News and Media"} app
+      - Is it possible to create an [news and media]{"entity":"category","value":"News and Media"} app?
+      - Can you help with an [news and media]{"entity":"category","value":"News and Media"} app?
+      - How about an [news and media]{"entity":"category","value":"News and Media"} app?
+      - I'm interested in an [news and media]{"entity":"category","value":"News and Media"} app
+      - I'm interested in an [news and media]{"entity":"category","value":"News and Media"} app
+      - Could you build an [news and media]{"entity":"category","value":"News and Media"} app?
+      - I want to develop an [news and media]{"entity":"category","value":"News and Media"} app
+      - Is it possible to create an [news and media]{"entity":"category","value":"News and Media"} app?
+      - Can you help with an [news and media]{"entity":"category","value":"News and Media"} app?
+      - I'm interested in an [news and media]{"entity":"category","value":"News and Media"} app
+      - How about an [news and media]{"entity":"category","value":"News and Media"} app?
+      - [news and media]{"entity":"category","value":"News and Media"}
+      - [news and media]{"entity":"category","value":"News and Media"} app
+      
+      - I'm looking for an [utilities]{"entity":"category","value":"Utilities"} app
+      - Can you help me with an [utilities]{"entity":"category","value":"Utilities"} app?
+      - I need assistance with an [utilities]{"entity":"category","value":"Utilities"} app
+      - Is it possible to create an [utilities]{"entity":"category","value":"Utilities"} app?
+      - I want to build an [utilities]{"entity":"category","value":"Utilities"} app
+      - Do you develop [utilities]{"entity":"category","value":"Utilities"} apps?
+      - Can you create an [utilities]{"entity":"category","value":"Utilities"} app?
+      - I'm interested in an [utilities]{"entity":"category","value":"Utilities"} app
+      - Could you build an [utilities]{"entity":"category","value":"Utilities"} app?
+      - I want to develop an [utilities]{"entity":"category","value":"Utilities"} app
+      - Is it possible to create an [utilities]{"entity":"category","value":"Utilities"} app?
+      - Can you help with an [utilities]{"entity":"category","value":"Utilities"} app?
+      - How about an [utilities]{"entity":"category","value":"Utilities"} app?
+      - I'm interested in an [utilities]{"entity":"category","value":"Utilities"} app
+      - I'm interested in an [utilities]{"entity":"category","value":"Utilities"} app
+      - Could you build an [utilities]{"entity":"category","value":"Utilities"} app?
+      - I want to develop an [utilities]{"entity":"category","value":"Utilities"} app
+      - Is it possible to create an [utilities]{"entity":"category","value":"Utilities"} app?
+      - Can you help with an [utilities]{"entity":"category","value":"Utilities"} app?
+      - I'm interested in an [utilities]{"entity":"category","value":"Utilities"} app
+      - How about an [utilities]{"entity":"category","value":"Utilities"} app?
+      - [utilities]{"entity":"category","value":"Utilities"}
+      - [utilities]{"entity":"category","value":"Utilities"} app
+      
+      - I'm looking for an [finance and banking]{"entity":"category","value":"Finance and Banking"} app
+      - Can you help me with an [finance and banking]{"entity":"category","value":"Finance and Banking"} app?
+      - I need assistance with an [finance and banking]{"entity":"category","value":"Finance and Banking"} app
+      - Is it possible to create an [finance and banking]{"entity":"category","value":"Finance and Banking"} app?
+      - I want to build an [finance and banking]{"entity":"category","value":"Finance and Banking"} app
+      - Do you develop [finance and banking]{"entity":"category","value":"Finance and Banking"} apps?
+      - Can you create an [finance and banking]{"entity":"category","value":"Finance and Banking"} app?
+      - I'm interested in an [finance and banking]{"entity":"category","value":"Finance and Banking"} app
+      - Could you build an [finance and banking]{"entity":"category","value":"Finance and Banking"} app?
+      - I want to develop an [finance and banking]{"entity":"category","value":"Finance and Banking"} app
+      - Is it possible to create an [finance and banking]{"entity":"category","value":"Finance and Banking"} app?
+      - Can you help with an [finance and banking]{"entity":"category","value":"Finance and Banking"} app?
+      - How about an [finance and banking]{"entity":"category","value":"Finance and Banking"} app?
+      - I'm interested in an [finance and banking]{"entity":"category","value":"Finance and Banking"} app
+      - I'm interested in an [finance and banking]{"entity":"category","value":"Finance and Banking"} app
+      - Could you build an [finance and banking]{"entity":"category","value":"Finance and Banking"} app?
+      - I want to develop an [finance and banking]{"entity":"category","value":"Finance and Banking"} app
+      - Is it possible to create an [finance and banking]{"entity":"category","value":"Finance and Banking"} app?
+      - Can you help with an [finance and banking]{"entity":"category","value":"Finance and Banking"} app?
+      - I'm interested in an [finance and banking]{"entity":"category","value":"Finance and Banking"} app
+      - How about an [finance and banking]{"entity":"category","value":"Finance and Banking"} app?
+      - [finance and banking]{"entity":"category","value":"Finance and Banking"}
+      - [finance and banking]{"entity":"category","value":"Finance and Banking"} app
+      
+      - I'm looking for an [food and beverage]{"entity":"category","value":"Food and Beverage"} app
+      - Can you help me with an [food and beverage]{"entity":"category","value":"Food and Beverage"} app?
+      - I need assistance with an [food and beverage]{"entity":"category","value":"Food and Beverage"} app
+      - Is it possible to create an [food and beverage]{"entity":"category","value":"Food and Beverage"} app?
+      - I want to build an [food and beverage]{"entity":"category","value":"Food and Beverage"} app
+      - Do you develop [food and beverage]{"entity":"category","value":"Food and Beverage"} apps?
+      - Can you create an [food and beverage]{"entity":"category","value":"Food and Beverage"} app?
+      - I'm interested in an [food and beverage]{"entity":"category","value":"Food and Beverage"} app
+      - Could you build an [food and beverage]{"entity":"category","value":"Food and Beverage"} app?
+      - I want to develop an [food and beverage]{"entity":"category","value":"Food and Beverage"} app
+      - Is it possible to create an [food and beverage]{"entity":"category","value":"Food and Beverage"} app?
+      - Can you help with an [food and beverage]{"entity":"category","value":"Food and Beverage"} app?
+      - How about an [food and beverage]{"entity":"category","value":"Food and Beverage"} app?
+      - I'm interested in an [food and beverage]{"entity":"category","value":"Food and Beverage"} app
+      - I'm interested in an [food and beverage]{"entity":"category","value":"Food and Beverage"} app
+      - Could you build an [food and beverage]{"entity":"category","value":"Food and Beverage"} app?
+      - I want to develop an [food and beverage]{"entity":"category","value":"Food and Beverage"} app
+      - Is it possible to create an [food and beverage]{"entity":"category","value":"Food and Beverage"} app?
+      - Can you help with an [food and beverage]{"entity":"category","value":"Food and Beverage"} app?
+      - I'm interested in an [food and beverage]{"entity":"category","value":"Food and Beverage"} app
+      - How about an [food and beverage]{"entity":"category","value":"Food and Beverage"} app?
+      - [food and beverage]{"entity":"category","value":"Food and Beverage"}
+      - [food and beverage]{"entity":"category","value":"Food and Beverage"} app
+      
+      - I'm looking for an [music and audio]{"entity":"category","value":"Music and Audio"} app
+      - Can you help me with an [music and audio]{"entity":"category","value":"Music and Audio"} app?
+      - I need assistance with an [music and audio]{"entity":"category","value":"Music and Audio"} app
+      - Is it possible to create an [music and audio]{"entity":"category","value":"Music and Audio"} app?
+      - I want to build an [music and audio]{"entity":"category","value":"Music and Audio"} app
+      - Do you develop [music and audio]{"entity":"category","value":"Music and Audio"} apps?
+      - Can you create an [music and audio]{"entity":"category","value":"Music and Audio"} app?
+      - I'm interested in an [music and audio]{"entity":"category","value":"Music and Audio"} app
+      - Could you build an [music and audio]{"entity":"category","value":"Music and Audio"} app?
+      - I want to develop an [music and audio]{"entity":"category","value":"Music and Audio"} app
+      - Is it possible to create an [music and audio]{"entity":"category","value":"Music and Audio"} app?
+      - Can you help with an [music and audio]{"entity":"category","value":"Music and Audio"} app?
+      - How about an [music and audio]{"entity":"category","value":"Music and Audio"} app?
+      - I'm interested in an [music and audio]{"entity":"category","value":"Music and Audio"} app
+      - I'm interested in an [music and audio]{"entity":"category","value":"Music and Audio"} app
+      - Could you build an [music and audio]{"entity":"category","value":"Music and Audio"} app?
+      - I want to develop an [music and audio]{"entity":"category","value":"Music and Audio"} app
+      - Is it possible to create an [music and audio]{"entity":"category","value":"Music and Audio"} app?
+      - Can you help with an [music and audio]{"entity":"category","value":"Music and Audio"} app?
+      - I'm interested in an [music and audio]{"entity":"category","value":"Music and Audio"} app
+      - How about an [music and audio]{"entity":"category","value":"Music and Audio"} app?
+      - [music and audio]{"entity":"category","value":"Music and Audio"}
+      - [music and audio]{"entity":"category","value":"Music and Audio"} app
+      
+      - I'm looking for an [sports and recreation]{"entity":"category","value":"Sports and Recreation"} app
+      - Can you help me with an [sports and recreation]{"entity":"category","value":"Sports and Recreation"} app?
+      - I need assistance with an [sports and recreation]{"entity":"category","value":"Sports and Recreation"} app
+      - Is it possible to create an [sports and recreation]{"entity":"category","value":"Sports and Recreation"} app?
+      - I want to build an [sports and recreation]{"entity":"category","value":"Sports and Recreation"} app
+      - Do you develop [sports and recreation]{"entity":"category","value":"Sports and Recreation"} apps?
+      - Can you create an [sports and recreation]{"entity":"category","value":"Sports and Recreation"} app?
+      - I'm interested in an [sports and recreation]{"entity":"category","value":"Sports and Recreation"} app
+      - Could you build an [sports and recreation]{"entity":"category","value":"Sports and Recreation"} app?
+      - I want to develop an [sports and recreation]{"entity":"category","value":"Sports and Recreation"} app
+      - Is it possible to create an [sports and recreation]{"entity":"category","value":"Sports and Recreation"} app?
+      - Can you help with an [sports and recreation]{"entity":"category","value":"Sports and Recreation"} app?
+      - How about an [sports and recreation]{"entity":"category","value":"Sports and Recreation"} app?
+      - I'm interested in an [sports and recreation]{"entity":"category","value":"Sports and Recreation"} app
+      - I'm interested in an [sports and recreation]{"entity":"category","value":"Sports and Recreation"} app
+      - Could you build an [sports and recreation]{"entity":"category","value":"Sports and Recreation"} app?
+      - I want to develop an [sports and recreation]{"entity":"category","value":"Sports and Recreation"} app
+      - Is it possible to create an [sports and recreation]{"entity":"category","value":"Sports and Recreation"} app?
+      - Can you help with an [sports and recreation]{"entity":"category","value":"Sports and Recreation"} app?
+      - I'm interested in an [sports and recreation]{"entity":"category","value":"Sports and Recreation"} app
+      - How about an [sports and recreation]{"entity":"category","value":"Sports and Recreation"} app?
+      - [sports and recreation]{"entity":"category","value":"Sports and Recreation"}
+      - [sports and recreation]{"entity":"category","value":"Sports and Recreation"} app
+      
+      - I'm looking for an [Lifestyle]{"entity":"category","value":"Lifestyle"} app
+      - Can you help me with an [Lifestyle]{"entity":"category","value":"Lifestyle"} app?
+      - I need assistance with an [Lifestyle]{"entity":"category","value":"Lifestyle"} app
+      - Is it possible to create an [Lifestyle]{"entity":"category","value":"Lifestyle"} app?
+      - I want to build an [Lifestyle]{"entity":"category","value":"Lifestyle"} app
+      - Do you develop [Lifestyle]{"entity":"category","value":"Lifestyle"} apps?
+      - Can you create an [Lifestyle]{"entity":"category","value":"Lifestyle"} app?
+      - I'm interested in an [Lifestyle]{"entity":"category","value":"Lifestyle"} app
+      - Could you build an [Lifestyle]{"entity":"category","value":"Lifestyle"} app?
+      - I want to develop an [Lifestyle]{"entity":"category","value":"Lifestyle"} app
+      - Is it possible to create an [Lifestyle]{"entity":"category","value":"Lifestyle"} app?
+      - Can you help with an [Lifestyle]{"entity":"category","value":"Lifestyle"} app?
+      - How about an [Lifestyle]{"entity":"category","value":"Lifestyle"} app?
+      - I'm interested in an [Lifestyle]{"entity":"category","value":"Lifestyle"} app
+      - I'm interested in an [Lifestyle]{"entity":"category","value":"Lifestyle"} app
+      - Could you build an [Lifestyle]{"entity":"category","value":"Lifestyle"} app?
+      - I want to develop an [Lifestyle]{"entity":"category","value":"Lifestyle"} app
+      - Is it possible to create an [Lifestyle]{"entity":"category","value":"Lifestyle"} app?
+      - Can you help with an [Lifestyle]{"entity":"category","value":"Lifestyle"} app?
+      - I'm interested in an [Lifestyle]{"entity":"category","value":"Lifestyle"} app
+      - How about an [Lifestyle]{"entity":"category","value":"Lifestyle"} app?
+      - [Lifestyle]{"entity":"category","value":"Lifestyle"}
+      - [Lifestyle]{"entity":"category","value":"Lifestyle"} app
+      
+      - I'm looking for an [business]{"entity":"category","value":"Business"} app
+      - Can you help me with an [business]{"entity":"category","value":"Business"} app?
+      - I need assistance with an [business]{"entity":"category","value":"Business"} app
+      - Is it possible to create an [business]{"entity":"category","value":"Business"} app?
+      - I want to build an [business]{"entity":"category","value":"Business"} app
+      - Do you develop [business]{"entity":"category","value":"Business"} apps?
+      - Can you create an [business]{"entity":"category","value":"Business"} app?
+      - I'm interested in an [business]{"entity":"category","value":"Business"} app
+      - Could you build an [business]{"entity":"category","value":"Business"} app?
+      - I want to develop an [business]{"entity":"category","value":"Business"} app
+      - Is it possible to create an [business]{"entity":"category","value":"Business"} app?
+      - Can you help with an [business]{"entity":"category","value":"Business"} app?
+      - How about an [business]{"entity":"category","value":"Business"} app?
+      - I'm interested in an [business]{"entity":"category","value":"Business"} app
+      - I'm interested in an [business]{"entity":"category","value":"Business"} app
+      - Could you build an [business]{"entity":"category","value":"Business"} app?
+      - I want to develop an [business]{"entity":"category","value":"Business"} app
+      - Is it possible to create an [business]{"entity":"category","value":"Business"} app?
+      - Can you help with an [business]{"entity":"category","value":"Business"} app?
+      - I'm interested in an [business]{"entity":"category","value":"Business"} app
+      - How about an [business]{"entity":"category","value":"Business"} app?
+      - [business]{"entity":"category","value":"Business"}
+      - [business]{"entity":"category","value":"Business"} app
+      
+      - I'm looking for an [e-commerce]{"entity":"category","value":"E-commerce"} app
+      - Can you help me with an [e-commerce]{"entity":"category","value":"E-commerce"} app?
+      - I need assistance with an [e-commerce]{"entity":"category","value":"E-commerce"} app
+      - Is it possible to create an [e-commerce]{"entity":"category","value":"E-commerce"} app?
+      - I want to build an [e-commerce]{"entity":"category","value":"E-commerce"} app
+      - Do you develop [e-commerce]{"entity":"category","value":"E-commerce"} apps?
+      - Can you create an [e-commerce]{"entity":"category","value":"E-commerce"} app?
+      - I'm interested in an [e-commerce]{"entity":"category","value":"E-commerce"} app
+      - Could you build an [e-commerce]{"entity":"category","value":"E-commerce"} app?
+      - I want to develop an [e-commerce]{"entity":"category","value":"E-commerce"} app
+      - Is it possible to create an [e-commerce]{"entity":"category","value":"E-commerce"} app?
+      - Can you help with an [e-commerce]{"entity":"category","value":"E-commerce"} app?
+      - How about an [e-commerce]{"entity":"category","value":"E-commerce"} app?
+      - I'm interested in an [e-commerce]{"entity":"category","value":"E-commerce"} app
+      - I'm interested in an [shopping]{"entity":"category","value":"E-commerce"} app
+      - Could you build an [shopping]{"entity":"category","value":"E-commerce"} app?
+      - I want to develop an [shopping]{"entity":"category","value":"E-commerce"} app
+      - Is it possible to create an [shopping]{"entity":"category","value":"E-commerce"} app?
+      - Can you help with an [shopping]{"entity":"category","value":"E-commerce"} app?
+      - I'm interested in an [shopping]{"entity":"category","value":"E-commerce"} app
+      - How about an [shopping]{"entity":"category","value":"E-commerce"} app?
+      - [e-commerce]{"entity":"category","value":"E-commerce"}
+      - [ecommerce]{"entity":"category","value":"E-commerce"}
+      - [e-commerce]{"entity":"category","value":"E-commerce"} app
+      - [ecommerce]{"entity":"category","value":"E-commerce"} app

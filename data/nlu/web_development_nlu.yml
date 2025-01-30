@@ -1,0 +1,323 @@
+version: "3.1"
+
+nlu:
+
+  - intent: web_development
+    examples: |
+      - web development
+      - Web Development
+      - i want to go with web development
+      - i am interested in web development
+
+  - intent: website_development
+    examples: |
+      - i want to make a website
+      - i want to go with website
+      - can you make website
+      - how about a website
+      - website
+      - can you make me a website
+      - i am interested in website
+      - website seems good
+      - go with website
+
+  - intent: web_app_development
+    examples: |
+      - i want to make a web app
+      - i want to make a web application
+      - i would like a web application
+      - can you make a web application
+      - i want to go with web app
+      - i want to go with web application
+      - how about web application
+      - web application seems good
+      - web application
+      - i want to create a web app
+      - web app
+
+  - intent: create_new_website
+    examples: |
+      - i want to create a new website
+      - create new
+      - create new website
+      - can you make a new one
+      - new one
+      - i want to create a new one
+      - new website
+      - i want to make it from scratch
+      - can you make from scratch
+      - make a new one
+      - i would go with new one
+      - No , i dont have any website i want to make a new one
+      - no, make a new one
+
+  - intent: create_new_webapp
+    examples: |
+      - i want to create a new web app
+      - i want to create a new web application
+      - create new
+      - create new web app
+      - create new web application
+      - can you make a new one
+      - i want to create a new one
+      - new one
+      - i want to make it from scratch
+      - can you make from scratch
+      - make a new one
+      - i would go with new one
+      - No , i dont have any web app i want to make a new one
+      - no, make a new one
+      - i want to create a new web app
+      - i want to create a new web application
+      - create new web app
+      - new web app
+      - new web application
+
+  - intent: update_already_existing_website
+    examples: |
+      - i want to update my website
+      - update website
+      - already have one
+      - i already have one
+      - i want to update my existing website
+      - I already have a website.
+      - I would like to do modification to my website.
+      - can you update my site
+      - can you modify my site
+      - i would like to improve my website
+      - please help me to improve my site
+      - i want to update my web app
+      - i want to update my web application 
+      - i already have a web application
+      - i would like to update my web application
+      - can you update my app
+      - can you help me to modify my web app
+      - update my web application
+
+  - intent: update_already_existing_webapp
+    examples: |
+      - i want to update my web app
+      - i want to update my webapp 
+      - i want to update my web application
+      - i want to update my existing web application
+      - i want to update my existing web app
+      - I already have a web app.
+      - I already have a web application.
+      - I would like to do modification to my web app.
+      - I would like to do modification to my web application.
+      - can you update my web app
+      - can you update my web application
+      - can you modify my web application 
+      - can you modify my web app
+      - i would like to improve my web app
+      - i would like to improve my web application
+      - please help me to improve my web app
+      - please help me to improve my web application
+
+  - intent: provided_backend_tech_web_app
+    examples: |
+      - I want to use [Node.js]{"entity":"backend_tech_web_app","value":"Node.js"} for the backend in my web app.
+      - Can you set up [ASP.NET]{"entity":"backend_tech_web_app","value":"ASP.NET"} for the backend of my web application?
+      - Can you set up [.net]{"entity":"backend_tech_web_app","value":"ASP.NET"} for the backend of my web application?
+      - Can you set up [dot net]{"entity":"backend_tech_web_app","value":"ASP.NET"} for the backend of my web application?
+      - I'm considering [PHP]{"entity":"backend_tech_web_app","value":"PHP"} as the backend technology for my web app.
+      - I'd like to go with [Laravel]{"entity":"backend_tech_web_app","value":"Laravel"} for the backend in my web application.
+      - Backend should be developed using [Node.js]{"entity":"backend_tech_web_app","value":"Node.js"} in my web app.
+      - I'm leaning towards [ASP.NET]{"entity":"backend_tech_web_app","value":"ASP.NET"} as the backend for my web application.
+      - Planning to build the backend using [PHP]{"entity":"backend_tech_web_app","value":"PHP"} for my web app.
+      - Let's implement the backend using [Laravel]{"entity":"backend_tech_web_app","value":"Laravel"} in my web application.
+      - The backend part will be powered by [Node.js]{"entity":"backend_tech_web_app","value":"Node.js"} in my web app.
+      - [ASP.NET]{"entity":"backend_tech_web_app","value":"ASP.NET"} seems like a suitable backend choice for my web application.
+      - [Node.js]{"entity":"backend_tech_web_app","value":"Node.js"}
+      - [node.js]{"entity":"backend_tech_web_app","value":"Node.js"}
+      - [node js]{"entity":"backend_tech_web_app","value":"Node.js"}
+      - [ASP.NET]{"entity":"backend_tech_web_app","value":"ASP.NET"}
+      - [.NET]{"entity":"backend_tech_web_app","value":"ASP.NET"}
+      - [.net]{"entity":"backend_tech_web_app","value":"ASP.NET"}
+      - [dot net]{"entity":"backend_tech_web_app","value":"ASP.NET"}
+      - i want to go with [dot net]{"entity":"backend_tech_web_app","value":"ASP.NET"}
+      - i want to go with [node js]{"entity":"backend_tech_web_app","value":"Node.js"}
+      - i want to go with [php]{"entity":"backend_tech_web_app","value":"PHP"}
+      - i want to go with [laravel]{"entity":"backend_tech_web_app","value":"Laravel"}
+      - [Dot Net]{"entity":"backend_tech_web_app","value":"ASP.NET"}
+      - [PHP]{"entity":"backend_tech_web_app","value":"PHP"}
+      - [php]{"entity":"backend_tech_web_app","value":"PHP"}
+      - [Laravel]{"entity":"backend_tech_web_app","value":"Laravel"}
+      - [laravel]{"entity":"backend_tech_web_app","value":"Laravel"}
+      - i want to make a web app using [node js]{"entity":"backend_tech_web_app","value":"Node.js"} as the backend tech
+      - i want to make a web app using [php]{"entity":"backend_tech_web_app","value":"PHP"} as the backend tech
+      - i want to make a web app using [laravel]{"entity":"backend_tech_web_app","value":"Laravel"} as the backend tech
+      - i want to make a web app using [ASP.NET]{"entity":"backend_tech_web_app","value":"ASP.NET"}  as the backend tech
+      - i want to make a web app using [.net]{"entity":"backend_tech_web_app","value":"ASP.NET"}  as the backend tech
+      - i want to make a web app using [dot net]{"entity":"backend_tech_web_app","value":"ASP.NET"}  as the backend tech
+
+  - intent: provided_frontend_tech_web_app
+    examples: |
+      - I'm thinking of using [React]{"entity":"frontend_tech_web_app","value":"React"} for the frontend of my web app.
+      - I'm considering [Angular]{"entity":"frontend_tech_web_app","value":"Angular"} for the frontend technology for my web app.
+      - Frontend should be developed using [React]{"entity":"frontend_tech_web_app","value":"React"} in my web app.
+      - I'm leaning towards [Angular]{"entity":"frontend_tech_web_app","value":"Angular"} as the frontend for my web application.
+      - Let's implement the frontend using [React]{"entity":"frontend_tech_web_app","value":"React"} in my web application.
+      - [Angular]{"entity":"frontend_tech_web_app","value":"Angular"} frontend seems like a suitable choice for my web application.
+      - [React]{"entity":"frontend_tech_web_app","value":"React"}
+      - [React JS]{"entity":"frontend_tech_web_app","value":"React"} web application
+      - [Angular]{"entity":"frontend_tech_web_app","value":"Angular"}
+      - I want to make a web app with [React]{"entity":"frontend_tech_web_app","value":"React"} as the front end.
+      - I want to make a web app with [Angular]{"entity":"frontend_tech_web_app","value":"Angular"} as the front end.
+      - Building a web app with [Angular]{"entity":"frontend_tech_web_app","value":"Angular"} frontend.
+      - Building a web app with [React]{"entity":"frontend_tech_web_app","value":"React"} frontend.
+      - go with [react.js]{"entity":"frontend_tech_web_app","value":"React"}
+      - go with [react js]{"entity":"frontend_tech_web_app","value":"React"}
+      - go with [react]{"entity":"frontend_tech_web_app","value":"React"}
+      - go with [angular.js]{"entity":"frontend_tech_web_app","value":"Angular"}
+      - [react.js]{"entity":"frontend_tech_web_app","value":"React"}
+      - i want to make a web application and i want to use [Angular]{"entity":"frontend_tech_web_app","value":"Angular"} for the frontend
+      - i want to make a web application and i want to use [react.js]{"entity":"frontend_tech_web_app","value":"React"} for the frontend
+
+
+  - intent: provided_both_tech_web_app
+    examples: |
+      - I'm planning to use [React]{"entity":"frontend_tech_web_app","value":"React"} for the frontend and [Node.js]{"entity":"backend_tech_web_app","value":"Node.js"} for the backend of my web app.
+      - For my web application, I'd like to go with [Vue.js]{"entity":"frontend_tech_web_app","value":"Vue.js"} for the frontend and [Django]{"entity":"backend_tech_web_app","value":"Django"} for the backend.
+      - I'm considering [Angular]{"entity":"frontend_tech_web_app","value":"Angular"} for the frontend and [Ruby on Rails]{"entity":"backend_tech_web_app","value":"Ruby on Rails"} for the backend of my web app.
+      - I want to build my web app using [Svelte]{"entity":"frontend_tech_web_app","value":"Svelte"} for the frontend and [PHP]{"entity":"backend_tech_web_app","value":"PHP"} for the backend.
+      - Let's create a web application with [React]{"entity":"frontend_tech_web_app","value":"React"} frontend and [Node.js]{"entity":"backend_tech_web_app","value":"Node.js"} backend.
+      - [Vue.js]{"entity":"frontend_tech_web_app","value":"Vue.js"} frontend and [Django]{"entity":"backend_tech_web_app","value":"Django"} backend sounds like a great combo for my web app.
+      - I'm going for [Angular]{"entity":"frontend_tech_web_app","value":"Angular"} frontend and [Ruby on Rails]{"entity":"backend_tech_web_app","value":"Ruby on Rails"} backend in my web application.
+      - [Svelte]{"entity":"frontend_tech_web_app","value":"Svelte"} frontend and [PHP]{"entity":"backend_tech_web_app","value":"PHP"} backend seem like a powerful combination for my web app.
+      - I'm planning to use [React]{"entity":"frontend_tech_web_app","value":"React"} for the frontend and [Node.js]{"entity":"backend_tech_web_app","value":"Node.js"} for the backend of my web app.
+      - For my web application, I'd like to go with [Angular]{"entity":"frontend_tech_web_app","value":"Angular"} for the frontend and [ASP.NET]{"entity":"backend_tech_web_app","value":"ASP.NET"} for the backend.
+      - I want to build my web app using [React]{"entity":"frontend_tech_web_app","value":"React"} frontend and [Node.js]{"entity":"backend_tech_web_app","value":"Node.js"} backend.
+      - Let's create a web application with [Angular]{"entity":"frontend_tech_web_app","value":"Angular"} frontend and [Laravel]{"entity":"backend_tech_web_app","value":"Laravel"} backend.
+      - [React]{"entity":"frontend_tech_web_app","value":"React"} frontend and [Node.js]{"entity":"backend_tech_web_app","value":"Node.js"} backend sounds like a great combo for my web app.
+      - [Angular]{"entity":"frontend_tech_web_app","value":"Angular"} frontend and [ASP.NET]{"entity":"backend_tech_web_app","value":"ASP.NET"} backend seem promising.
+      - I'd like to make a web app with [React]{"entity":"frontend_tech_web_app","value":"React"} as the frontend and [Django]{"entity":"backend_tech_web_app","value":"Django"} as the backend.
+      - [Angular]{"entity":"frontend_tech_web_app","value":"Angular"} front end and [Laravel]{"entity":"backend_tech_web_app","value":"Laravel"} back end, that's the plan for my web app.
+
+
+  - intent: wordpress_development
+    examples: |
+      - wordpress
+      - i want to go with wordpress
+      - i want to make a website in wordpress
+      - can you make a wordpress website
+      - a site made with wordpress
+      - can you help me to make a wordpress site
+      - can you make a website with wordpress
+      - i want to develop a website with wordpress
+      - wordpress seems good
+
+  - intent: suggest_wordpress_development
+    examples: |
+      - I need a website for my small business, showcasing our products and contact information.
+      - My website should have a blog section and an online store to sell products.
+      - The website should have a gallery to showcase our portfolio.
+      - I need a platform to display upcoming events and allow users to register.
+      - I want a simple and easy-to-maintain website for my personal blog.
+      - The website should support multiple language translations.
+      - I'm looking for a content-focused website with the ability to add multimedia elements.
+      - I want a visually appealing website with various customizable themes.
+      - My website should have seamless integration with social media platforms.
+      - I need a website with built-in SEO features to improve search rankings.
+      - The website should offer membership and subscription-based access to content.
+      - I want an e-learning platform to offer online courses and tutorials.
+      - I need a website for my restaurant with a menu, reservation, and reviews section.
+      - The website should include an events calendar and ticket booking functionality.
+      - I want a community forum integrated into my website for user discussions.
+      - My website should have an email newsletter signup and distribution system.
+      - I need a website for my photography business with a gallery and contact form.
+      - I want a user-friendly website to promote and sell my digital products.
+      - The website should have a client portal with secure login for access to resources.
+      - I need a blog website with features for guest posts and user comments.
+      - I need a website to showcase my video portfolio and highlight my work.
+      - The website should have a media library to organize and display videos.
+      - I want a website to stream live webinars and interactive video content.
+      - My website should have a video gallery with categories and tags for easy navigation.
+      - I need a platform to host online video courses and tutorials.
+      - I need a simple website to showcase my portfolio and contact information.
+      - My website should have a blog section to share my travel experiences and photos.
+      - I want a website to promote my new book and allow visitors to purchase it online.
+      - The website should have an event calendar to display upcoming workshops and events.
+      - I need a website for my restaurant with a menu, reservation, and reviews section.
+      - The website should have an email newsletter signup for regular updates and promotions.
+      - I want a visually appealing website with customizable themes to fit my brand.
+      - I need a content-focused website with multimedia elements for my art portfolio.
+      - The website should support multiple language translations for a global audience.
+      - I want a membership platform to offer exclusive content to my subscribers.
+      - I need a website for my bakery business, showcasing our products and contact details.
+      - My website should have a page to introduce our team and share our story.
+      - I want a website to promote my photography services and showcase my portfolio.
+      - The website should have a section to display customer testimonials and reviews.
+      - I need a simple website for my pet grooming services with pricing and booking options.
+      - I want to create a website for my upcoming event with a schedule and ticket sales.
+      - The website should have a blog to share gardening tips and tricks.
+      - I need a website for my charity organization to raise funds and share updates.
+      - I want a visually appealing website for my handmade crafts shop with an online store.
+      - The website should have a contact form for inquiries and feedback.
+
+  - intent: react_js_development
+    examples: |
+      - [react js]{"entity":"frontend_tech_web_app","value":"React"}
+      - i want to go with [react js]{"entity":"frontend_tech_web_app","value":"React"}
+      - [react js]{"entity":"frontend_tech_web_app","value":"React"} seems good
+      - i want to make a website in [react js]{"entity":"frontend_tech_web_app","value":"React"}
+      - can you make a [react js]{"entity":"frontend_tech_web_app","value":"React"} website
+      - a site made with [react js]{"entity":"frontend_tech_web_app","value":"React"}
+      - can you help me to make a [react js]{"entity":"frontend_tech_web_app","value":"React"} site
+      - can you make a website with [react js]{"entity":"frontend_tech_web_app","value":"React"}
+      - i want to develop a website with [react js]{"entity":"frontend_tech_web_app","value":"React"}
+      - [react js]{"entity":"frontend_tech_web_app","value":"React"} seems good
+      - can you make a website with real time changes
+      - a site with dynamic changes
+      - i want to go with [react] {"entity":"frontend_tech_web_app","value":"React"}
+      - website that change dynamically
+
+  - intent: suggest_react_js_development
+    examples: |
+      - I want a web application that offers real-time updates and smooth user interactions.
+      - I need a platform with complex user interactions and dynamic content loading.
+      - The web app should have a real-time chat feature for customer support.
+      - I want to create a single-page application with smooth navigation and animations.
+      - The application should handle large amounts of data and display it in an organized way.
+      - I'm looking for a fast and responsive web app with server-side rendering.
+      - The web app should integrate with third-party APIs for data exchange.
+      - I need a mobile-friendly web application with native-like performance.
+      - My web app should provide real-time data visualization and analytics.
+      - I want to build an interactive gaming platform with multiplayer capabilities.
+      - The application should have a drag-and-drop interface for seamless user experience.
+      - I need a scalable e-commerce platform with personalized product recommendations.
+      - I want to create a social networking platform with real-time updates and notifications.
+      - The web app should support real-time collaborative document editing.
+      - I need a web app that can handle user authentication and access controls securely.
+      - The application should include a task management system with reminders and notifications.
+      - I want to build an interactive mapping and geolocation-based application.
+      - The web app should support live video streaming and user-generated content.
+      - I need a web app that can manage and visualize large datasets using charts and graphs.
+      - I want to create a virtual reality (VR) or augmented reality (AR) experience on the web.
+      - I want a web application to create and edit video content with real-time preview.
+      - The web app should have a video editing timeline and tools for effects and transitions.
+      - I need a video streaming platform with interactive features like comments and likes.
+      - I want to build a video conferencing application with live video feeds and chat.
+      - The application should support real-time video processing and filtering.
+      - I need a web application to manage my personal finance and budgeting.
+      - The web app should have real-time chat for customer support and inquiries.
+      - I want to build an interactive gaming platform with leaderboards and achievements.
+      - The application should include a task management system with reminders and deadlines.
+      - I need a web app for project collaboration with real-time updates and notifications.
+      - I want a web application to display and analyze stock market data in real-time.
+      - The web app should have a drag-and-drop interface for easy content organization.
+      - I need a mobile-friendly web app with smooth transitions and navigation.
+      - I want to create an interactive quiz platform with real-time scoring and results.
+      - The application should support real-time collaborative document editing.
+      - I need a web application to manage my daily to-do list and set reminders.
+      - The web app should have a weather forecast feature to plan outdoor activities.
+      - I want to build an interactive recipe app with step-by-step instructions and videos.
+      - The application should include a health and fitness tracker to monitor my progress.
+      - I need a web app to search for nearby restaurants and view their menus.
+      - I want a web application to discover and listen to my favorite podcasts.
+      - The web app should have a movie recommendation system based on user preferences.
+      - I need a quiz app to test my general knowledge and learn new facts.
+      - I want a web application to create and customize digital greeting cards.
+      - The application should include a meditation and relaxation guide for stress relief.
+      - I need a responsive e-commerce website for a trendy fashion store, with easy navigation, secure payment options, and social media integration
+      - I need a Shopify app to be developed that will provide an option to customers to add an additional item in cart. The item to be added is carbon offset provided by a third party.

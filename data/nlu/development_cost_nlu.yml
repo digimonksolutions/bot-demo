@@ -1,0 +1,121 @@
+version: "3.1"
+
+nlu:
+  - intent: app_development_cost
+    examples: |
+      - what is the cost of app development  
+      - how much does it cost to develop an app?
+      - app development price
+      - What's the estimated cost for developing a mobile app?
+      - Can you provide a ballpark figure for app development expenses?
+      - I'm curious about the pricing for developing a mobile application. Any insights?
+      - How expensive is it to create a mobile app from scratch?
+      - What should I budget for app development?
+      - Are there average costs associated with building a mobile app?
+      - I'm in the planning stages for an app. What kind of budget should I set aside for development?
+      - Can you break down the factors that influence the cost of app development?
+      - What are the typical price ranges for developing iOS and Android apps separately?
+      - I'm exploring the cost of app development services. What's the industry standard?
+      - Are there any cost-saving tips for someone looking to develop a mobile app on a budget?
+      - How does the complexity of an app affect the overall development cost?
+      - What's the difference in cost between developing a native app and a cross-platform app?
+      - For a startup, what percentage of the budget should be allocated to app development?
+      - Can you provide examples of well-known apps and their development costs?
+      - I'm interested in understanding the cost structure for app maintenance post-launch. Any insights?
+      - Are there ongoing costs associated with app development, aside from the initial development fee?
+      - Do different app development platforms (iOS, Android) have varying costs?
+      - How does outsourcing app development compare to hiring an in-house team in terms of cost?
+      - I'm considering DIY app development. How does the cost differ from hiring professionals?
+      - How much for app development?
+      - Cost of making an app?
+      - What's the app development price?
+      - Mobile app development cost?
+      - Price to develop a mobile app?
+      - Estimated app development cost?
+      - Any idea on app development expenses?
+      - What's the budget for building an app?
+      - Quick overview of app development costs?
+      - How expensive is app development?
+      - Cost factors for mobile app creation?
+      - Average cost for developing an app?
+      - Native vs. cross-platform cost difference?
+      - iOS and Android app development costs?
+      - Startup budget for app development?
+      - Tips for cost-effective app development?
+      - Maintenance costs for a developed app?
+      - Ongoing expenses post app launch?
+      - Cost comparison: DIY vs. professional app development?
+
+  - intent: android_development_cost
+    examples: |
+      - what is the cost of android development
+      - how much money does it take to make an android app
+      - android app development cost 
+      - what is the estimated cost for developing an android app
+      - how expensive is it to create an android application
+      - android app development price
+      - approximate cost of developing an android app
+      - pricing for android app development services
+      - give me an idea of the cost for android development
+      - what are the costs associated with developing an android app?
+      - how much does it usually cost to build an android application?
+      - pricing for creating an android app
+      - tell me about the expenses involved in android app development
+      - give me an estimate for the cost of developing an android app
+      - what is the budget range for android app development services?   
+      - android app cost
+      - price for android development
+      - cost of making an android app
+      - android app development budget
+      - what will be the charge of creating a android app
+      - what will be the cost to create an android app
+
+  - intent: ios_development_cost
+    examples: |
+      - what is the cost of ios development
+      - how much money does it take to make an ios app
+      - ios app development cost 
+      - what is the estimated cost for developing an iOS app
+      - how much does it typically cost to create an iOS application
+      - iOS app development price
+      - approximate cost of developing an iOS app
+      - pricing for iOS app development services
+      - give me an idea of the cost for iOS development
+      - what are the costs associated with developing an iOS app?
+      - how much does it usually cost to build an iOS application?
+      - pricing for creating an iOS app
+      - tell me about the expenses involved in iOS app development
+      - give me an estimate for the cost of developing an iOS app
+      - what is the budget range for iOS app development services?
+      - iOS app cost
+      - price for iOS development
+      - cost of making an iOS app
+      - iOS app development budget
+      - what will be the cost to create an iOS app
+      - what will be the charge of creating a ios app
+
+  - intent: web_development_cost
+    examples: |
+      - what is the cost of website development
+      - how much money does it take to make an web app
+      - how much money does it take to make an website
+      - web development cost
+      - what is the cost of developing a website
+      - how much money does it take to build a web app
+      - how expensive is it to create a website
+      - web development price
+      - approximate cost of developing a website
+      - pricing for web development services
+      - give me an idea of the cost for web development
+      - what are the costs associated with developing a website?
+      - how much does it usually cost to build a web application?
+      - pricing for creating a website
+      - tell me about the expenses involved in web development
+      - give me an estimate for the cost of developing a website
+      - what is the budget range for web development services?
+      - web development cost
+      - website creation price
+      - cost of building a web app
+      - web development budget
+      - what will be the cost to create an website
+      - what will be the charge of creating a website

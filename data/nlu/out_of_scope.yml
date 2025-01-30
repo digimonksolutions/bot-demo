@@ -1,0 +1,48 @@
+version: "3.1"
+
+nlu:
+
+  - intent: out_of_scope
+    examples: |
+      - I am asking out of scope question
+      - ı am learning python
+      - CALL THE POLICE
+      - tertyryutyi
+      - wsdrcftvgybhnj
+      - why sky is blue?
+      - what kind of bird are you?
+      - contextua
+      - contextual
+      - talk to me about voulette
+      - voulette voulette
+      - Do you have a demo?
+      - Cars
+      - please voulette
+      - Out of scope question.
+      - i need money
+      - no, i need cash, money! Do you have it ?
+      - the beatles
+      - Hi i want to go palghar
+      - I want to go palghar
+      - your contry name
+      - you girl
+      - gsaf
+      - expert of rasa
+      - i want play ball
+      - flight catch up
+      - how do you like your coffee
+      - coronavirus
+      - have you heard of corona?
+      - where do i type in commandy
+      - where to type in commands
+      - kiss me
+      - you have to
+      - what type of bot?
+      - sfasd
+      - asdkjasdhjkasd
+      - j  bhbhj
+      - eshdtjfjfyk
+      - drhdtjfjfyj
+      - sudo reboot
+      - asdfgasd
+      - asdfgasdas

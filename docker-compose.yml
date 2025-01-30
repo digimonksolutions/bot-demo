@@ -1,0 +1,73 @@
+version: "3.3"
+services:
+  rasa:
+    image: rasa/rasa:latest
+    ports:
+      - "5006:5006"
+    restart: always
+    volumes:
+      - ./:/app
+    command:
+      - "run" # original hard code value as array entry
+      - "--enable-api"
+      - "-p"
+      - "5006"
+      - "--cors"
+      - "*"
+    depends_on:
+      - action_server
+      - duckling
+    networks:
+      - all
+  action_server:
+    image: rasa/rasa-sdk:latest
+    restart: always
+    volumes:
+      - ./actions:/app/actions
+    ports:
+      - "5055:5055"
+    networks:
+      - all
+  duckling:
+    image: rasa/duckling:latest
+    restart: always
+    ports:
+      - "8000:8000"
+    networks:
+      - all
+
+
+  postgres:
+    image: postgres:latest
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=MYDB
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/ var/lib/postgresql/data
+    networks:
+      - all
+
+  pgadmin:
+    image: dpage/pgadmin4
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=pgadmin4@pgadmin.org
+      - PGADMIN_DEFAULT_PASSWORD=admin
+      - PGADMIN_CONFIG_CHECK_EMAIL_DELIVERABILITY=False
+    ports:
+      - "9000:80"
+    networks:
+      - all
+
+volumes:
+  pgdata:
+
+
+
+networks:
+  all:
+    driver: bridge
+    driver_opts:
+      com.docker.network.enable_ipv6: "true"

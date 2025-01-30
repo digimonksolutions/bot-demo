@@ -1,0 +1,462 @@
+version: "3.1"
+
+nlu:
+
+  - intent: mobile_development
+    examples: |
+      - mobile development
+      - Mobile Development
+      - i want to go with mobile development
+      - i would like to make a app for mobile
+      - i am interested in mobile development
+      - i want to make a mobile app
+      - i want to make a app
+      - can you help me to create a app
+      - mobile development
+      - Mobile Development
+      - I want to go with mobile development
+      - I'd like to make a mobile app
+      - Interested in mobile development
+      - I want to make a mobile app
+      - I want to make an app
+      - Can you help me create an app
+      - Looking for mobile development
+      - Considering app development
+      - Exploring mobile app creation
+      - Interested in making an app
+      - Looking to create a mobile app
+      - Want to develop a mobile app
+      - Mobile app creation
+      - Seeking mobile development
+      - Exploring app development
+      - I want to create a mobile application
+      - Interested in app development
+      - Looking for mobile app developers
+      - Exploring the possibilities of mobile development for a comprehensive app that involves intricate features like real-time collaboration, push notifications, and integration with external APIs.
+      - Considering mobile app development for a startup project that requires a modern and responsive user interface with seamless navigation across various devices.
+      - I'm in the early stages of planning a mobile application, and I'm looking for a development team with expertise in cross-platform development for both Android and iOS.
+      - Interested in creating a feature-rich mobile app that stands out in terms of design, performance, and user experience. I'm looking for a development team with a proven track record in mobile development.
+      - I have a detailed project plan for a mobile app that involves not only technical expertise but also a focus on delivering a delightful user experience. I'm seeking a reliable mobile development team for this project.
+      - Considering mobile app development for a project that requires the implementation of modern design trends, smooth animations, and real-time collaboration features.
+      - I'm looking for a mobile development team to create a robust and scalable app that caters to the specific needs of our target audience, ensuring optimal performance and user satisfaction.
+      - In the process of conceptualizing a mobile app that goes beyond conventional functionalities, involving elements like machine learning algorithms, personalized recommendations, and a visually appealing interface.
+      - Interested in mobile development services for a project that involves complex features like geolocation services, secure authentication, and seamless integration with external APIs.
+      - I want to create a mobile app, and I'm interested in mobile development teams that can provide end-to-end solutions, from conceptualization to deployment.
+      - Exploring mobile app development for a social networking platform, my project requires a team with expertise in user interaction design, real-time updates, and integrating features that enhance community engagement and communication.
+      - In the early stages of planning a mobile application, I'm seeking a mobile development team that can handle both the technical aspects and the nuances of cross-platform compatibility.
+      - I have a vision for a visually appealing and interactive mobile app, and I'm interested in mobile development teams that can bring this vision to life with creativity and technical excellence.
+      - Considering mobile app development for a project that involves features such as offline functionality, push notifications, and integration with external databases.
+      - I'm interested in mobile development services for a project that requires extensive testing, optimized performance, and a visually appealing design.
+      - I have a concept for a mobile app that involves intricate features like augmented reality integration, real-time collaboration, and a personalized user experience. I'm seeking a mobile development team with expertise in these areas.
+      - Exploring mobile app development for a startup project that requires a seamless and intuitive user interface, smooth transitions, and efficient data handling.
+      - I'm looking for a mobile development team to build an app that leverages the latest technologies, ensuring optimal performance and user satisfaction.
+      - Interested in mobile development services to revamp our existing app, incorporating modern design principles and improving overall user satisfaction.
+      - I have a detailed project plan for a mobile app that requires careful attention to user engagement features, intuitive navigation, and seamless integration with external services.
+
+
+  - intent: native_app_development
+    examples: |
+      - native development
+      - native app development
+      - i want to go with native
+      - like to make a native app
+      - can you make a native app
+      - i want to make a native app
+      - i want to develop a native app
+      - i am interested in native apps
+      - native app
+      - Native Development
+      - native app development
+      - Exploring the possibilities of native app development for a comprehensive application that involves intricate features like real-time collaboration, push notifications, and seamless integration with external APIs.
+      - Considering native app development for a startup project that requires a modern and responsive user interface with seamless navigation across various devices.
+      - I'm in the early stages of planning a native application, and I'm looking for a development team with expertise in cross-platform development for both Android and iOS.
+      - Interested in creating a feature-rich native app that stands out in terms of design, performance, and user experience. I'm looking for a development team with a proven track record in native app development.
+      - I have a detailed project plan for a native app that involves not only technical expertise but also a focus on delivering a delightful user experience. I'm seeking a reliable native app development team for this project.
+      - Considering native app development for a project that requires the implementation of modern design trends, smooth animations, and real-time collaboration features.
+      - I'm looking for a native app development team to create a robust and scalable app that caters to the specific needs of our target audience, ensuring optimal performance and user satisfaction.
+      - In the process of conceptualizing a native app that goes beyond conventional functionalities, involving elements like machine learning algorithms, personalized recommendations, and a visually appealing interface.
+      - Interested in native app development services for a project that involves complex features like geolocation services, secure authentication, and seamless integration with external APIs.
+      - I want to create a native app, and I'm interested in native app development teams that can provide end-to-end solutions, from conceptualization to deployment.
+      - Exploring native app development for a social networking platform, my project requires a team with expertise in user interaction design, real-time updates, and integrating features that enhance community engagement and communication.
+      - In the early stages of planning a native application, I'm seeking a native app development team that can handle both the technical aspects and the nuances of cross-platform compatibility.
+      - I have a vision for a visually appealing and interactive native app, and I'm interested in native app development teams that can bring this vision to life with creativity and technical excellence.
+      - Considering native app development for a project that involves features such as offline functionality, push notifications, and integration with external databases.
+      - I'm interested in native app development services for a project that requires extensive testing, optimized performance, and a visually appealing design.
+      - I have a concept for a native app that involves intricate features like augmented reality integration, real-time collaboration, and a personalized user experience. I'm seeking a native app development team with expertise in these areas.
+      - Exploring native app development for a startup project that requires a seamless and intuitive user interface, smooth transitions, and efficient data handling.
+      - I'm looking for a native app development team to build an app that leverages the latest technologies, ensuring optimal performance and user satisfaction.
+      - Interested in native app development services to revamp our existing app, incorporating modern design principles and improving overall user satisfaction.
+      - I have a detailed project plan for a native app that requires careful attention to user engagement features, intuitive navigation, and seamless integration with external services.
+      - native development
+      - Native Development
+      - I want to go with native
+      - Like to make a native app
+      - Can you make a native app
+      - I want to make a native app
+      - I want to develop a native app
+      - I am interested in native apps
+      - Native app
+      - Native app development
+      - Looking for native development
+      - Considering native app development
+      - Exploring native app creation
+      - Interested in making a native app
+      - Looking to create a native app
+      - Want to develop a native app
+      - Native app creation
+      - Seeking native app development
+      - Exploring native app development
+      - I want to create a native application
+
+  - intent: cross_platform_development
+    examples: |
+      - cross platform development
+      - cross platform app development
+      - i want to go with cross platform
+      - like to make a cross platform app
+      - can you make a cross platform app
+      - i am interested in cross platform apps
+      - cross platform app
+      - cross platform Development
+      - cross platform app development
+      - cross platform development
+      - Cross Platform Development
+      - I want to go with cross-platform
+      - Like to make a cross-platform app
+      - Can you make a cross-platform app
+      - I am interested in cross-platform apps
+      - Cross-platform app
+      - Cross-platform app development
+      - Looking for cross-platform development
+      - Considering cross-platform app development
+      - Exploring cross-platform app creation
+      - Interested in making a cross-platform app
+      - Looking to create a cross-platform app
+      - Want to develop a cross-platform app
+      - Cross-platform app creation
+      - Seeking cross-platform app development
+      - Exploring cross-platform app development
+      - I want to create a cross-platform application
+      - Interested in cross-platform app development
+      - Looking for cross-platform app developers
+      - Exploring the possibilities of cross-platform app development for a comprehensive application that involves intricate features like real-time collaboration, push notifications, and seamless integration with external APIs.
+      - Considering cross-platform app development for a startup project that requires a modern and responsive user interface with seamless navigation across various devices.
+      - I'm in the early stages of planning a cross-platform application, and I'm looking for a development team with expertise in cross-platform development for both Android and iOS.
+      - Interested in creating a feature-rich cross-platform app that stands out in terms of design, performance, and user experience. I'm looking for a development team with a proven track record in cross-platform app development.
+      - I have a detailed project plan for a cross-platform app that involves not only technical expertise but also a focus on delivering a delightful user experience. I'm seeking a reliable cross-platform app development team for this project.
+      - Considering cross-platform app development for a project that requires the implementation of modern design trends, smooth animations, and real-time collaboration features.
+      - I'm looking for a cross-platform app development team to create a robust and scalable app that caters to the specific needs of our target audience, ensuring optimal performance and user satisfaction.
+      - In the process of conceptualizing a cross-platform app that goes beyond conventional functionalities, involving elements like machine learning algorithms, personalized recommendations, and a visually appealing interface.
+      - Interested in cross-platform app development services for a project that involves complex features like geolocation services, secure authentication, and seamless integration with external APIs.
+      - I want to create a cross-platform app, and I'm interested in cross-platform app development teams that can provide end-to-end solutions, from conceptualization to deployment.
+      - Exploring cross-platform app development for a social networking platform, my project requires a team with expertise in user interaction design, real-time updates, and integrating features that enhance community engagement and communication.
+      - In the early stages of planning a cross-platform application, I'm seeking a cross-platform app development team that can handle both the technical aspects and the nuances of cross-platform compatibility.
+      - I have a vision for a visually appealing and interactive cross-platform app, and I'm interested in cross-platform app development teams that can bring this vision to life with creativity and technical excellence.
+      - Considering cross-platform app development for a project that involves features such as offline functionality, push notifications, and integration with external databases.
+      - I'm interested in cross-platform app development services for a project that requires extensive testing, optimized performance, and a visually appealing design.
+      - I have a concept for a cross-platform app that involves intricate features like augmented reality integration, real-time collaboration, and a personalized user experience. I'm seeking a cross-platform app development team with expertise in these areas.
+      - Exploring cross-platform app development for a startup project that requires a seamless and intuitive user interface, smooth transitions, and efficient data handling.
+      - I'm looking for a cross-platform app development team to build an app that leverages the latest technologies, ensuring optimal performance and user satisfaction.
+      - Interested in cross-platform app development services to revamp our existing app, incorporating modern design principles and improving overall user satisfaction.
+      - I have a detailed project plan for a cross-platform app that requires careful attention to user engagement features, intuitive navigation, and seamless integration with external services.
+
+
+  - intent: flutter_development
+    examples: |
+      - i would like a flutter app
+      - flutter app development
+      - want to develop a flutter app
+      - Flutter Development
+      - flutter development
+      - i want to develop a flutter app
+      - flutter
+      - flutter seems good
+      - Considering Flutter app development for a cross-platform project that requires a single codebase for both Android and iOS.
+      - I'm exploring the idea of creating a visually stunning mobile app, and Flutter appears to be a promising framework for achieving a consistent design across platforms.
+      - Interested in Flutter development services for a project that involves complex features like real-time collaboration, secure authentication, and smooth animations.
+      - I'm looking for a Flutter development team to build a feature-rich mobile app that stands out in terms of performance and user experience.
+      - Considering Flutter app development for a startup project that requires a modern and responsive user interface with seamless navigation.
+      - I have a concept for a Flutter app that involves intricate features like offline functionality, push notifications, and integration with external APIs.
+      - Interested in creating a cross-platform mobile app, and Flutter seems like the ideal framework for ensuring a consistent user experience on both Android and iOS.
+      - In the early stages of planning a Flutter app for a social networking platform, I'm seeking a development team that can handle both the technical aspects and the nuances of real-time updates.
+      - I'm interested in Flutter development services to revamp our existing mobile app, incorporating modern design principles and improving overall user satisfaction.
+      - Considering Flutter app development for a project that involves features such as geolocation services, offline functionality, and integration with external databases.
+      - I want to create a mobile app, and Flutter seems like a suitable choice for its hot reload feature and expressive UI.
+      - I have a vision for a Flutter app that goes beyond conventional functionalities, involving elements like machine learning algorithms, personalized recommendations, and a visually appealing interface.
+      - Considering Flutter app development for a project that requires the implementation of modern design trends, smooth animations, and real-time collaboration features.
+      - I'm looking for a Flutter development team to create a mobile app that not only meets technical requirements but also provides an engaging and visually appealing user experience.
+      - Interested in Flutter app development for a startup project that requires extensive testing, optimized performance, and a visually appealing design.
+      - I have a detailed project plan for a Flutter app that requires not only technical expertise but also a focus on delivering a delightful user experience.
+      - Considering Flutter app development for a project that involves features such as offline functionality, secure user authentication, and seamless navigation.
+      - Exploring the development of a Flutter app for a startup, and I'm looking for a team with a proven track record in delivering successful mobile applications.
+      - I want to create a mobile app, and Flutter appears to be a suitable choice for ensuring a consistent user experience on both Android and iOS devices.
+      - I have a concept for a Flutter app that involves integrating virtual reality elements, machine learning algorithms, and a personalized recommendation system.
+      - I'm looking for Flutter developers to create a mobile app that not only meets technical requirements but also provides an engaging and visually appealing experience.
+      - Exploring Flutter development for a project that involves real-time collaboration, push notifications, and integration with external APIs.
+      - I have a detailed project plan for a Flutter app that requires not only technical expertise but also a focus on delivering a delightful user experience.
+      - Interested in Flutter app development for a project that requires extensive testing, optimized performance, and a visually appealing design.
+      - Considering Flutter app development for a project that involves features such as offline functionality, secure user authentication, and seamless navigation.
+      - Exploring the development of a Flutter app for a startup, and I'm looking for a team with a proven track record in delivering successful mobile applications.
+      - I want to create a mobile app, and Flutter appears to be a suitable choice for ensuring a consistent user experience on both Android and iOS devices.
+      - I have a concept for a Flutter app that involves integrating virtual reality elements, machine learning algorithms, and a personalized recommendation system
+
+  - intent: react_native_development
+    examples: |
+      - i would like a react native app
+      - i would like a react app
+      - react native app development
+      - react app development
+      - want to develop a react app
+      - want to develop a react native app
+      - React Native Development
+      - React App Development
+      - react development
+      - react app development
+      - react native app development
+      - i want to develop a react app
+      - i want to develop a react native app
+      - react
+      - react native
+      - react seems good
+      - react native seems good
+      - Exploring the development of a cross-platform mobile app, and React Native seems like a suitable choice for ensuring compatibility on both iOS and Android devices.
+      - Interested in React Native development services for a project that involves complex features like real-time collaboration, push notifications, and seamless integration with backend APIs.
+      - Considering React Native app development for a mobile application that requires a smooth user experience on both Android and iOS platforms.
+      - Looking for React Native developers to create a mobile app that stands out in terms of design, performance, and user engagement.
+      - In the early stages of planning a React Native app, I'm seeking a development team that can handle both the technical aspects and the nuances of cross-platform compatibility.
+      - I'm interested in React Native app development for a project that involves features such as geolocation services, offline functionality, and integration with external APIs.
+      - I want to build a mobile app, and React Native seems like the right choice to ensure a consistent and responsive user experience across different devices.
+      - Exploring React development for a single-page application that requires smooth transitions, efficient data fetching, and an intuitive user interface.
+      - I have a concept for a React Native app that involves complex animations, user-generated content, and social media integration. I'm looking for a team with expertise in these areas.
+      - Considering React Native app development for a project that involves integrating machine learning algorithms, personalized recommendations, and a secure authentication system.
+      - Interested in developing a mobile app with React Native to leverage the advantages of a single codebase for both iOS and Android platforms.
+      - In the process of planning a React Native app for a startup project, and I'm seeking a development team with experience in building scalable and performant mobile applications.
+      - Considering React development for a project that requires real-time collaboration, seamless data synchronization, and integration with external APIs.
+      - I have a detailed project plan for a React Native app that requires not only technical expertise but also a focus on delivering a delightful user experience.
+      - Interested in React Native app development for a project that requires extensive testing, optimized performance, and a visually appealing design.
+      - Considering React Native app development for a mobile application that involves features such as offline functionality, secure user authentication, and seamless navigation.
+      - Exploring the development of a React Native app for a startup, and I'm looking for a team with a proven track record in delivering successful mobile applications.
+      - I want to create a mobile app, and React Native appears to be a suitable choice for ensuring a consistent user experience on both Android and iOS devices.
+      - I have a concept for a React Native app that involves integrating virtual reality elements, machine learning algorithms, and a personalized recommendation system.
+      - I'm looking for React Native developers to create a mobile app that not only meets technical requirements but also provides an engaging and visually appealing experience.
+      - Exploring React development for a project that involves real-time collaboration, push notifications, and integration with external APIs.
+      - I have a detailed project plan for a React Native app that requires not only technical expertise but also a focus on delivering a delightful user experience.
+      - Interested in React Native app development for a project that requires extensive testing, optimized performance, and a visually appealing design.
+      - Considering React Native app development for a mobile application that involves features such as offline functionality, secure user authentication, and seamless navigation.
+      - Exploring the development of a React Native app for a startup, and I'm looking for a team with a proven track record in delivering successful mobile applications.
+      - I want to create a mobile app, and React Native appears to be a suitable choice for ensuring a consistent user experience on both Android and iOS devices.
+      - I have a concept for a React Native app that involves integrating virtual reality elements, machine learning algorithms, and a personalized recommendation system.
+      - I'm looking for React Native developers to create a mobile app that not only meets technical requirements but also provides an engaging and visually appealing experience.
+      - Exploring React development for a project that involves real-time collaboration, push notifications, and integration with external APIs.
+      - I have a detailed project plan for a React Native app that requires not only technical expertise but also a focus on delivering a delightful user experience.
+      - Interested in React Native app development for a project that requires extensive testing, optimized performance, and a visually appealing design.
+      - Considering React Native app development for a mobile application that involves features such as offline functionality, secure user authentication, and seamless navigation.
+      - Exploring the development of a React Native app for a startup, and I'm looking for a team with a proven track record in delivering successful mobile applications.
+      - I want to create a mobile app, and React Native appears to be a suitable choice for ensuring a consistent user experience on both Android and iOS devices.
+      - I have a concept for a React Native app that involves integrating virtual reality elements, machine learning algorithms, and a personalized recommendation system.
+     
+
+  - intent: android_development
+    examples: |
+      - i would like a android app
+      - android app development
+      - want to develop a android app
+      - Android Development
+      - android development
+      - i want to develop a android app
+      - i want to make a android app
+      - can you help me create a android app
+      - i would like to create a app for android
+      - help me develop a android app
+      - can you create a app that runs on android devices
+      - Android Development
+      - I'm looking to initiate the development of a feature-rich Android application that not only stands out in terms of functionality but also aligns with the latest design principles, providing users with a seamless experience across a wide range of Android devices.
+      - Interested in Android app development for a project that involves complex functionalities such as real-time data synchronization, GPS integration, and a user-friendly interface. I'm seeking a development team with expertise in Android technologies to bring this vision to life.
+      - Considering the development of an Android app that integrates with third-party APIs, supports in-app purchases, and ensures optimal performance on various screen sizes. I'm in search of a proficient Android development team that can handle both the technical complexities and the user interface design aspects.
+      - I have a unique concept for an Android app that requires careful attention to user engagement features, intuitive navigation, and seamless integration with Android Wear devices. I'm looking for a development team with expertise in Android development and a track record of creating innovative and user-centric applications.
+      - I've envisioned an Android app that involves advanced features such as machine learning algorithms, dynamic content loading, and offline capabilities. In my search for Android developers, I'm particularly interested in a team that can provide insights into optimizing app performance and ensuring a smooth experience for users on diverse Android platforms.
+      - I need an Android app developed.
+      - Looking for Android app development.
+      - I want to create an Android app.
+      - Seeking assistance for Android development.
+      - I want an app for Android devices.
+      - Can you create an app for Android devices?
+      - Interested in Android app development services.
+      - Need help developing an Android app.
+      - Can you help me create an Android app?
+      - Considering Android development for my project.
+        - I'm in the process of conceptualizing a cutting-edge Android application that aims to offer users a unique and interactive experience, featuring advanced functionalities like augmented reality integration, secure data storage, and seamless integration with various Android devices.
+      - Interested in initiating the Android app development for a project that involves creating a user-friendly interface, incorporating push notification functionalities, and optimizing the app for different screen sizes. I'm seeking an experienced Android development team that can bring this project to fruition while ensuring scalability and performance.
+      - Considering Android app development for a mobile application that requires intricate features such as real-time collaboration, in-app messaging, and geolocation services. I'm looking for a development team that not only has expertise in Android technologies but also understands the importance of delivering a streamlined and intuitive user experience.
+      - I have a well-defined vision for an Android app that goes beyond conventional functionalities, involving elements like secure user authentication, integration with external APIs, and a visually appealing interface. I'm seeking Android developers who can contribute to the success of this project by providing innovative solutions and ensuring a high level of user satisfaction.
+      - I've conceptualized a comprehensive Android app that caters to a specific market niche, requiring features like offline functionality, personalized user profiles, and a robust backend infrastructure. In my search for Android development services, I'm particularly interested in a team that can handle the technical intricacies and contribute creative solutions to enhance the app's overall appeal.
+      - I need an Android app developed.
+      - Looking for Android app development.
+      - I want to create an Android app.
+      - Seeking assistance for Android development.
+      - I want an app for Android devices.
+      - Can you create an app for Android devices?
+      - Interested in Android app development services.
+      - Need help developing an Android app.
+      - Can you help me create an Android app?
+      - Considering Android development for my project.
+      - I'm in the early stages of planning a sophisticated Android application that seamlessly integrates with wearable devices, implements advanced gesture controls, and ensures a consistent user experience across various screen sizes.
+      - In the process of conceptualizing a cutting-edge Android application that aims to offer users a unique and interactive experience, featuring advanced functionalities like augmented reality integration, secure data storage, and seamless integration with various Android devices.
+      - Exploring the idea of creating a comprehensive Android app for a niche market, involving features like real-time collaboration, personalized user profiles, and compatibility with both smartphones and tablets.
+      - Interested in initiating the Android app development for a project that involves creating a user-friendly interface, incorporating push notification functionalities, and optimizing the app for different screen sizes.
+      - Considering Android app development for a mobile application that requires intricate features such as real-time collaboration, in-app messaging, and geolocation services.
+      - I'm searching for a seasoned Android development team to handle the intricacies of a well-defined vision for an Android app that goes beyond conventional functionalities, involving elements like secure user authentication, integration with external APIs, and a visually appealing interface.
+      - I have a detailed project plan for an Android app that requires not only a high level of technical expertise in areas like push notifications and cloud integration but also a keen understanding of the Android design guidelines for optimal user experience.
+      - Exploring Android app development for a social networking platform, my project requires a team with expertise in user interaction design, real-time updates, and integrating features that enhance community engagement and communication.
+      - I've envisioned a comprehensive Android app that caters to a specific market niche, requiring features like offline functionality, personalized user profiles, and a robust backend infrastructure.
+      - In the early stages of planning an Android app that involves complex features like secure in-app messaging, geolocation services, and integration with external databases.
+      - Considering Android app development for a project that involves intricate features such as real-time collaboration, in-app messaging, and geolocation services.
+      - I have a unique concept for an Android app that requires careful attention to user engagement features, intuitive navigation, and seamless integration with Android Wear devices.
+      - Exploring Android app development for a social networking platform, my project requires a team with expertise in user interaction design, real-time updates, and integrating features that enhance community engagement and communication.
+      - I'm looking for an experienced Android development team to bring my vision of a feature-rich Android application to life, incorporating functionalities like augmented reality, machine learning, and real-time data synchronization.
+      - Considering Android app development for a mobile application that requires intricate features such as real-time collaboration, in-app messaging, and geolocation services.
+      - I'm searching for a seasoned Android development team to handle the intricacies of a well-defined vision for an Android app that goes beyond conventional functionalities, involving elements like secure user authentication, integration with external APIs, and a visually appealing interface.
+      - In the process of conceptualizing a cutting-edge Android application that aims to offer users a unique and interactive experience, featuring advanced functionalities like augmented reality integration, secure data storage, and seamless integration with various Android devices.
+      - Exploring the idea of creating a comprehensive Android app for a niche market, involving features like real-time collaboration, personalized user profiles, and compatibility with both smartphones and tablets.
+      - Interested in initiating the Android app development for a project that involves creating a user-friendly interface, incorporating push notification functionalities, and optimizing the app for different screen sizes.
+      - Considering Android app development for a mobile application that requires intricate features such as real-time collaboration, in-app messaging, and geolocation services.
+      - I'm in the early stages of planning a sophisticated Android application that seamlessly integrates with wearable devices, implements advanced gesture controls, and ensures a consistent user experience across various screen sizes.
+      - In the process of conceptualizing a cutting-edge Android application that aims to offer users a unique and interactive experience, featuring advanced functionalities like augmented reality integration, secure data storage, and seamless integration with various Android devices.
+      - Exploring the idea of creating a comprehensive Android app for a niche market, involving features like real-time collaboration, personalized user profiles, and compatibility with both smartphones and tablets.
+      - Interested in initiating the Android app development for a project that involves creating a user-friendly interface, incorporating push notification functionalities, and optimizing the app for different screen sizes.
+      - Considering Android app development for a mobile application that requires intricate features such as real-time collaboration, in-app messaging, and geolocation services.
+      - I'm searching for a seasoned Android development team to handle the intricacies of a well-defined vision for an Android app that goes beyond conventional functionalities, involving elements like secure user authentication, integration with external APIs, and a visually appealing interface.
+      - I have a detailed project plan for an Android app that requires not only a high level of technical expertise in areas like push notifications and cloud integration but also a keen understanding of the Android design guidelines for optimal user experience.
+      - Exploring Android app development for a social networking platform, my project requires a team with expertise in user interaction design, real-time updates, and integrating features that enhance community engagement and communication.
+      - I've envisioned a comprehensive Android app that caters to a specific market niche, requiring features like offline functionality, personalized user profiles, and a robust backend infrastructure.
+      - In the early stages of planning an Android app that involves complex features like secure in-app messaging, geolocation services, and integration with external databases.
+      - Considering Android app development for a project that involves intricate features such as real-time collaboration, in-app messaging, and geolocation services.
+      - I have a unique concept for an Android app that requires careful attention to user engagement features, intuitive navigation, and seamless integration with
+
+  - intent: ios_development
+    examples: |
+      - i would like a IOS app
+      - i would like a ios app
+      - IOS app development
+      - ios app development
+      - want to develop a IOS app
+      - want to develop a ios app
+      - IOS Development
+      - ios development
+      - i want to develop a ios app
+      - i want a app for apple devices
+      - app for apple device
+      - app for iphones 
+      - Iphone app
+      - i want to go with iphone app
+      - i want to go with apple 
+      - i want to develop a ios app
+      - i want to develop a iphone app
+      - i want to make a iphone app
+      - i want to make a ios app
+      - can you help me create a ios app
+      - i would like to create a app for iphone
+      - i would like to create a app for ios
+      - help me develop a ios app
+      - can you create a app that runs on iphone devices
+      - can you create a app that runs on ios devices
+      - I want an iOS app developed.
+      - Looking for iOS app development services.
+      - Interested in creating an app for iOS.
+      - Want to develop an iOS app.
+      - Seeking iOS development for my project.
+      - I need an app for Apple devices.
+      - Want an iPhone app.
+      - Considering iOS development for my project.
+      - I'm looking to create an iOS app.
+      - I want an app for iPhones.
+      - Need help developing an iOS app.
+      - I want to go with an iPhone app.
+      - I want to make an iOS app.
+      - Can you help me create an iOS app?
+      - I'd like to create an app for iOS.
+      - Help me develop an iOS app.
+      - Can you create an app for iPhone devices?
+      - Can you create an app that runs on iOS devices?
+      - I'm in the initial stages of planning a sophisticated iOS application, and I'm looking for a team of experienced developers who can bring my vision to life with attention to detail in design, user experience, and functionality.
+      - Interested in embarking on an iOS app development journey for a unique product that combines cutting-edge technology with a seamless user interface, ensuring compatibility across a range of Apple devices.
+      - I've conceptualized a comprehensive iOS app that will integrate seamlessly with the latest Apple technologies, requiring not only skill in development but also an understanding of the iOS ecosystem and design principles.
+      - Considering iOS app development for a social networking platform, and I'm keen on finding a team that can handle the complexities of user interactions, real-time updates, and ensuring a smooth experience across different iOS devices.
+      - I have a well-defined project plan for an iOS app that involves features such as geolocation services, secure in-app messaging, and integration with third-party APIs. Looking for developers with expertise in iOS development to bring this project to fruition.
+      - I need an iOS app developed.
+      - Looking for iOS app development.
+      - I want to create an iOS app.
+      - Seeking assistance for iOS development.
+      - I want an app for iPhones.
+      - Can you create an app for iOS devices?
+      - Interested in iOS app development services.
+      - Need help developing an iOS app.
+      - Can you help me create an iOS app?
+      - Considering iOS development for my project.
+      - I'm looking to embark on the development of a sophisticated iOS application that caters to a niche audience, and I'm searching for a development team with expertise not only in coding but also in understanding the intricacies of iOS design guidelines, ensuring a seamless and visually appealing user experience across various Apple devices.
+      - I have a unique concept for an iOS app that involves intricate features like augmented reality integration, machine learning algorithms, and a personalized recommendation engine. I'm in search of a proficient iOS development team that can handle the technical complexities of implementing these features while maintaining optimal performance and user engagement.
+      - Considering the development of an iOS app that integrates seamlessly with Apple's latest technologies, I am particularly focused on features such as SiriKit integration, Apple Pay, and Core ML for enhanced functionality. I'm seeking a team that can not only execute these technical aspects but also provide innovative suggestions to enhance the overall user experience on iOS devices.
+      - I've envisioned an iOS app that goes beyond conventional functionalities, involving elements like secure biometric authentication, real-time data synchronization, and offline capabilities. In my search for iOS developers, I'm looking for a team that can handle the intricacies of secure data transmission, implement a robust backend infrastructure, and create a user-friendly interface that aligns with the latest iOS design trends.
+      - I'm in the process of planning an iOS app that aims to revolutionize the way users interact with content. This involves features like dynamic content loading, intuitive gesture controls, and personalized user profiles. I'm interested in a development team that not only possesses technical expertise in iOS development but also demonstrates creativity in enhancing the user experience and implementing innovative design concepts.
+
+
+
+  - intent: both_android_ios_development
+    examples: |
+      - i would like a both android and ios
+      - i would like a both
+      - lets go with both android and ios
+      - both
+      - Both
+      - i want to develop it for both platform
+      - for both platform 
+      - Android & IOS
+      - android and ios
+      - ios development
+      - both would be great  
+      - I am looking to have mobile applications created (IOS and potentially also Android).
+      - I'm in the early stages of conceptualizing a comprehensive mobile application, and I envision it being available on both Android and iOS platforms. The app will have intricate features like real-time collaboration, multimedia integration, and user authentication. Can you guide me through the process of developing such a robust solution for both operating systems?
+      - I have a detailed project plan for a mobile application that needs to be developed for both Android and iOS. The app will involve complex functionalities, including geolocation services, secure in-app messaging, and integration with third-party APIs. What expertise does your development team have in handling such intricate requirements, and what's the typical timeline for a project of this scale?
+      - I'm embarking on a business venture and require a sophisticated mobile app that caters to both Android and iOS users. The app should seamlessly handle features like in-app purchases, user profiles, and push notifications. Could you provide insights into your development process, the technologies you plan to use, and the anticipated challenges for implementing these functionalities on both platforms?
+      - I have an elaborate vision for a cross-platform mobile application that offers a unique user experience on both Android and iOS devices. The app will involve intricate animations, real-time synchronization across devices, and integration with external databases. Can you share your approach to cross-platform development, and how do you ensure a consistent user interface and performance on both operating systems?
+      - I'm looking to develop a mobile app that serves a niche audience and requires careful consideration of user experience on both Android and iOS. The app will involve advanced features such as machine learning algorithms, augmented reality components, and data encryption. How can your development team accommodate such intricate requirements, and what is your experience with implementing cutting-edge technologies on multiple platforms?
+      - I'm currently in the process of creating a comprehensive mobile solution that spans both Android and iOS ecosystems. The app will be feature-rich, incorporating elements like social media integration, secure user authentication, and extensive offline capabilities. Can you provide a breakdown of your development process, including testing methodologies, and how you handle complex feature integrations for dual-platform compatibility?
+      - I have a highly detailed specification document outlining the functionality and design requirements for a mobile app intended for both Android and iOS. The app will involve intricate backend integrations, user-generated content features, and a personalized recommendation engine. How do you approach projects with detailed specifications, and what level of customization can your development team accommodate for dual-platform development?
+      - I'm exploring the development of a sophisticated mobile application that caters to a diverse user base on both Android and iOS platforms. The app will involve complex user workflows, real-time communication features, and integration with external APIs. Can you provide insights into your project management approach, communication strategies, and how you handle the coordination of development efforts for simultaneous Android and iOS releases?
+      - I'm interested in developing for both Android and iOS platforms. Can you provide more information?
+      - I want to create a mobile app, and it should be available on both Android and iOS.
+      - Both Android and iOS development is required for my project. What are the next steps?
+      - Let's proceed with development for both Android and iOS.
+      - I need a mobile app that supports both Android and iOS devices.
+      - I'm looking for a solution that caters to both Android and iOS users.
+      - Can you create an app that is compatible with both Android and iOS operating systems?
+      - I'm interested in mobile app development, and it should be compatible with both Android and iOS platforms.
+      - I want my application to be accessible on both Android and iOS devices.
+      - I'm considering both Android and iOS development for my upcoming project.
+      - Android and iOS compatibility is a must for my mobile application.
+      - For my project, I'm specifically looking for developers experienced in both Android and iOS development.
+      - I want to build an app for both Android and iOS users. What are the estimated timelines?
+      - Both Android and iOS development are essential for my mobile app idea.
+      - I need a mobile app for both Android and iOS.
+      - Looking for developers to create an app compatible with Android and iOS.
+      - Develop a cross-platform app for Android and iOS.
+      - Seeking assistance for Android and iOS mobile app development.
+      - Need an app that works seamlessly on both Android and iOS devices.
+      - Looking to build a mobile app supporting both Android and iOS platforms.
+      - Develop a mobile app accessible on both Android and iOS.
+      - Interested in hiring developers for a dual-platform Android and iOS app.
+      - Want to create an app available on both Android and iOS.
+      - Building a mobile app for both Android and iOS users.
+      - Need developers for a dual-platform Android and iOS project.
+      - Looking for assistance with Android and iOS app development.
+      - Seeking developers for a cross-platform mobile app (Android and iOS).
+      - Interested in developing an app for both Android and iOS platforms.
+      - I'm exploring both Android and iOS development for a mobile app.
+      - Need a mobile app that caters to both Android and iOS users.
+      - Considering Android and iOS development for a new mobile app.
+      - Interested in hiring developers for a project involving both Android and iOS.
+      - Looking for assistance in developing an app for both Android and iOS.
+      - Considering both Android and iOS for a new mobile application.
+
+
+    

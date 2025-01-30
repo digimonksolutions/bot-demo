@@ -1,0 +1,1537 @@
+version: "3.1"
+nlu:
+- intent: main_menu
+  examples: |
+    - back to menu
+    - main menu
+- intent: pricing
+  examples: |
+    - whats the pricing
+    - i want to know the price
+    - pricing
+- intent: web_development
+  examples: |
+    - web development
+    - i want to go with web development
+    - i am interested in web development
+- intent: free_trial
+  examples: |
+    - free trial
+    - is there any free trial
+    - can i use it for free ?
+    - i want to know about the free trial
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - am I talking to a human?
+    - what is you name
+    - who are you
+    - are you a AI
+    - are you a human?
+- intent: website_development
+  examples: |
+    - i am interested in website
+    - website
+    - go with website
+    - how about a website
+    - i want to make a website
+    - can you make me a website
+    - can you make website
+- intent: wordpress_development
+  examples: |
+    - wordpress
+    - a site made with wordpress
+    - can you help me to make a wordpress site
+    - can you make a website with wordpress
+    - wordpress seems good
+    - i want to make a website in wordpress
+    - i want to go with wordpress
+- intent: goodbye
+  examples: |
+    - bye
+    - good by
+    - cu
+    - bye bye
+    - good night
+    - have a nice day
+    - goodbye
+    - cee you later
+- intent: how_are_you
+  examples: |
+    - You good?
+    - How are you feeling?
+    - How are you today?
+    - What's up?
+    - How's it?
+    - What's new?
+    - Everything okay?
+    - What's going on?
+- intent: provided_email
+  examples: |
+    - my email is test@gmail.com
+    - email: bravo@hotmail.com
+    - my email is test@xyz.abc
+    - sure, here is my email natty@hotmail.com
+    - abc@gmail.com
+    - vijay@digimonk.in
+    - here is my email abds@efg.qwe
+    - my email is jonny@digimonksolutions.com
+- intent: who_made_you
+  examples: |
+    - What's the story behind your creation?
+    - Who made you?
+    - Who's your creator?
+    - Who brought you into existence?
+    - Who created you?
+    - Who's responsible for making you?
+    - By whom were you developed?
+    - Can you tell me who made you?
+    - What's your origin?
+- intent: restart_form
+  examples: |
+    - resubmit
+    - retry
+    - Restart
+    - no, retry
+    - No
+    - try again
+    - restart
+    - No that's incorrect
+    - incorrect
+- intent: web_app_development
+  examples: |
+    - i would like a web application
+    - i want to make a web app
+    - web application
+    - i want to go with web application
+    - web application seems good
+    - web app
+    - can you make a web application
+    - i want to make a web application
+    - i want to go with web app
+- intent: submit_form
+  examples: |
+    - correct
+    - that sounds good
+    - submit form
+    - send it
+    - of course
+    - submit
+    - yes send it
+    - y
+    - Yes that's correct
+- intent: create_new_website
+  examples: |
+    - no, make a new one
+    - i want to create a new website
+    - make a new one
+    - i want to make it from scratch
+    - create new
+    - No , i dont have any website i want to make a new one
+    - new one
+    - can you make from scratch
+    - i would go with new one
+    - can you make a new one
+    - create new website
+- intent: react_js_development
+  examples: |
+    - a site with dynamic changes
+    - i want to make a website in [react js]{"entity": "frontend_tech_web_app", "value": "React"}
+    - [react js]{"entity": "frontend_tech_web_app", "value": "React"} seems good
+    - can you make a website with [react js]{"entity": "frontend_tech_web_app", "value": "React"}
+    - can you make a [react js]{"entity": "frontend_tech_web_app", "value": "React"} website
+    - can you help me to make a [react js]{"entity": "frontend_tech_web_app", "value": "React"} site
+    - i want to go with [react] {"entity":"frontend_tech_web_app","value":"React"}
+    - [react js]{"entity": "frontend_tech_web_app", "value": "React"}
+    - can you make a website with real time changes
+    - i want to develop a website with [react js]{"entity": "frontend_tech_web_app", "value": "React"}
+- intent: provided_both_tech_web_app
+  examples: |
+    - For my web application, I'd like to go with [Angular](frontend_tech_web_app) for the frontend and [ASP.NET](backend_tech_web_app) for the backend.
+    - [Vue.js](frontend_tech_web_app) frontend and [Django](backend_tech_web_app) backend sounds like a great combo for my web app.
+    - Let's create a web application with [Angular](frontend_tech_web_app) frontend and [Laravel](backend_tech_web_app) backend.
+    - [Angular](frontend_tech_web_app) frontend and [ASP.NET](backend_tech_web_app) backend seem promising.
+    - I'd like to make a web app with [React](frontend_tech_web_app) as the frontend and [Django](backend_tech_web_app) as the backend.
+    - I want to build my web app using [Svelte](frontend_tech_web_app) for the frontend and [PHP](backend_tech_web_app) for the backend.
+    - For my web application, I'd like to go with [Vue.js](frontend_tech_web_app) for the frontend and [Django](backend_tech_web_app) for the backend.
+    - [Angular](frontend_tech_web_app) front end and [Laravel](backend_tech_web_app) back end, that's the plan for my web app.
+    - I'm considering [Angular](frontend_tech_web_app) for the frontend and [Ruby on Rails](backend_tech_web_app) for the backend of my web app.
+    - [React](frontend_tech_web_app) frontend and [Node.js](backend_tech_web_app) backend sounds like a great combo for my web app.
+    - I'm planning to use [React](frontend_tech_web_app) for the frontend and [Node.js](backend_tech_web_app) for the backend of my web app.
+    - [Svelte](frontend_tech_web_app) frontend and [PHP](backend_tech_web_app) backend seem like a powerful combination for my web app.
+- intent: give_information
+  examples: |
+    - What sort of details can you provide?
+    - what can i ask you.
+    - Share some facts or details with me.
+    - What can you do
+    - What kind of information do you have?
+    - I'm in learning mode. What kind of details can you throw my way?
+    - Tell me what you know.
+    - What's in your knowledge base?
+    - Can you provide me with information on [specific topic]?
+    - Let's chat! What information do you have that might pique my interest?
+    - Spill the beans! What information do you have in your virtual brain?
+    - I'm curious—can you share some info with me?
+    - What info do you have?
+- intent: create_new_webapp
+  examples: |
+    - new one
+    - create new web application
+    - no, make a new one
+    - create new web app
+    - i want to create a new web app
+    - make a new one
+    - can you make from scratch
+    - i want to create a new web application
+    - new web application
+    - i want to make it from scratch
+    - new web app
+    - i would go with new one
+    - can you make a new one
+- intent: not_sure
+  examples: |
+    - confused about that
+    - i am confused
+    - not sure yet
+    - you decide
+    - NOT SURE
+    - i dont know
+    - i am not sure
+    - not sure about that
+    - i'm not sure
+    - DONT KNOW YET
+    - not sure you decide
+    - I AM NOT SURE
+    - not sure
+- intent: update_already_existing_webapp
+  examples: |
+    - i want to update my existing web app
+    - I would like to do modification to my web application.
+    - i want to update my web application
+    - can you update my web application
+    - i want to update my web app
+    - i would like to improve my web app
+    - I already have a web application.
+    - I would like to do modification to my web app.
+    - i want to update my existing web application
+    - can you modify my web app
+    - can you update my web app
+    - i want to update my webapp
+    - please help me to improve my web application
+    - i would like to improve my web application
+- intent: update_already_existing_website
+  examples: |
+    - can you update my app
+    - i want to update my website
+    - already have one
+    - i already have a web application
+    - can you modify my site
+    - i want to update my web app
+    - please help me to improve my site
+    - i want to update my web application
+    - i would like to improve my website
+    - i would like to update my web application
+    - I would like to do modification to my website.
+    - update website
+    - update my web application
+    - can you help me to modify my web app
+- intent: android_development_cost
+  examples: |
+    - cost of making an android app
+    - what is the cost of android development
+    - how much money does it take to make an android app
+    - pricing for creating an android app
+    - what are the costs associated with developing an android app?
+    - android app development cost
+    - how much does it usually cost to build an android application?
+    - give me an estimate for the cost of developing an android app
+    - android app development budget
+    - how expensive is it to create an android application
+    - tell me about the expenses involved in android app development
+    - pricing for android app development services
+    - give me an idea of the cost for android development
+    - what is the estimated cost for developing an android app
+    - what is the budget range for android app development services?
+    - approximate cost of developing an android app
+- intent: ios_development_cost
+  examples: |
+    - pricing for iOS app development services
+    - pricing for creating an iOS app
+    - what is the cost of ios development
+    - give me an idea of the cost for iOS development
+    - how much money does it take to make an ios app
+    - tell me about the expenses involved in iOS app development
+    - iOS app development price
+    - what will be the cost to create an iOS app
+    - price for iOS development
+    - how much does it typically cost to create an iOS application
+    - what are the costs associated with developing an iOS app?
+    - ios app development cost
+    - approximate cost of developing an iOS app
+    - iOS app development budget
+    - what is the estimated cost for developing an iOS app
+    - cost of making an iOS app
+- intent: provided_frontend_tech_web_app
+  examples: |
+    - go with [react js]{"entity": "frontend_tech_web_app", "value": "React"}
+    - Let's implement the frontend using [React](frontend_tech_web_app) in my web application.
+    - Frontend should be developed using [React](frontend_tech_web_app) in my web app.
+    - I'm considering [Angular](frontend_tech_web_app) for the frontend technology for my web app.
+    - i want to make a web application and i want to use [Angular](frontend_tech_web_app) for the frontend
+    - [React JS]{"entity": "frontend_tech_web_app", "value": "React"} web application
+    - go with [angular.js]{"entity": "frontend_tech_web_app", "value": "Angular"}
+    - I'm thinking of using [React](frontend_tech_web_app) for the frontend of my web app.
+    - [Angular](frontend_tech_web_app)
+    - go with [react.js]{"entity": "frontend_tech_web_app", "value": "React"}
+    - go with [react]{"entity": "frontend_tech_web_app", "value": "React"}
+    - [Angular](frontend_tech_web_app) frontend seems like a suitable choice for my web application.
+    - I want to make a web app with [Angular](frontend_tech_web_app) as the front end.
+    - I'm leaning towards [Angular](frontend_tech_web_app) as the frontend for my web application.
+    - Building a web app with [Angular](frontend_tech_web_app) frontend.
+    - I want to make a web app with [React](frontend_tech_web_app) as the front end.
+- intent: web_development_cost
+  examples: |
+    - web development cost
+    - tell me about the expenses involved in web development
+    - how much does it usually cost to build a web application?
+    - pricing for creating a website
+    - what is the cost of website development
+    - how much money does it take to make an website
+    - pricing for web development services
+    - web development price
+    - give me an idea of the cost for web development
+    - what are the costs associated with developing a website?
+    - approximate cost of developing a website
+    - how much money does it take to build a web app
+    - what is the budget range for web development services?
+    - website creation price
+    - how much money does it take to make an web app
+    - what is the cost of developing a website
+    - web development budget
+- intent: greet
+  examples: |
+    - hello
+    - hello there
+    - hola
+    - kem chee
+    - good evening
+    - hey there
+    - hi
+    - goodevening
+    - hie
+    - heyyyyy
+    - hy
+    - hey
+    - hiiii
+    - howdy
+    - goodmorning
+    - moin
+    - heya
+    - kem choo
+- intent: portfolio
+  examples: |
+    - Can you showcase your Portfolio?
+    - Do you have a portfolio available that demonstrates your expertise in different areas?
+    - Any portfolio samples?
+    - I'm considering your services and would like to assess the quality of your work. Can I access your portfolio?
+    - Could you please provide me with a glimpse of your portfolio?
+    - Could you show me some examples from your portfolio?
+    - Show portfolio.
+    - I want to browse your portfolio.
+    - I'm looking for examples of your past projects to get a better understanding of your capabilities. Can you direct me to your portfolio?
+    - Can I see your Portfolio?
+    - Can you show me a comprehensive portfolio showcasing your skills and experience?
+    - Share your portfolio.
+    - Portfolio examples.
+    - Your portfolio?
+    - Can I have a look at your work examples?
+    - Your work?
+    - Can I see your portfolio?
+    - Show me your portfolio of projects.
+    - Is it possible for me to view a collection of your past works?
+    - Examples of your work?
+    - I would love to explore the projects you've previously worked on.
+    - Show me your work.
+    - Please show me your portfolio.
+- intent: flutter_development
+  examples: |
+    - flutter seems good
+    - I have a concept for a Flutter app that involves integrating virtual reality elements, machine learning algorithms, and a personalized recommendation system.
+    - Interested in Flutter app development for a startup project that requires extensive testing, optimized performance, and a visually appealing design.
+    - want to develop a flutter app
+    - Interested in creating a cross-platform mobile app, and Flutter seems like the ideal framework for ensuring a consistent user experience on both Android and iOS.
+    - flutter app development
+    - Considering Flutter app development for a project that requires the implementation of modern design trends, smooth animations, and real-time collaboration features.
+    - I'm looking for a Flutter development team to build a feature-rich mobile app that stands out in terms of performance and user experience.
+    - I'm looking for a Flutter development team to create a mobile app that not only meets technical requirements but also provides an engaging and visually appealing user experience.
+    - I'm interested in Flutter development services to revamp our existing mobile app, incorporating modern design principles and improving overall user satisfaction.
+    - Considering Flutter app development for a project that involves features such as offline functionality, secure user authentication, and seamless navigation.
+    - Flutter Development
+    - Interested in Flutter app development for a project that requires extensive testing, optimized performance, and a visually appealing design.
+    - Interested in Flutter development services for a project that involves complex features like real-time collaboration, secure authentication, and smooth animations.
+    - I have a vision for a Flutter app that goes beyond conventional functionalities, involving elements like machine learning algorithms, personalized recommendations, and a visually appealing interface.
+    - I have a concept for a Flutter app that involves integrating virtual reality elements, machine learning algorithms, and a personalized recommendation system
+    - I want to create a mobile app, and Flutter seems like a suitable choice for its hot reload feature and expressive UI.
+    - I'm exploring the idea of creating a visually stunning mobile app, and Flutter appears to be a promising framework for achieving a consistent design across platforms.
+    - Exploring the development of a Flutter app for a startup, and I'm looking for a team with a proven track record in delivering successful mobile applications.
+    - I'm looking for Flutter developers to create a mobile app that not only meets technical requirements but also provides an engaging and visually appealing experience.
+    - flutter development
+    - i want to develop a flutter app
+    - i would like a flutter app
+    - Exploring Flutter development for a project that involves real-time collaboration, push notifications, and integration with external APIs.
+    - I have a detailed project plan for a Flutter app that requires not only technical expertise but also a focus on delivering a delightful user experience.
+    - I have a concept for a Flutter app that involves intricate features like offline functionality, push notifications, and integration with external APIs.
+- intent: contact_us
+  examples: |
+    - can you connect me with support
+    - I need to get in touch with your team.
+    - can you give me your contact details so I can call the company
+    - i want to connect with your company
+    - how to contact you.
+    - what is you contact info
+    - How can I contact you guys.
+    - i want to talk to expert
+    - contact information
+    - I need help, what's the best way to reach your team?
+    - I'm looking for your contact details.
+    - Can you provide me with the contact details of your head office?
+    - customer support
+    - How do I contact customer service?
+    - What's the best way to reach your support team?
+    - I want to reach out to your technical support team.
+    - Please provide me with your contact information.
+    - I have an inquiry; can you give me your contact info?
+    - I have a question; how can I reach out to you?
+    - I want to connect with a representative.
+    - Could you share the contact info for your company?
+    - contact us
+    - What are the available channels for customer support?
+    - I'd like to speak with someone from your company.
+    - I'd like to schedule a meeting; how can I do that?
+- intent: provided_backend_tech_web_app
+  examples: |
+    - I'm considering [PHP](backend_tech_web_app) as the backend technology for my web app.
+    - [ASP.NET](backend_tech_web_app)
+    - [.net]{"entity": "backend_tech_web_app", "value": "ASP.NET"}
+    - [php]{"entity": "backend_tech_web_app", "value": "PHP"}
+    - i want to make a web app using [dot net]{"entity": "backend_tech_web_app", "value": "ASP.NET"}  as the backend tech
+    - [Node.js](backend_tech_web_app)
+    - i want to make a web app using [php]{"entity": "backend_tech_web_app", "value": "PHP"} as the backend tech
+    - i want to make a web app using [node js]{"entity": "backend_tech_web_app", "value": "Node.js"} as the backend tech
+    - i want to go with [node js]{"entity": "backend_tech_web_app", "value": "Node.js"}
+    - [PHP](backend_tech_web_app)
+    - Let's implement the backend using [Laravel](backend_tech_web_app) in my web application.
+    - [node js]{"entity": "backend_tech_web_app", "value": "Node.js"}
+    - I'd like to go with [Laravel](backend_tech_web_app) for the backend in my web application.
+    - i want to go with [dot net]{"entity": "backend_tech_web_app", "value": "ASP.NET"}
+    - i want to make a web app using [ASP.NET](backend_tech_web_app)  as the backend tech
+    - [Laravel](backend_tech_web_app)
+    - Planning to build the backend using [PHP](backend_tech_web_app) for my web app.
+    - [node.js]{"entity": "backend_tech_web_app", "value": "Node.js"}
+    - i want to go with [laravel]{"entity": "backend_tech_web_app", "value": "Laravel"}
+    - I'm leaning towards [ASP.NET](backend_tech_web_app) as the backend for my web application.
+    - [dot net]{"entity": "backend_tech_web_app", "value": "ASP.NET"}
+    - The backend part will be powered by [Node.js](backend_tech_web_app) in my web app.
+    - i want to make a web app using [.net]{"entity": "backend_tech_web_app", "value": "ASP.NET"}  as the backend tech
+    - i want to go with [php]{"entity": "backend_tech_web_app", "value": "PHP"}
+    - [Dot Net]{"entity": "backend_tech_web_app", "value": "ASP.NET"}
+    - I want to use [Node.js](backend_tech_web_app) for the backend in my web app.
+    - Backend should be developed using [Node.js](backend_tech_web_app) in my web app.
+- intent: react_native_development
+  examples: |
+    - I'm interested in React Native app development for a project that involves features such as geolocation services, offline functionality, and integration with external APIs.
+    - Interested in React Native development services for a project that involves complex features like real-time collaboration, push notifications, and seamless integration with backend APIs.
+    - i would like a react native app
+    - react native app development
+    - I have a concept for a React Native app that involves complex animations, user-generated content, and social media integration. I'm looking for a team with expertise in these areas.
+    - react development
+    - Interested in developing a mobile app with React Native to leverage the advantages of a single codebase for both iOS and Android platforms.
+    - want to develop a react app
+    - Exploring React development for a single-page application that requires smooth transitions, efficient data fetching, and an intuitive user interface.
+    - i would like a react app
+    - react native
+    - In the process of planning a React Native app for a startup project, and I'm seeking a development team with experience in building scalable and performant mobile applications.
+    - Considering React development for a project that requires real-time collaboration, seamless data synchronization, and integration with external APIs.
+    - Considering React Native app development for a mobile application that requires a smooth user experience on both Android and iOS platforms.
+    - Looking for React Native developers to create a mobile app that stands out in terms of design, performance, and user engagement.
+    - I have a detailed project plan for a React Native app that requires not only technical expertise but also a focus on delivering a delightful user experience.
+    - Exploring React development for a project that involves real-time collaboration, push notifications, and integration with external APIs.
+    - React App Development
+    - React Native Development
+    - I have a concept for a React Native app that involves integrating virtual reality elements, machine learning algorithms, and a personalized recommendation system.
+    - Considering React Native app development for a mobile application that involves features such as offline functionality, secure user authentication, and seamless navigation.
+    - i want to develop a react native app
+    - react native seems good
+    - I want to build a mobile app, and React Native seems like the right choice to ensure a consistent and responsive user experience across different devices.
+    - I'm looking for React Native developers to create a mobile app that not only meets technical requirements but also provides an engaging and visually appealing experience.
+    - Exploring the development of a cross-platform mobile app, and React Native seems like a suitable choice for ensuring compatibility on both iOS and Android devices.
+    - I want to create a mobile app, and React Native appears to be a suitable choice for ensuring a consistent user experience on both Android and iOS devices.
+    - i want to develop a react app
+    - react app development
+- intent: blogs
+  examples: |
+    - I'm looking for informative articles. Can you direct me to your blog?
+    - Could you please provide me with a list of your articles?
+    - I'm interested in your articles. How can I access them?
+    - Where can I find your blog section on the website?
+    - Do you have any recent blog posts I can read?
+    - article on android development
+    - blog posts display
+    - I'd like to see examples of your blog articles.
+    - Show me blogs.
+    - What are some interesting topics covered in your blog?
+    - Please share your blog articles.
+    - Is there a collection of articles I can explore on your website?
+    - Where can I find your article section on the website?
+    - Could you give me some insights into your blog content?
+    - Can you provide a list of your popular articles?
+    - What are some interesting topics covered in your articles?
+    - Blog examples.
+    - Show me articles.
+    - Can you show me your Blogs?
+    - Share some details about the blogs you've published.
+    - I want to read your blog.
+    - show me article on development
+    - Your blog posts?
+    - I want to read your articles.
+    - What topics do your blog posts cover?
+    - Is there a collection of blog posts I can explore on your website?
+    - I'm interested in reading your article content. Can you share some of your recent articles?
+    - Please share your articles.
+    - Can you show me your Articles?
+    - article posts display
+    - Your articles?
+- intent: native_vs_cross_platform
+  examples: |
+    - What are the pros and cons of choosing a native app over a cross platform one?
+    - Native or cross platform for startup?
+    - Can you provide guidance on selecting the right approach – native or cross platform – based on the project's long-term goals?
+    - Which type of app is generally more cost-effective – native or cross platform?
+    - What impact does the choice between native and cross platform have on app maintenance and updates?
+    - What considerations should I keep in mind when choosing between a native and cross platform solution for my mobile app?
+    - Considering market trends, are there any indicators that suggest a preference for native or cross platform apps in certain regions or industries?
+    - Factors for native or cross platform?
+    - When aiming for a seamless user experience, does the choice between native and cross platform significantly impact the overall design and feel of the app?
+    - Native app or cross platform app?
+    - Could you provide some insights into the strengths and weaknesses of native and cross platform mobile development?
+    - Which is better, native or cross platform?
+    - Are there any notable success stories or case studies that showcase the advantages of either native or cross platform app development?
+    - Differences: native or cross platform?
+    - How do native and cross platform apps differ in terms of accessing device features and APIs?
+    - Native or cross platform?
+    - I'm trying to decide between a native app and a cross platform app for my project. What factors should I consider?
+    - Are there specific industries or use cases where one should lean more towards native development or cross platform development?
+    - In terms of development time, are there noticeable discrepancies between native and cross platform app development?
+    - which one is better native app or a cross platform app
+    - what is the difference between native and cross platform apps
+    - Can you highlight scenarios where a native app is a clear choice over a cross platform app, and vice versa?
+    - I'm a bit confused about native and cross platform apps. Could you help me understand the differences?
+    - I'm exploring options for my mobile app. Could you share insights on whether native or cross platform development aligns better with scalability requirements?
+    - What are the key factors that make native development preferable in certain situations compared to cross platform development?
+    - Native vs. cross platform for my project?
+    - Can you explain the distinctions between native and cross platform applications?
+    - I want to make sure my app integrates smoothly with various devices. Does native development or a cross platform approach offer better compatibility?
+    - For a startup with limited resources, would you recommend prioritizing native development or opting for the efficiency of cross platform development?
+    - When considering the development of a new app, how do I determine whether a native or cross platform approach is more suitable?
+    - Thoughts on native vs. cross platform?
+    - Is there a significant difference in user experience between native and cross platform mobile applications?
+- intent: app_development_cost
+  examples: |
+    - Can you provide examples of well-known apps and their development costs?
+    - Ongoing expenses post app launch?
+    - What's the estimated cost for developing a mobile app?
+    - Cost of making an app?
+    - Native vs. cross-platform cost difference?
+    - Mobile app development cost?
+    - What's the budget for building an app?
+    - I'm in the planning stages for an app. What kind of budget should I set aside for development?
+    - What's the difference in cost between developing a native app and a cross-platform app?
+    - Maintenance costs for a developed app?
+    - Cost factors for mobile app creation?
+    - I'm exploring the cost of app development services. What's the industry standard?
+    - Any idea on app development expenses?
+    - How does the complexity of an app affect the overall development cost?
+    - Price to develop a mobile app?
+    - Can you provide a ballpark figure for app development expenses?
+    - How expensive is it to create a mobile app from scratch?
+    - how much does it cost to develop an app?
+    - Are there any cost-saving tips for someone looking to develop a mobile app on a budget?
+    - What are the typical price ranges for developing iOS and Android apps separately?
+    - Tips for cost-effective app development?
+    - Are there ongoing costs associated with app development, aside from the initial development fee?
+    - Quick overview of app development costs?
+    - Do different app development platforms (iOS, Android) have varying costs?
+    - Can you break down the factors that influence the cost of app development?
+    - I'm interested in understanding the cost structure for app maintenance post-launch. Any insights?
+    - Startup budget for app development?
+    - Estimated app development cost?
+    - iOS and Android app development costs?
+    - app development price
+    - what is the cost of app development
+    - What's the app development price?
+    - For a startup, what percentage of the budget should be allocated to app development?
+- intent: out_of_scope
+  examples: |
+    - Out of scope question.
+    - how do you like your coffee
+    - Cars
+    - sudo reboot
+    - ı am learning python
+    - what kind of bird are you?
+    - where do i type in commandy
+    - asdfgasdas
+    - asdfgasd
+    - gsaf
+    - you girl
+    - i need money
+    - talk to me about voulette
+    - you have to
+    - sfasd
+    - i want play ball
+    - I want to go palghar
+    - contextual
+    - expert of rasa
+    - Do you have a demo?
+    - what type of bot?
+    - CALL THE POLICE
+    - flight catch up
+    - tertyryutyi
+    - why sky is blue?
+    - coronavirus
+    - voulette voulette
+    - asdkjasdhjkasd
+    - your contry name
+    - j  bhbhj
+    - kiss me
+    - no, i need cash, money! Do you have it ?
+    - contextua
+    - I am asking out of scope question
+- intent: android_development
+  examples: |
+    - I want to create an Android app.
+    - i would like a android app
+    - Android Development
+    - i want to make a android app
+    - I have a unique concept for an Android app that requires careful attention to user engagement features, intuitive navigation, and seamless integration with Android Wear devices.
+    - I'm looking for an experienced Android development team to bring my vision of a feature-rich Android application to life, incorporating functionalities like augmented reality, machine learning, and real-time data synchronization.
+    - I've conceptualized a comprehensive Android app that caters to a specific market niche, requiring features like offline functionality, personalized user profiles, and a robust backend infrastructure. In my search for Android development services, I'm particularly interested in a team that can handle the technical intricacies and contribute creative solutions to enhance the app's overall appeal.
+    - Considering Android app development for a mobile application that requires intricate features such as real-time collaboration, in-app messaging, and geolocation services.
+    - i would like to create a app for android
+    - I have a unique concept for an Android app that requires careful attention to user engagement features, intuitive navigation, and seamless integration with
+    - I'm looking to initiate the development of a feature-rich Android application that not only stands out in terms of functionality but also aligns with the latest design principles, providing users with a seamless experience across a wide range of Android devices.
+    - I'm searching for a seasoned Android development team to handle the intricacies of a well-defined vision for an Android app that goes beyond conventional functionalities, involving elements like secure user authentication, integration with external APIs, and a visually appealing interface.
+    - I have a well-defined vision for an Android app that goes beyond conventional functionalities, involving elements like secure user authentication, integration with external APIs, and a visually appealing interface. I'm seeking Android developers who can contribute to the success of this project by providing innovative solutions and ensuring a high level of user satisfaction.
+    - help me develop a android app
+    - Considering Android app development for a project that involves intricate features such as real-time collaboration, in-app messaging, and geolocation services.
+    - Exploring the idea of creating a comprehensive Android app for a niche market, involving features like real-time collaboration, personalized user profiles, and compatibility with both smartphones and tablets.
+    - Interested in initiating the Android app development for a project that involves creating a user-friendly interface, incorporating push notification functionalities, and optimizing the app for different screen sizes. I'm seeking an experienced Android development team that can bring this project to fruition while ensuring scalability and performance.
+    - I'm in the early stages of planning a sophisticated Android application that seamlessly integrates with wearable devices, implements advanced gesture controls, and ensures a consistent user experience across various screen sizes.
+    - android app development
+    - Considering the development of an Android app that integrates with third-party APIs, supports in-app purchases, and ensures optimal performance on various screen sizes. I'm in search of a proficient Android development team that can handle both the technical complexities and the user interface design aspects.
+    - Looking for Android app development.
+    - Exploring Android app development for a social networking platform, my project requires a team with expertise in user interaction design, real-time updates, and integrating features that enhance community engagement and communication.
+    - Can you create an app for Android devices?
+    - Need help developing an Android app.
+    - Considering Android development for my project.
+    - I've envisioned an Android app that involves advanced features such as machine learning algorithms, dynamic content loading, and offline capabilities. In my search for Android developers, I'm particularly interested in a team that can provide insights into optimizing app performance and ensuring a smooth experience for users on diverse Android platforms.
+    - In the process of conceptualizing a cutting-edge Android application that aims to offer users a unique and interactive experience, featuring advanced functionalities like augmented reality integration, secure data storage, and seamless integration with various Android devices.
+    - I want an app for Android devices.
+    - Interested in Android app development services.
+    - Can you help me create an Android app?
+    - android development
+    - can you help me create a android app
+    - I've envisioned a comprehensive Android app that caters to a specific market niche, requiring features like offline functionality, personalized user profiles, and a robust backend infrastructure.
+    - Interested in initiating the Android app development for a project that involves creating a user-friendly interface, incorporating push notification functionalities, and optimizing the app for different screen sizes.
+    - I need an Android app developed.
+- intent: suggest_wordpress_development
+  examples: |
+    - I want a simple and easy-to-maintain website for my personal blog.
+    - I want an e-learning platform to offer online courses and tutorials.
+    - The website should support multiple language translations.
+    - The website should have a media library to organize and display videos.
+    - The website should have a section to display customer testimonials and reviews.
+    - I want a website to promote my new book and allow visitors to purchase it online.
+    - My website should have a blog section to share my travel experiences and photos.
+    - I want a user-friendly website to promote and sell my digital products.
+    - I need a platform to display upcoming events and allow users to register.
+    - My website should have a video gallery with categories and tags for easy navigation.
+    - I want to create a website for my upcoming event with a schedule and ticket sales.
+    - My website should have an email newsletter signup and distribution system.
+    - The website should include an events calendar and ticket booking functionality.
+    - My website should have a blog section and an online store to sell products.
+    - I need a website for my bakery business, showcasing our products and contact details.
+    - I want a visually appealing website with customizable themes to fit my brand.
+    - I need a website for my charity organization to raise funds and share updates.
+    - The website should support multiple language translations for a global audience.
+    - I need a content-focused website with multimedia elements for my art portfolio.
+    - The website should have a blog to share gardening tips and tricks.
+    - My website should have seamless integration with social media platforms.
+    - The website should have a client portal with secure login for access to resources.
+    - I'm looking for a content-focused website with the ability to add multimedia elements.
+    - The website should offer membership and subscription-based access to content.
+    - I want a website to stream live webinars and interactive video content.
+    - I want a community forum integrated into my website for user discussions.
+    - The website should have a contact form for inquiries and feedback.
+    - I need a website for my photography business with a gallery and contact form.
+    - The website should have a gallery to showcase our portfolio.
+    - The website should have an event calendar to display upcoming workshops and events.
+    - My website should have a page to introduce our team and share our story.
+    - I want a website to promote my photography services and showcase my portfolio.
+    - I need a website for my small business, showcasing our products and contact information.
+    - I want a visually appealing website for my handmade crafts shop with an online store.
+    - I want a membership platform to offer exclusive content to my subscribers.
+- intent: mobile_development
+  examples: |
+    - Interested in creating a feature-rich mobile app that stands out in terms of design, performance, and user experience. I'm looking for a development team with a proven track record in mobile development.
+    - I want to make an app
+    - Mobile app creation
+    - i want to make a mobile app
+    - i would like to make a app for mobile
+    - Interested in app development
+    - Exploring mobile app development for a startup project that requires a seamless and intuitive user interface, smooth transitions, and efficient data handling.
+    - i want to go with mobile development
+    - mobile development
+    - Exploring the possibilities of mobile development for a comprehensive app that involves intricate features like real-time collaboration, push notifications, and integration with external APIs.
+    - Can you help me create an app
+    - Interested in mobile development services to revamp our existing app, incorporating modern design principles and improving overall user satisfaction.
+    - Exploring mobile app creation
+    - can you help me to create a app
+    - I have a vision for a visually appealing and interactive mobile app, and I'm interested in mobile development teams that can bring this vision to life with creativity and technical excellence.
+    - I want to make a mobile app
+    - I have a detailed project plan for a mobile app that involves not only technical expertise but also a focus on delivering a delightful user experience. I'm seeking a reliable mobile development team for this project.
+    - Want to develop a mobile app
+    - Looking for mobile app developers
+    - I want to go with mobile development
+    - Looking to create a mobile app
+    - I have a concept for a mobile app that involves intricate features like augmented reality integration, real-time collaboration, and a personalized user experience. I'm seeking a mobile development team with expertise in these areas.
+    - I want to create a mobile application
+    - I'm looking for a mobile development team to build an app that leverages the latest technologies, ensuring optimal performance and user satisfaction.
+    - I'd like to make a mobile app
+    - I want to create a mobile app, and I'm interested in mobile development teams that can provide end-to-end solutions, from conceptualization to deployment.
+    - Interested in mobile development
+    - Considering mobile app development for a project that requires the implementation of modern design trends, smooth animations, and real-time collaboration features.
+    - I'm interested in mobile development services for a project that requires extensive testing, optimized performance, and a visually appealing design.
+    - i want to make a app
+    - In the early stages of planning a mobile application, I'm seeking a mobile development team that can handle both the technical aspects and the nuances of cross-platform compatibility.
+    - Considering app development
+    - Seeking mobile development
+    - i am interested in mobile development
+    - Considering mobile app development for a startup project that requires a modern and responsive user interface with seamless navigation across various devices.
+    - Considering mobile app development for a project that involves features such as offline functionality, push notifications, and integration with external databases.
+    - Looking for mobile development
+- intent: cross_platform_development
+  examples: |
+    - cross platform app development
+    - I have a detailed project plan for a cross-platform app that involves not only technical expertise but also a focus on delivering a delightful user experience. I'm seeking a reliable cross-platform app development team for this project.
+    - Considering cross-platform app development for a project that requires the implementation of modern design trends, smooth animations, and real-time collaboration features.
+    - cross platform app
+    - can you make a cross platform app
+    - Want to develop a cross-platform app
+    - Looking for cross-platform development
+    - I want to go with cross-platform
+    - Considering cross-platform app development
+    - Cross-platform app
+    - Seeking cross-platform app development
+    - i am interested in cross platform apps
+    - Exploring cross-platform app development for a social networking platform, my project requires a team with expertise in user interaction design, real-time updates, and integrating features that enhance community engagement and communication.
+    - Cross-platform app creation
+    - cross platform development
+    - I am interested in cross-platform apps
+    - like to make a cross platform app
+    - I want to create a cross-platform app, and I'm interested in cross-platform app development teams that can provide end-to-end solutions, from conceptualization to deployment.
+    - I'm looking for a cross-platform app development team to create a robust and scalable app that caters to the specific needs of our target audience, ensuring optimal performance and user satisfaction.
+    - Cross Platform Development
+    - Exploring cross-platform app development for a startup project that requires a seamless and intuitive user interface, smooth transitions, and efficient data handling.
+    - I'm looking for a cross-platform app development team to build an app that leverages the latest technologies, ensuring optimal performance and user satisfaction.
+    - Interested in creating a feature-rich cross-platform app that stands out in terms of design, performance, and user experience. I'm looking for a development team with a proven track record in cross-platform app development.
+    - I have a vision for a visually appealing and interactive cross-platform app, and I'm interested in cross-platform app development teams that can bring this vision to life with creativity and technical excellence.
+    - I have a detailed project plan for a cross-platform app that requires careful attention to user engagement features, intuitive navigation, and seamless integration with external services.
+    - In the early stages of planning a cross-platform application, I'm seeking a cross-platform app development team that can handle both the technical aspects and the nuances of cross-platform compatibility.
+    - Interested in making a cross-platform app
+    - Considering cross-platform app development for a project that involves features such as offline functionality, push notifications, and integration with external databases.
+    - cross platform Development
+    - Looking to create a cross-platform app
+    - Cross-platform app development
+    - Interested in cross-platform app development services to revamp our existing app, incorporating modern design principles and improving overall user satisfaction.
+    - In the process of conceptualizing a cross-platform app that goes beyond conventional functionalities, involving elements like machine learning algorithms, personalized recommendations, and a visually appealing interface.
+    - Exploring cross-platform app creation
+    - I'm in the early stages of planning a cross-platform application, and I'm looking for a development team with expertise in cross-platform development for both Android and iOS.
+    - Interested in cross-platform app development services for a project that involves complex features like geolocation services, secure authentication, and seamless integration with external APIs.
+    - i want to go with cross platform
+    - I'm interested in cross-platform app development services for a project that requires extensive testing, optimized performance, and a visually appealing design.
+- intent: suggest_react_js_development
+  examples: |
+    - My web app should provide real-time data visualization and analytics.
+    - I need a mobile-friendly web app with smooth transitions and navigation.
+    - The application should include a task management system with reminders and deadlines.
+    - I need a Shopify app to be developed that will provide an option to customers to add an additional item in cart. The item to be added is carbon offset provided by a third party.
+    - The application should include a meditation and relaxation guide for stress relief.
+    - I need a web app that can handle user authentication and access controls securely.
+    - I want to build a video conferencing application with live video feeds and chat.
+    - I want to build an interactive gaming platform with leaderboards and achievements.
+    - The application should support real-time video processing and filtering.
+    - The web app should support live video streaming and user-generated content.
+    - I need a video streaming platform with interactive features like comments and likes.
+    - The application should include a task management system with reminders and notifications.
+    - The application should support real-time collaborative document editing.
+    - I need a mobile-friendly web application with native-like performance.
+    - I want a web application that offers real-time updates and smooth user interactions.
+    - The web app should have a real-time chat feature for customer support.
+    - The web app should support real-time collaborative document editing.
+    - I want a web application to create and customize digital greeting cards.
+    - I want a web application to create and edit video content with real-time preview.
+    - I need a quiz app to test my general knowledge and learn new facts.
+    - I need a web application to manage my personal finance and budgeting.
+    - The web app should have a weather forecast feature to plan outdoor activities.
+    - I want to create a single-page application with smooth navigation and animations.
+    - The web app should have real-time chat for customer support and inquiries.
+    - I need a responsive e-commerce website for a trendy fashion store, with easy navigation, secure payment options, and social media integration
+    - I want to build an interactive recipe app with step-by-step instructions and videos.
+    - I want to create an interactive quiz platform with real-time scoring and results.
+    - I'm looking for a fast and responsive web app with server-side rendering.
+    - I want a web application to discover and listen to my favorite podcasts.
+    - The application should include a health and fitness tracker to monitor my progress.
+    - The web app should have a movie recommendation system based on user preferences.
+    - I want to build an interactive mapping and geolocation-based application.
+    - I need a scalable e-commerce platform with personalized product recommendations.
+    - I want to create a social networking platform with real-time updates and notifications.
+    - I want to create a virtual reality (VR) or augmented reality (AR) experience on the web.
+    - I need a platform with complex user interactions and dynamic content loading.
+    - I want to build an interactive gaming platform with multiplayer capabilities.
+- intent: native_app_development
+  examples: |
+    - I want to make a native app
+    - i am interested in native apps
+    - Exploring native app development for a startup project that requires a seamless and intuitive user interface, smooth transitions, and efficient data handling.
+    - Native Development
+    - Considering native app development
+    - I have a vision for a visually appealing and interactive native app, and I'm interested in native app development teams that can bring this vision to life with creativity and technical excellence.
+    - Interested in making a native app
+    - I want to go with native
+    - I want to develop a native app
+    - like to make a native app
+    - I'm in the early stages of planning a native application, and I'm looking for a development team with expertise in cross-platform development for both Android and iOS.
+    - native app development
+    - Like to make a native app
+    - Native app development
+    - Interested in creating a feature-rich native app that stands out in terms of design, performance, and user experience. I'm looking for a development team with a proven track record in native app development.
+    - native development
+    - can you make a native app
+    - Exploring native app development for a social networking platform, my project requires a team with expertise in user interaction design, real-time updates, and integrating features that enhance community engagement and communication.
+    - Exploring the possibilities of native app development for a comprehensive application that involves intricate features like real-time collaboration, push notifications, and seamless integration with external APIs.
+    - Exploring native app creation
+    - I want to create a native app, and I'm interested in native app development teams that can provide end-to-end solutions, from conceptualization to deployment.
+    - Can you make a native app
+    - Interested in native app development services to revamp our existing app, incorporating modern design principles and improving overall user satisfaction.
+    - Want to develop a native app
+    - Considering native app development for a startup project that requires a modern and responsive user interface with seamless navigation across various devices.
+    - I want to create a native application
+    - i want to go with native
+    - Native app
+    - Considering native app development for a project that involves features such as offline functionality, push notifications, and integration with external databases.
+    - Exploring native app development
+    - I'm interested in native app development services for a project that requires extensive testing, optimized performance, and a visually appealing design.
+    - native app
+    - i want to make a native app
+    - Native app creation
+    - Looking for native development
+    - I'm looking for a native app development team to create a robust and scalable app that caters to the specific needs of our target audience, ensuring optimal performance and user satisfaction.
+    - I have a concept for a native app that involves intricate features like augmented reality integration, real-time collaboration, and a personalized user experience. I'm seeking a native app development team with expertise in these areas.
+    - In the early stages of planning a native application, I'm seeking a native app development team that can handle both the technical aspects and the nuances of cross-platform compatibility.
+    - Interested in native app development services for a project that involves complex features like geolocation services, secure authentication, and seamless integration with external APIs.
+- intent: both_android_ios_development
+  examples: |
+    - Let's proceed with development for both Android and iOS.
+    - Seeking assistance for Android and iOS mobile app development.
+    - Can you create an app that is compatible with both Android and iOS operating systems?
+    - I'm considering both Android and iOS development for my upcoming project.
+    - I have a detailed project plan for a mobile application that needs to be developed for both Android and iOS. The app will involve complex functionalities, including geolocation services, secure in-app messaging, and integration with third-party APIs. What expertise does your development team have in handling such intricate requirements, and what's the typical timeline for a project of this scale?
+    - Seeking developers for a cross-platform mobile app (Android and iOS).
+    - I want to create a mobile app, and it should be available on both Android and iOS.
+    - Interested in hiring developers for a dual-platform Android and iOS app.
+    - i want to develop it for both platform
+    - I'm looking for a solution that caters to both Android and iOS users.
+    - Need an app that works seamlessly on both Android and iOS devices.
+    - I'm exploring both Android and iOS development for a mobile app.
+    - I need a mobile app that supports both Android and iOS devices.
+    - both
+    - Considering Android and iOS development for a new mobile app.
+    - Develop a cross-platform app for Android and iOS.
+    - I'm looking to develop a mobile app that serves a niche audience and requires careful consideration of user experience on both Android and iOS. The app will involve advanced features such as machine learning algorithms, augmented reality components, and data encryption. How can your development team accommodate such intricate requirements, and what is your experience with implementing cutting-edge technologies on multiple platforms?
+    - I have an elaborate vision for a cross-platform mobile application that offers a unique user experience on both Android and iOS devices. The app will involve intricate animations, real-time synchronization across devices, and integration with external databases. Can you share your approach to cross-platform development, and how do you ensure a consistent user interface and performance on both operating systems?
+    - android and ios
+    - I want my application to be accessible on both Android and iOS devices.
+    - Both
+    - Interested in developing an app for both Android and iOS platforms.
+    - ios development
+    - I'm interested in developing for both Android and iOS platforms. Can you provide more information?
+    - I'm in the early stages of conceptualizing a comprehensive mobile application, and I envision it being available on both Android and iOS platforms. The app will have intricate features like real-time collaboration, multimedia integration, and user authentication. Can you guide me through the process of developing such a robust solution for both operating systems?
+    - Android and iOS compatibility is a must for my mobile application.
+    - Interested in hiring developers for a project involving both Android and iOS.
+    - Considering both Android and iOS for a new mobile application.
+    - I'm currently in the process of creating a comprehensive mobile solution that spans both Android and iOS ecosystems. The app will be feature-rich, incorporating elements like social media integration, secure user authentication, and extensive offline capabilities. Can you provide a breakdown of your development process, including testing methodologies, and how you handle complex feature integrations for dual-platform compatibility?
+    - I have a highly detailed specification document outlining the functionality and design requirements for a mobile app intended for both Android and iOS. The app will involve intricate backend integrations, user-generated content features, and a personalized recommendation engine. How do you approach projects with detailed specifications, and what level of customization can your development team accommodate for dual-platform development?
+    - both would be great
+    - For my project, I'm specifically looking for developers experienced in both Android and iOS development.
+    - Building a mobile app for both Android and iOS users.
+    - Both Android and iOS development are essential for my mobile app idea.
+    - Need a mobile app that caters to both Android and iOS users.
+    - i would like a both android and ios
+    - Looking for developers to create an app compatible with Android and iOS.
+    - Need developers for a dual-platform Android and iOS project.
+    - I'm exploring the development of a sophisticated mobile application that caters to a diverse user base on both Android and iOS platforms. The app will involve complex user workflows, real-time communication features, and integration with external APIs. Can you provide insights into your project management approach, communication strategies, and how you handle the coordination of development efforts for simultaneous Android and iOS releases?
+    - Both Android and iOS development is required for my project. What are the next steps?
+    - Want to create an app available on both Android and iOS.
+    - I'm embarking on a business venture and require a sophisticated mobile app that caters to both Android and iOS users. The app should seamlessly handle features like in-app purchases, user profiles, and push notifications. Could you provide insights into your development process, the technologies you plan to use, and the anticipated challenges for implementing these functionalities on both platforms?
+    - lets go with both android and ios
+- intent: flutter_vs_react_native
+  examples: |
+    - Are there situations where Flutter is a better fit than React Native, and vice versa?
+    - Are there any notable apps or companies that have successfully used Flutter or React Native?
+    - What are the performance implications of using Flutter or React Native for resource-intensive applications?
+    - Can you provide a brief comparison of the development tools and IDE support for Flutter and React Native?
+    - Can you provide insights into the community support and ecosystem for Flutter versus React Native?
+    - Performance is a crucial factor for my app. Can you provide insights into how Flutter and React Native compare in terms of speed and efficiency?
+    - Are there specific advantages of using Flutter over React Native or vice versa?
+    - What are the differences in terms of UI/UX capabilities between Flutter and React Native?
+    - Differences between Flutter and React Native?
+    - Considerations: Flutter or React Native?
+    - Flutter or React Native for UI design?
+    - React Native or Flutter learning curve?
+    - Which is better: Flutter or React Native?
+    - I'm working on a startup project, and I'm torn between Flutter and React Native. What considerations should I keep in mind when making a choice?
+    - In terms of third-party library support, do Flutter and React Native differ significantly?
+    - Flutter and React Native differences?
+    - What are the key considerations when choosing between Flutter and React Native for mobile app development?
+    - What success stories or case studies can you share about apps developed with Flutter or React Native?
+    - Performance: Flutter or React Native?
+    - As someone new to mobile app development, I'm curious about Flutter and React Native. Can you break down their strengths and weaknesses for me?
+    - Native integrations: Flutter vs. React Native?
+    - What kind of projects are better suited for Flutter, and which ones are better suited for React Native?
+    - When deciding between Flutter and React Native, what factors should I consider?
+    - Considering my background in JavaScript, would React Native be a more seamless transition for me, or is Flutter equally accessible?
+    - In terms of performance, how do Flutter and React Native compare?
+    - I'm looking for a framework that offers smooth integrations with native modules. Can you shed light on how Flutter and React Native handle this aspect?
+    - How do hot reload features in Flutter and React Native impact the development workflow?
+    - I'm a developer exploring cross-platform options. Can you help me understand the real-world differences between Flutter and React Native?
+    - I've heard Flutter has a hot reload feature. How does it compare to React Native's hot reload, and what impact does it have on development efficiency?
+    - Development tools: Flutter or React Native?
+    - App examples: Flutter vs. React Native?
+    - Flutter or React Native for small projects?
+    - I'm concerned about future updates and support. Are there any historical trends that suggest one framework is more future-proof than the other?
+    - React Native or Flutter community support?
+    - As a solo developer, I'm interested in the learning curve of both Flutter and React Native. Which one is more beginner-friendly?
+    - Can you explain the differences between Flutter and React Native development?
+    - I'm exploring cross-platform frameworks. What sets Flutter apart from React Native in terms of development?
+    - How does the developer community play a role in the decision between Flutter and React Native? Is one more supportive than the other?
+    - I've heard good things about both Flutter and React Native. How do I decide which one is the better fit for my mobile app project?
+    - Flutter vs. React Native?
+    - Pros and cons: Flutter vs. React Native?
+    - How do Flutter and React Native handle native module integrations and accessing device features?
+    - Choosing Flutter or React Native?
+    - Quick comparison: Flutter vs. React Native?
+- intent: wordpress_vs_shopify
+  examples: |
+    - SEO is crucial for my online presence. Between WordPress and Shopify, which one is more SEO-friendly and helps with better search engine rankings?
+    - I've read about the importance of SEO for online businesses. Between WordPress and Shopify, which one is more SEO-friendly?
+    - For an e-commerce website, should I go with WordPress or Shopify? What are the key differences between the two?
+    - Quick comparison: WordPress vs. Shopify?
+    - In terms of payment gateways and transaction fees, is there a significant difference between using WordPress and Shopify for an online store?
+    - I'm looking to migrate my online store to a new platform. What advantages does WordPress have over Shopify, and vice versa?
+    - Considering ease of use, would you recommend WordPress or Shopify for a beginner looking to start an online business?
+    - When it comes to mobile responsiveness and performance, how do WordPress and Shopify stack up for online stores?
+    - I'm a small business owner with limited time. Should I invest in WordPress or Shopify for my online store, considering ease of setup and management?
+    - which one is better for online store: wordpress or shopify?
+    - Choosing between WordPress and Shopify?
+    - Which is more user-friendly: WordPress or Shopify?
+    - Cost considerations: WordPress vs. Shopify?
+    - WordPress or Shopify for small business?
+    - Better for e-commerce: WordPress or Shopify?
+    - I'm curious about real-world examples. Can you share success stories or case studies of businesses using WordPress or Shopify for their online stores?
+    - What are the ongoing maintenance and security considerations when choosing between WordPress and Shopify for an online store?
+    - For a hands-on approach to managing an online store, does one platform, WordPress or Shopify, provide a more intuitive and enjoyable user experience?
+    - I already use WordPress for my blog and thinking about adding an online store. Would it be better to stick with WordPress for consistency, or should I consider Shopify separately?
+    - For a non-technical person, which platform, WordPress or Shopify, offers a more straightforward setup process for launching an online store?
+    - I've heard about the scalability challenges with some e-commerce platforms. How does the scalability of WordPress compare to that of Shopify?
+    - I've heard great things about both WordPress and Shopify, but I'm still unsure which one aligns better with my vision for an online store. Can you provide guidance?
+    - I want my online store to stand out. How do WordPress and Shopify differ when it comes to creating a unique and visually appealing store?
+    - Transaction fees: WordPress or Shopify?
+    - WordPress vs. Shopify: pros and cons?
+    - I've heard about the importance of mobile responsiveness. Can you discuss how well WordPress and Shopify cater to the mobile user experience for online stores?
+    - I've heard about WordPress and Shopify for online stores. Can you help me understand which one offers better features and flexibility?
+    - When it comes to customization options, can you explain how WordPress and Shopify differ for creating a unique online store experience?
+    - I'm a bit concerned about ongoing maintenance. Could you outline the maintenance responsibilities for managing an online store on WordPress versus Shopify?
+    - Customer support is important to me. How do the customer support services of WordPress and Shopify compare for online store owners?
+    - Thoughts on WordPress vs. Shopify?
+    - What role does customer support play in the decision between WordPress and Shopify for managing an online store?
+    - WordPress or Shopify for beginners?
+    - I'm looking to integrate various tools and plugins into my online store. Is there a platform, WordPress or Shopify, that excels in terms of third-party integrations?
+    - Integrations and plugins: WordPress vs. Shopify?
+    - Unique design: WordPress or Shopify?
+    - I'm not super tech-savvy, but I want to sell products online. Between WordPress and Shopify, which one is more user-friendly for someone like me?
+    - Cost is a factor for me. In your opinion, which platform, WordPress or Shopify, offers better value for money for someone starting an online store?
+    - I've been researching platforms for my online store, and it seems like WordPress and Shopify are popular choices. Any insights on which one is a better fit?
+    - My online store is growing, and I need a platform that scales well. Between WordPress and Shopify, which one is more accommodating for business expansion?
+    - Mobile responsiveness: WordPress or Shopify?
+    - SEO-friendly platform: WordPress or Shopify?
+    - Are there specific industries or types of products that are better suited for a WordPress-based online store compared to a Shopify one, and vice versa?
+    - I'm thinking about starting an online store, and I'm stuck between WordPress and Shopify. Can you help me figure out which one suits my business better?
+    - WordPress or Shopify for an online store?
+- intent: ios_development
+  examples: |
+    - i want to develop a iphone app
+    - I want to go with an iPhone app.
+    - Can you create an app that runs on iOS devices?
+    - i want to make a ios app
+    - I need an app for Apple devices.
+    - want to develop a IOS app
+    - ios development
+    - Interested in embarking on an iOS app development journey for a unique product that combines cutting-edge technology with a seamless user interface, ensuring compatibility across a range of Apple devices.
+    - can you help me create a ios app
+    - Looking for iOS app development.
+    - can you create a app that runs on ios devices
+    - I have a well-defined project plan for an iOS app that involves features such as geolocation services, secure in-app messaging, and integration with third-party APIs. Looking for developers with expertise in iOS development to bring this project to fruition.
+    - Looking for iOS app development services.
+    - Seeking assistance for iOS development.
+    - Want an iPhone app.
+    - i want a app for apple devices
+    - Considering iOS development for my project.
+    - I'm in the process of planning an iOS app that aims to revolutionize the way users interact with content. This involves features like dynamic content loading, intuitive gesture controls, and personalized user profiles. I'm interested in a development team that not only possesses technical expertise in iOS development but also demonstrates creativity in enhancing the user experience and implementing innovative design concepts.
+    - I have a unique concept for an iOS app that involves intricate features like augmented reality integration, machine learning algorithms, and a personalized recommendation engine. I'm in search of a proficient iOS development team that can handle the technical complexities of implementing these features while maintaining optimal performance and user engagement.
+    - help me develop a ios app
+    - i want to develop a ios app
+    - Interested in creating an app for iOS.
+    - Want to develop an iOS app.
+    - IOS app development
+    - i want to make a iphone app
+    - i would like a IOS app
+    - I want to create an iOS app.
+    - i want to go with apple
+    - I want to make an iOS app.
+    - can you create a app that runs on iphone devices
+    - I want an app for iPhones.
+    - I want an iOS app developed.
+    - app for iphones
+    - IOS Development
+    - I've envisioned an iOS app that goes beyond conventional functionalities, involving elements like secure biometric authentication, real-time data synchronization, and offline capabilities. In my search for iOS developers, I'm looking for a team that can handle the intricacies of secure data transmission, implement a robust backend infrastructure, and create a user-friendly interface that aligns with the latest iOS design trends.
+    - ios app development
+    - I'm in the initial stages of planning a sophisticated iOS application, and I'm looking for a team of experienced developers who can bring my vision to life with attention to detail in design, user experience, and functionality.
+    - I'd like to create an app for iOS.
+    - i would like to create a app for iphone
+    - i would like to create a app for ios
+    - Can you create an app for iPhone devices?
+    - Help me develop an iOS app.
+    - Can you help me create an iOS app?
+    - Can you create an app for iOS devices?
+    - I need an iOS app developed.
+    - i would like a ios app
+    - I've conceptualized a comprehensive iOS app that will integrate seamlessly with the latest Apple technologies, requiring not only skill in development but also an understanding of the iOS ecosystem and design principles.
+- intent: hiring_developers
+  examples: |
+    - I am looking for a [flutter]{"entity": "hiring_tech_type", "value": "Flutter"} developer to build a b2b e-commerce hybrid mobile application.
+    - Hi, I'm looking to hire a [web]{"entity": "hiring_development_type", "value": "Web Development"} developer. Can you provide details on available candidates?
+    - Hey, I'm considering hiring a [web]{"entity": "hiring_development_type", "value": "Web Development"} developer skilled in [React.js](hiring_tech_type). What's the estimated time for a project like this?
+    - I want to hire a developer experienced in mobile app development. Can you provide information on the developer's availability and project timelines?
+    - Hi, I'm looking to hire a [React Native](hiring_tech_type) developer for a [mobile app]{"entity": "hiring_development_type", "value": "Mobile Development"}. Can you share the expected project duration?
+    - I'm looking for a [web]{"entity": "hiring_development_type", "value": "Web Development"} developer skilled in [React.js](hiring_tech_type). What's the estimated time for a project like this?
+    - Hello, I'm looking to hire developers for our team. Can you provide information on available [mobile]{"entity": "hiring_development_type", "value": "Mobile Development"} app developers without specifying a platform?
+    - Hey, I'm interested in building a development team and hiring a [web]{"entity": "hiring_development_type", "value": "Web Development"} developer skilled in [React.js](hiring_tech_type). What's your approach to team building?
+    - I want to recruit an [iOS](hiring_mobile_platform) developer proficient in [Swift](hiring_tech_type) to join our team. What's the usual duration for the recruitment process?
+    - Hello, I'm interested in hiring a [mobile]{"entity": "hiring_development_type", "value": "Mobile Development"} app developer without specifying a platform. Can you share details on the expected project duration?
+    - Hey there, I'm looking for a [web]{"entity": "hiring_development_type", "value": "Web Development"} developer for a [React.js](hiring_tech_type) project. What's the average duration for a project like this?
+    - I am looking for a [swift](hiring_tech_type) developer to build a b2b e-commerce hybrid mobile application.
+    - Hello! We're planning to build a development team and recruit [mobile]{"entity": "hiring_development_type", "value": "Mobile Development"} app developers for a [React Native](hiring_tech_type) project. What's the anticipated timeline for team formation?
+    - Hello! We're planning to build a development team and hire [mobile]{"entity": "hiring_development_type", "value": "Mobile Development"} app developers for a [React Native](hiring_tech_type) project. What's the anticipated timeline for team formation?
+    - I want to hire an [iOS](hiring_mobile_platform) developer for a [Swift](hiring_tech_type) project. What's your approach to ensuring code quality, and can you provide an estimate for the project duration?
+    - Hi, I want to hire a developer for a [mobile]{"entity": "hiring_development_type", "value": "Mobile Development"} app. What do you have available?
+    - Hello! I'm interested in hiring a [full-stack]{"entity": "hiring_tech_type", "value": "Full-stack"} developer with expertise in [Node.js](hiring_tech_type) and [React](hiring_tech_type). What's the timeline for bringing in new developers?
+    - Hello! I'm considering hiring a [mobile]{"entity": "hiring_development_type", "value": "Mobile Development"} app developer without a specific tech stack preference. Can you share details on the skillsets your developers usually possess and the general timeline for projects?
+    - Hi, I want to hire a developer for a new project. Can you provide information on your available candidates and their expertise?
+    - I'm looking to hire a [web]{"entity": "hiring_development_type", "value": "Web Development"} developer skilled in [Angular](hiring_tech_type) for a three-month project. What's the recruitment process like?
+    - I need a [full-stack]{"entity": "hiring_tech_type", "value": "Full-stack"} developer for a [Node.js](hiring_tech_type) project.
+    - Hi, I'm looking to hire a developer for a [web]{"entity": "hiring_development_type", "value": "Web Development"} development project. Can you provide more information?
+    - Hi, I'm looking for a [web]{"entity": "hiring_development_type", "value": "Web Development"} developer to work on a [Vue.js](hiring_tech_type) project. Can you provide examples of past projects and their timelines?
+    - Hello! I need a skilled [Java](hiring_tech_type) developer for a [backend project]{"entity": "hiring_development_type", "value": "Backend Development"}. What's your recruitment process like?
+    - Hello! I need a [full-stack]{"entity": "hiring_tech_type", "value": "Full-stack"} developer for a [Node.js](hiring_tech_type) and [React](hiring_tech_type) project with a four-month timeline. What's the cost structure?
+    - Hello! We're expanding our team and looking to recruit a [full-stack]{"entity": "hiring_tech_type", "value": "Full-stack"} developer with expertise in [Node.js](hiring_tech_type) and [React](hiring_tech_type). What's the timeline for bringing in new team members?
+    - Hey, I need a [backend]{"entity": "hiring_development_type", "value": "Backend Development"} developer with expertise in [Java](hiring_tech_type). Can you share details on the recruitment process and the tech stack your developers usually work with?
+    - Hey, I need to hire a [backend]{"entity": "hiring_development_type", "value": "Backend Development"} developer skilled in [Node.js](hiring_tech_type). What's the cost structure for your hiring services?
+    - Hi, I'm looking to recruit a [web]{"entity": "hiring_development_type", "value": "Web Development"} developer to join our team. What's the process for applying?
+    - Hello! I'm looking for a [React Native](hiring_tech_type) developer to work on a [mobile app]{"entity": "hiring_development_type", "value": "Mobile Development"} for both [Android](hiring_mobile_platform) and [iOS](hiring_mobile_platform). What's the typical timeline for such a project?
+    - I want to hire a [android]{"entity": "hiring_mobile_platform", "value": "Android"} developer
+    - Hi, I want to hire a developer for a [web]{"entity": "hiring_development_type", "value": "Web Development"} development project. What's the estimated time for completion?
+    - Hello! I need a [full-stack]{"entity": "hiring_tech_type", "value": "Full-stack"} developer for a [Node.js](hiring_tech_type) project. What's the expected timeline for completion?
+    - I am looking for a [kotlin]{"entity": "hiring_tech_type", "value": "Kotlin"} developer to build a b2b e-commerce hybrid mobile application.
+    - I'm interested in hiring a [mobile]{"entity": "hiring_development_type", "value": "Mobile Development"} app developer for both [Android](hiring_mobile_platform) and [iOS](hiring_mobile_platform). What's the expected timeline for developing a basic version of the app?
+    - Hey, I'm interested in hiring a [web]{"entity": "hiring_development_type", "value": "Web Development"} developer for an [Android](hiring_mobile_platform) app. Can you provide details on the expected project duration?
+    - Hello! I'm interested in hiring a developer for a web development project. What's the general process and timeline for getting started?
+    - Hello! I want to hire a [mobile]{"entity": "hiring_development_type", "value": "Mobile Development"} app developer for a [React Native](hiring_tech_type) project. What's the typical timeline for completion?
+    - Hi, I'm looking for a [DevOps engineer]{"entity": "hiring_tech_type", "value": "DevOps"} to join our team. Do you have candidates experienced with [Docker](hiring_tech_type) and [Kubernetes](hiring_tech_type)?
+    - Hey there, I'm looking to hire a [front-end]{"entity": "hiring_development_type", "value": "Front-end Development"} developer proficient in [Vue.js](hiring_tech_type). Can you provide details on your candidates?
+    - Hi, I'm looking to hire a developer for a React Native project. What's the typical engagement model and pricing structure?
+    - Hello! I'm considering hiring a [mobile]{"entity": "hiring_development_type", "value": "Mobile Development"} app developer for both [Android](hiring_mobile_platform) and [iOS](hiring_mobile_platform). Can you share profiles of developers along with their preferred tech stacks?
+    - Can you find me an [iOS](hiring_mobile_platform) developer with expertise in [Swift](hiring_tech_type)? The project duration is around six months.
+    - Hey, I'm interested in building a development team and recruiting a [web]{"entity": "hiring_development_type", "value": "Web Development"} developer skilled in [React.js](hiring_tech_type). What's your approach to team building?
+    - Hi, I'm considering hiring a [React Native](hiring_tech_type) developer for a [mobile app]{"entity": "hiring_development_type", "value": "Mobile Development"} project. Can you share details on the available candidates?
+    - I want to hire an [iOS](hiring_mobile_platform) developer for a [Swift](hiring_tech_type) project with an estimated duration of five months. Can you provide candidate profiles?
+    - Hello, we're expanding our team and looking to recruit [mobile]{"entity": "hiring_development_type", "value": "Mobile Development"} app developers without specifying a platform. Can you provide information on the recruitment timeline?
+    - Hi, I'm considering recruiting a [React Native](hiring_tech_type) developer for a [mobile app]{"entity": "hiring_development_type", "value": "Mobile Development"} project. Can you share details on the recruitment process and available candidates?
+    - Hi, I want to hire a [full-stack]{"entity": "hiring_tech_type", "value": "Full-stack"} developer for a [Node.js](hiring_tech_type) and [React](hiring_tech_type) project. What's the cost structure for your hiring services, and can you provide a timeline estimate?
+    - i want a team to work on my project can you help?
+    - Hi, I need a [backend]{"entity": "hiring_development_type", "value": "Backend Development"} developer for a [Python](hiring_tech_type) project. What's the anticipated timeline?
+    - Hey, I'm interested in hiring a [mobile]{"entity": "hiring_development_type", "value": "Mobile Development"} app developer with a focus on [Android](hiring_mobile_platform). Can you provide details on the project duration?
+    - Hey, I want to hire a developer with expertise in backend development. What's the usual duration for onboarding a developer to a project?
+    - Hi, I want to hire a [web]{"entity": "hiring_development_type", "value": "Web Development"} developer proficient in [Angular](hiring_tech_type) for a project with an estimated duration of three months. Can you share more information?
+    - Hi, I'm considering hiring a [backend]{"entity": "hiring_development_type", "value": "Backend Development"} developer with expertise in [Python](hiring_tech_type). What's the process for candidate selection?
+    - Hi, I have a [machine learning]{"entity": "hiring_development_type", "value": "Machine Learning"} project and I'm interested in hiring a developer with experience in [TensorFlow](hiring_tech_type). Can you assist me?
+    - I want to hire a [mobile]{"entity": "hiring_development_type", "value": "Mobile Development"} developer for my [flutter]{"entity": "hiring_tech_type", "value": "Flutter"} app
+    - Hey, I'm looking to hire a skilled developer. What technologies do your developers typically work with, and can you share some profiles?
+    - Hello! I want to hire a [mobile]{"entity": "hiring_development_type", "value": "Mobile Development"} app developer for a [React Native](hiring_tech_type) project with an expected timeline of four months. What's the usual process for onboarding?
+    - I'm considering hiring a developer for a new initiative. Can you provide details on the recruitment process and any project samples?
+    - Hello, I'm interested in hiring a [mobile]{"entity": "hiring_development_type", "value": "Mobile Development"} app developer without specifying a platform. Can you provide details on the expected project duration?
+    - Hello! I'm interested in hiring a [game]{"entity": "hiring_development_type", "value": "Game Development"} developer for a [Unity](hiring_tech_type) project. Can you share profiles of available developers?
+    - Hey, I want to build a development team and need [mobile]{"entity": "hiring_development_type", "value": "Mobile Development"} app developers skilled in [Android](hiring_mobile_platform) and [iOS](hiring_mobile_platform). Can you share details on the recruitment process?
+    - Hi, I need a [backend]{"entity": "hiring_development_type", "value": "Backend Development"} developer for a [Python](hiring_tech_type) project with an anticipated timeline of two months. Can you provide information on the available candidates?
+    - I want to hire a [iOS](hiring_mobile_platform) developer
+    - Hello! I'm in the process of hiring a developer. Can you share some success stories or testimonials from previous clients?
+    - Hi, I'm looking to hire a [React Native](hiring_tech_type) developer for a [mobile app]{"entity": "hiring_development_type", "value": "Mobile Development"} project. What's the expected duration for completion?
+    - I want to recruit an [iOS](hiring_mobile_platform) developer proficient in [Swift](hiring_tech_type) for our development team. What's the usual duration for the recruitment process?
+    - I want to hire an [iOS](hiring_mobile_platform) developer proficient in [Swift](hiring_tech_type) for my project. What's the estimated time commitment?
+    - Hi, I'm looking to hire a [mobile]{"entity": "hiring_development_type", "value": "Mobile Development"} app developer for an [iOS](hiring_mobile_platform) project. What's the estimated timeline for a project of this nature?
+    - Hey, I'm interested in hiring a developer without specific technology requirements. Can you share details on your developer pool and their general skillsets?
+    - Hello, I'm interested in hiring a [mobile]{"entity": "hiring_development_type", "value": "Mobile Development"} app developer. What can you offer?
+- intent: provided_website_category
+  examples: |
+    - Do you develop [news]{"entity": "website_category", "value": "News"} websites?
+    - I want to develop an [blogs]{"entity": "website_category", "value": "Blogs"} website
+    - I'm interested in an [educational]{"entity": "website_category", "value": "Educational"} website
+    - I want to build an [educational]{"entity": "website_category", "value": "Educational"} website
+    - I want to develop an [personal]{"entity": "website_category", "value": "Personal"} website
+    - Can you create an [social media]{"entity": "website_category", "value": "Social Media"} website?
+    - I'm interested in an [e-commerce]{"entity": "website_category", "value": "E-commerce"} website
+    - I want to build an [government]{"entity": "website_category", "value": "Government"} website
+    - [social media]{"entity": "website_category", "value": "Social Media"} website
+    - Could you build an [e-commerce]{"entity": "website_category", "value": "E-commerce"} website?
+    - Is it possible to create an [e-commerce]{"entity": "website_category", "value": "E-commerce"} website?
+    - Could you build an [government]{"entity": "website_category", "value": "Government"} website?
+    - Can you help me with an [business]{"entity": "website_category", "value": "Business"} website?
+    - I'm interested in an [personal]{"entity": "website_category", "value": "Personal"} website
+    - How about an [social media]{"entity": "website_category", "value": "Social Media"} website?
+    - I'm interested in an [news]{"entity": "website_category", "value": "News"} website
+    - Could you build an [business]{"entity": "website_category", "value": "Business"} website?
+    - I'm interested in an [blogs]{"entity": "website_category", "value": "Blogs"} website
+    - How about an [government]{"entity": "website_category", "value": "Government"} website?
+    - I want to develop an [business]{"entity": "website_category", "value": "Business"} website
+    - I want to build an [business]{"entity": "website_category", "value": "Business"} website
+    - Is it possible to create an [personal]{"entity": "website_category", "value": "Personal"} website?
+    - Can you create an [news]{"entity": "website_category", "value": "News"} website?
+    - I want to develop an [e-commerce]{"entity": "website_category", "value": "E-commerce"} website
+    - I need assistance with an [business]{"entity": "website_category", "value": "Business"} website
+    - Could you build an [educational]{"entity": "website_category", "value": "Educational"} website?
+    - I need assistance with an [blogs]{"entity": "website_category", "value": "Blogs"} website
+    - Can you help with an [news]{"entity": "website_category", "value": "News"} website?
+    - I'm looking to create an [educational]{"entity": "website_category", "value": "Educational"} website
+    - Can you create an [e-commerce]{"entity": "website_category", "value": "E-commerce"} website?
+    - How about an [educational]{"entity": "website_category", "value": "Educational"} website?
+    - Can you create an [educational]{"entity": "website_category", "value": "Educational"} website?
+    - Can you create an [business]{"entity": "website_category", "value": "Business"} website?
+    - I'm looking to create an [social media]{"entity": "website_category", "value": "Social Media"} website
+    - Is it possible to create an [blogs]{"entity": "website_category", "value": "Blogs"} website?
+    - Can you help me with an [educational]{"entity": "website_category", "value": "Educational"} website?
+    - [educational]{"entity": "website_category", "value": "Educational"} website
+    - Can you help me with an [personal]{"entity": "website_category", "value": "Personal"} website?
+    - [government]{"entity": "website_category", "value": "Government"} website
+    - Is it possible to create an [government]{"entity": "website_category", "value": "Government"} website?
+    - I'm looking to create an [news]{"entity": "website_category", "value": "News"} website
+    - I want to develop an [government]{"entity": "website_category", "value": "Government"} website
+    - Can you help with an [personal]{"entity": "website_category", "value": "Personal"} website?
+    - I'm looking to create an [government]{"entity": "website_category", "value": "Government"} website
+    - I'm looking to create an [personal]{"entity": "website_category", "value": "Personal"} website
+    - How about an [personal]{"entity": "website_category", "value": "Personal"} website?
+    - I'm looking to create an [business]{"entity": "website_category", "value": "Business"} website
+    - I want to build an [personal]{"entity": "website_category", "value": "Personal"} website
+    - Do you develop [government]{"entity": "website_category", "value": "Government"} websites?
+    - Do you develop [blogs]{"entity": "website_category", "value": "Blogs"} websites?
+    - [news]{"entity": "website_category", "value": "News"} website
+    - I want to build an [news]{"entity": "website_category", "value": "News"} website
+    - [blogs]{"entity": "website_category", "value": "Blogs"} website
+    - Can you help with an [government]{"entity": "website_category", "value": "Government"} website?
+    - Could you build an [social media]{"entity": "website_category", "value": "Social Media"} website?
+    - Is it possible to create an [news]{"entity": "website_category", "value": "News"} website?
+    - I'm interested in an [government]{"entity": "website_category", "value": "Government"} website
+    - [e-commerce]{"entity": "website_category", "value": "E-commerce"} website
+    - Can you help me with an [blogs]{"entity": "website_category", "value": "Blogs"} website?
+    - Do you develop [e-commerce]{"entity": "website_category", "value": "E-commerce"} websites?
+    - I need assistance with an [social media]{"entity": "website_category", "value": "Social Media"} website
+    - Is it possible to create an [educational]{"entity": "website_category", "value": "Educational"} website?
+    - I'm looking to create an [e-commerce]{"entity": "website_category", "value": "E-commerce"} website
+    - Can you help me with an [news]{"entity": "website_category", "value": "News"} website?
+    - I need assistance with an [news]{"entity": "website_category", "value": "News"} website
+    - How about an [e-commerce]{"entity": "website_category", "value": "E-commerce"} website?
+    - I want to build an [blogs]{"entity": "website_category", "value": "Blogs"} website
+    - Could you build an [news]{"entity": "website_category", "value": "News"} website?
+    - Can you help with an [educational]{"entity": "website_category", "value": "Educational"} website?
+    - I need assistance with an [e-commerce]{"entity": "website_category", "value": "E-commerce"} website
+    - Can you help with an [social media]{"entity": "website_category", "value": "Social Media"} website?
+    - I'm interested in an [business]{"entity": "website_category", "value": "Business"} website
+    - Could you build an [personal]{"entity": "website_category", "value": "Personal"} website?
+    - Can you create an [government]{"entity": "website_category", "value": "Government"} website?
+    - Can you help with an [e-commerce]{"entity": "website_category", "value": "E-commerce"} website?
+    - How about an [blogs]{"entity": "website_category", "value": "Blogs"} website?
+    - How about an [business]{"entity": "website_category", "value": "Business"} website?
+    - Can you help me with an [government]{"entity": "website_category", "value": "Government"} website?
+    - Do you develop [personal]{"entity": "website_category", "value": "Personal"} websites?
+    - Can you help with an [business]{"entity": "website_category", "value": "Business"} website?
+    - Could you build an [blogs]{"entity": "website_category", "value": "Blogs"} website?
+    - [personal]{"entity": "website_category", "value": "Personal"} website
+    - I want to develop an [social media]{"entity": "website_category", "value": "Social Media"} website
+- intent: provided_category
+  examples: |
+    - I need assistance with an [business]{"entity": "category", "value": "Business"} app
+    - I want to develop an [Lifestyle](category) app
+    - I want to build an [sports and recreation]{"entity": "category", "value": "Sports and Recreation"} app
+    - Looking for a [social networking]{"entity": "category", "value": "Social Networking"} app development service
+    - [health and fitness]{"entity": "category", "value": "Health and Fitness"}
+    - Can you help me with an [health and fitness]{"entity": "category", "value": "Health and Fitness"} app?
+    - [finance and banking]{"entity": "category", "value": "Finance and Banking"} app
+    - [food and beverage]{"entity": "category", "value": "Food and Beverage"} app
+    - Is it possible to create an [sports and recreation]{"entity": "category", "value": "Sports and Recreation"} app?
+    - How about an [sports and recreation]{"entity": "category", "value": "Sports and Recreation"} app?
+    - I need assistance with an [e-commerce]{"entity": "category", "value": "E-commerce"} app
+    - [ecommerce]{"entity": "category", "value": "E-commerce"} app
+    - I'm looking for an [entertainment]{"entity": "category", "value": "Entertainment"} app
+    - I'm looking for an [utilities]{"entity": "category", "value": "Utilities"} app
+    - [gaming]{"entity": "category", "value": "Gaming"}
+    - Do you develop [food and beverage]{"entity": "category", "value": "Food and Beverage"} apps?
+    - Can you create an [Lifestyle](category) app?
+    - How about an [social networking]{"entity": "category", "value": "Social Networking"} app?
+    - How about an [gaming]{"entity": "category", "value": "Gaming"} app?
+    - Is it possible to create an [music and audio]{"entity": "category", "value": "Music and Audio"} app?
+    - How about an [shopping]{"entity": "category", "value": "E-commerce"} app?
+    - Is it better to hire a team or outsource [social networking]{"entity": "category", "value": "Social Networking"} app development?
+    - I want to build a [social networking]{"entity": "category", "value": "Social Networking"} app
+    - Could you build an [food and beverage]{"entity": "category", "value": "Food and Beverage"} app?
+    - Need assistance with building a [social networking]{"entity": "category", "value": "Social Networking"} app
+    - [finance and banking]{"entity": "category", "value": "Finance and Banking"}
+    - I'm interested in an [business]{"entity": "category", "value": "Business"} app
+    - Interested in developing my own [social network app]{"entity": "category", "value": "Social Networking"}
+    - Can you create an [business]{"entity": "category", "value": "Business"} app?
+    - Can you help me with an [business]{"entity": "category", "value": "Business"} app?
+    - [business]{"entity": "category", "value": "Business"}
+    - Is it possible to create an [business]{"entity": "category", "value": "Business"} app?
+    - I want to develop a [social networking]{"entity": "category", "value": "Social Networking"} app
+    - How about an [Lifestyle](category) app?
+    - I'm interested in a [social networking]{"entity": "category", "value": "Social Networking"} app
+    - I'm interested in an [news and media]{"entity": "category", "value": "News and Media"} app
+    - Is it possible to create an [travel and tourism]{"entity": "category", "value": "Travel and Tourism"} app?
+    - [productivity]{"entity": "category", "value": "Productivity"} app
+    - I need assistance with an [education]{"entity": "category", "value": "Education"} app
+    - I'm looking for an [music and audio]{"entity": "category", "value": "Music and Audio"} app
+    - Can you help with an [gaming]{"entity": "category", "value": "Gaming"} app?
+    - I want to build an [gaming]{"entity": "category", "value": "Gaming"} app
+    - I'm looking for an [social networking]{"entity": "category", "value": "Social Networking"} app
+    - I need assistance with an [utilities]{"entity": "category", "value": "Utilities"} app
+    - Can you create an [finance and banking]{"entity": "category", "value": "Finance and Banking"} app?
+    - Do you develop [business]{"entity": "category", "value": "Business"} apps?
+    - I want to develop an [utilities]{"entity": "category", "value": "Utilities"} app
+    - Can you help me with an [travel and tourism]{"entity": "category", "value": "Travel and Tourism"} app?
+    - How about an [music and audio]{"entity": "category", "value": "Music and Audio"} app?
+    - I'm looking for an [gaming]{"entity": "category", "value": "Gaming"} app
+    - I'm interested in an [gaming]{"entity": "category", "value": "Gaming"} app
+    - Is it possible to create an [productivity]{"entity": "category", "value": "Productivity"} app?
+    - Can you help me with an [gaming]{"entity": "category", "value": "Gaming"} app?
+    - [social networking]{"entity": "category", "value": "Social Networking"}
+    - Can you help me with an [news and media]{"entity": "category", "value": "News and Media"} app?
+    - I need assistance with an [travel and tourism]{"entity": "category", "value": "Travel and Tourism"} app
+    - [Lifestyle](category)
+    - Can you help with an [music and audio]{"entity": "category", "value": "Music and Audio"} app?
+    - Could you build an [education]{"entity": "category", "value": "Education"} app?
+    - I want to develop an [music and audio]{"entity": "category", "value": "Music and Audio"} app
+    - Do you develop [health and fitness]{"entity": "category", "value": "Health and Fitness"} apps?
+    - I'm interested in an [finance and banking]{"entity": "category", "value": "Finance and Banking"} app
+    - Can you help with an [e-commerce]{"entity": "category", "value": "E-commerce"} app?
+    - Do you develop [travel and tourism]{"entity": "category", "value": "Travel and Tourism"} apps?
+    - I want to develop an [education]{"entity": "category", "value": "Education"} app
+    - Can you help me with a [social app]{"entity": "category", "value": "Social Networking"}?
+    - I want to build an [health and fitness]{"entity": "category", "value": "Health and Fitness"} app
+    - I want to develop an [news and media]{"entity": "category", "value": "News and Media"} app
+    - I want to develop an [finance and banking]{"entity": "category", "value": "Finance and Banking"} app
+    - Could you build an [Lifestyle](category) app?
+    - Can you help me with an [music and audio]{"entity": "category", "value": "Music and Audio"} app?
+    - Can you help with an [health and fitness]{"entity": "category", "value": "Health and Fitness"} app?
+    - I want to develop a [social app]{"entity": "category", "value": "Social Networking"}
+    - Need assistance with building a [social network app]{"entity": "category", "value": "Social Networking"}
+    - Can you help with an [productivity]{"entity": "category", "value": "Productivity"} app?
+    - Can you help with an [education]{"entity": "category", "value": "Education"} app?
+    - Is it possible to create an [health and fitness]{"entity": "category", "value": "Health and Fitness"} app?
+    - Examples of popular [social networking]{"entity": "category", "value": "Social Networking"} apps
+    - I want to build an [finance and banking]{"entity": "category", "value": "Finance and Banking"} app
+    - I want to develop an [shopping]{"entity": "category", "value": "E-commerce"} app
+    - [travel and tourism]{"entity": "category", "value": "Travel and Tourism"}
+    - Is it possible to create an [utilities]{"entity": "category", "value": "Utilities"} app?
+    - I want to develop an [business]{"entity": "category", "value": "Business"} app
+    - I want to develop an [food and beverage]{"entity": "category", "value": "Food and Beverage"} app
+    - I'm interested in an [Lifestyle](category) app
+    - I need assistance with an [music and audio]{"entity": "category", "value": "Music and Audio"} app
+    - Can you help with an [finance and banking]{"entity": "category", "value": "Finance and Banking"} app?
+    - [Lifestyle](category) app
+    - Do you develop [social networking]{"entity": "category", "value": "Social Networking"} apps?
+    - How about an [productivity]{"entity": "category", "value": "Productivity"} app?
+    - I want to develop an [gaming]{"entity": "category", "value": "Gaming"} app
+    - I'm looking for a [social app]{"entity": "category", "value": "Social Networking"}
+    - Can you help with a [social networking]{"entity": "category", "value": "Social Networking"} app?
+    - Can you create an [utilities]{"entity": "category", "value": "Utilities"} app?
+    - I want to build an [utilities]{"entity": "category", "value": "Utilities"} app
+    - Could you build an [shopping]{"entity": "category", "value": "E-commerce"} app?
+    - What is the cost of [social networking]{"entity": "category", "value": "Social Networking"} app development?
+    - Can you help with an [Lifestyle](category) app?
+    - How about an [food and beverage]{"entity": "category", "value": "Food and Beverage"} app?
+    - I'm interested in an [e-commerce]{"entity": "category", "value": "E-commerce"} app
+    - Can you help me with an [utilities]{"entity": "category", "value": "Utilities"} app?
+    - [ecommerce]{"entity": "category", "value": "E-commerce"}
+    - I want to build an [music and audio]{"entity": "category", "value": "Music and Audio"} app
+    - Important factors to consider when building a [social networking]{"entity": "category", "value": "Social Networking"} app
+    - [social networking]{"entity": "category", "value": "Social Networking"} app development process explained
+    - Interested in developing my own [social networking]{"entity": "category", "value": "Social Networking"} app
+    - I'm looking for an [productivity]{"entity": "category", "value": "Productivity"} app
+    - Do you develop [Lifestyle](category) apps?
+    - I'm interested in a [social app]{"entity": "category", "value": "Social Networking"}
+    - I need assistance with an [productivity]{"entity": "category", "value": "Productivity"} app
+    - I'm looking for an [education]{"entity": "category", "value": "Education"} app
+    - Can you create an [education]{"entity": "category", "value": "Education"} app?
+    - Can you create an [gaming]{"entity": "category", "value": "Gaming"} app?
+    - [social network app]{"entity": "category", "value": "Social Networking"} development help required
+    - I'm interested in an [education]{"entity": "category", "value": "Education"} app
+    - [social networking]{"entity": "category", "value": "Social Networking"} app development cost estimation
+    - Can you help with an [business]{"entity": "category", "value": "Business"} app?
+    - Do you develop [education]{"entity": "category", "value": "Education"} apps?
+    - Do you develop [productivity]{"entity": "category", "value": "Productivity"} apps?
+    - Can you help me with an [productivity]{"entity": "category", "value": "Productivity"} app?
+    - Can you help with a [social app]{"entity": "category", "value": "Social Networking"}?
+    - Do you develop [entertainment]{"entity": "category", "value": "Entertainment"} apps?
+    - Could you build an [business]{"entity": "category", "value": "Business"} app?
+    - I'm interested in an [health and fitness]{"entity": "category", "value": "Health and Fitness"} app
+    - Any tips for designing a successful [social networking]{"entity": "category", "value": "Social Networking"} app?
+    - Can you help me with an [finance and banking]{"entity": "category", "value": "Finance and Banking"} app?
+    - [entertainment]{"entity": "category", "value": "Entertainment"}
+    - Can you create a custom [social networking]{"entity": "category", "value": "Social Networking"} app?
+    - How about an [education]{"entity": "category", "value": "Education"} app?
+    - Can you create a prototype for a [social networking]{"entity": "category", "value": "Social Networking"} app?
+    - Can you provide a timeline for [social networking]{"entity": "category", "value": "Social Networking"} app development?
+    - How about an [e-commerce]{"entity": "category", "value": "E-commerce"} app?
+    - Can you create an [travel and tourism]{"entity": "category", "value": "Travel and Tourism"} app?
+    - I'm interested in an [food and beverage]{"entity": "category", "value": "Food and Beverage"} app
+    - I'm interested in an [entertainment]{"entity": "category", "value": "Entertainment"} app
+    - Could you build an [news and media]{"entity": "category", "value": "News and Media"} app?
+    - I'm looking for an [health and fitness]{"entity": "category", "value": "Health and Fitness"} app
+    - I'm interested in an [sports and recreation]{"entity": "category", "value": "Sports and Recreation"} app
+    - [sports and recreation]{"entity": "category", "value": "Sports and Recreation"} app
+    - Is it possible to create an [entertainment]{"entity": "category", "value": "Entertainment"} app?
+    - [social app]{"entity": "category", "value": "Social Networking"}
+    - I want to develop an [health and fitness]{"entity": "category", "value": "Health and Fitness"} app
+    - How about an [entertainment]{"entity": "category", "value": "Entertainment"} app?
+    - I need assistance with an [food and beverage]{"entity": "category", "value": "Food and Beverage"} app
+    - Can you help with an [utilities]{"entity": "category", "value": "Utilities"} app?
+    - Could you build an [utilities]{"entity": "category", "value": "Utilities"} app?
+    - I'm looking for an [finance and banking]{"entity": "category", "value": "Finance and Banking"} app
+    - Could you build an [gaming]{"entity": "category", "value": "Gaming"} app?
+    - I want to develop an [productivity]{"entity": "category", "value": "Productivity"} app
+    - Can you help me with an [education]{"entity": "category", "value": "Education"} app?
+    - I want to build an [e-commerce]{"entity": "category", "value": "E-commerce"} app
+    - Can you help with an [shopping]{"entity": "category", "value": "E-commerce"} app?
+    - How about an [finance and banking]{"entity": "category", "value": "Finance and Banking"} app?
+    - Can you create an [e-commerce]{"entity": "category", "value": "E-commerce"} app?
+    - [news and media]{"entity": "category", "value": "News and Media"}
+    - Is it possible to create a [social app]{"entity": "category", "value": "Social Networking"}?
+    - I need assistance with an [gaming]{"entity": "category", "value": "Gaming"} app
+    - Can you recommend a [social networking]{"entity": "category", "value": "Social Networking"} app development company?
+    - Do you develop [social apps]{"entity": "category", "value": "Social Networking"}?
+    - Do you develop [e-commerce]{"entity": "category", "value": "E-commerce"} apps?
+    - Could you build an [entertainment]{"entity": "category", "value": "Entertainment"} app?
+    - [social networking]{"entity": "category", "value": "Social Networking"} app development help required
+    - I need assistance with a [social app]{"entity": "category", "value": "Social Networking"}
+    - [music and audio]{"entity": "category", "value": "Music and Audio"} app
+    - [health and fitness]{"entity": "category", "value": "Health and Fitness"} app
+    - Can you help with an [food and beverage]{"entity": "category", "value": "Food and Beverage"} app?
+    - Could you build an [productivity]{"entity": "category", "value": "Productivity"} app?
+    - Is it possible to create an [news and media]{"entity": "category", "value": "News and Media"} app?
+    - [productivity]{"entity": "category", "value": "Productivity"}
+    - [music and audio]{"entity": "category", "value": "Music and Audio"}
+    - I want to develop an [entertainment]{"entity": "category", "value": "Entertainment"} app
+    - [utilities]{"entity": "category", "value": "Utilities"}
+    - [education]{"entity": "category", "value": "Education"} app
+    - I need assistance with an [social networking]{"entity": "category", "value": "Social Networking"} app
+    - [e-commerce]{"entity": "category", "value": "E-commerce"}
+    - [education]{"entity": "category", "value": "Education"}
+    - How about an [business]{"entity": "category", "value": "Business"} app?
+    - Is it possible to monetize a [social networking]{"entity": "category", "value": "Social Networking"} app?
+    - Could you build a [social networking]{"entity": "category", "value": "Social Networking"} app?
+    - Are there any good [social networking]{"entity": "category", "value": "Social Networking"} app developers?
+    - I need assistance with an [finance and banking]{"entity": "category", "value": "Finance and Banking"} app
+    - [utilities]{"entity": "category", "value": "Utilities"} app
+    - [entertainment]{"entity": "category", "value": "Entertainment"} app
+    - How long does it take to develop a [social networking]{"entity": "category", "value": "Social Networking"} app?
+    - I'm looking for an [travel and tourism]{"entity": "category", "value": "Travel and Tourism"} app
+    - I'm interested in an [music and audio]{"entity": "category", "value": "Music and Audio"} app
+    - What are the must-have features for a [social networking]{"entity": "category", "value": "Social Networking"} app?
+    - Is it possible to create an [e-commerce]{"entity": "category", "value": "E-commerce"} app?
+    - I want to build an [business]{"entity": "category", "value": "Business"} app
+    - Could you build an [health and fitness]{"entity": "category", "value": "Health and Fitness"} app?
+    - How do I market my [social networking]{"entity": "category", "value": "Social Networking"} app?
+    - Could you build an [sports and recreation]{"entity": "category", "value": "Sports and Recreation"} app?
+    - I want to build an [food and beverage]{"entity": "category", "value": "Food and Beverage"} app
+    - I'm looking for an [business]{"entity": "category", "value": "Business"} app
+    - Challenges in [social networking]{"entity": "category", "value": "Social Networking"} app development
+    - Is it possible to create an [shopping]{"entity": "category", "value": "E-commerce"} app?
+    - I'm interested in an [utilities]{"entity": "category", "value": "Utilities"} app
+    - I need assistance with an [sports and recreation]{"entity": "category", "value": "Sports and Recreation"} app
+    - Can you help me with an [e-commerce]{"entity": "category", "value": "E-commerce"} app?
+    - I need assistance with an [Lifestyle](category) app
+    - I want to develop an [e-commerce]{"entity": "category", "value": "E-commerce"} app
+    - Can you help me with an [food and beverage]{"entity": "category", "value": "Food and Beverage"} app?
+    - I want to build an [entertainment]{"entity": "category", "value": "Entertainment"} app
+    - How about an [news and media]{"entity": "category", "value": "News and Media"} app?
+    - Can you help me with an [entertainment]{"entity": "category", "value": "Entertainment"} app?
+    - I'm interested in an [productivity]{"entity": "category", "value": "Productivity"} app
+    - Can you help me with an [sports and recreation]{"entity": "category", "value": "Sports and Recreation"} app?
+    - Can you help with an [entertainment]{"entity": "category", "value": "Entertainment"} app?
+    - Do you develop [music and audio]{"entity": "category", "value": "Music and Audio"} apps?
+    - I'm looking for an [news and media]{"entity": "category", "value": "News and Media"} app
+    - Can you create an [productivity]{"entity": "category", "value": "Productivity"} app?
+    - I want to develop an [sports and recreation]{"entity": "category", "value": "Sports and Recreation"} app
+    - [social networking]{"entity": "category", "value": "Social Networking"} app development for iOS and Android
+    - Is it possible to create an [gaming]{"entity": "category", "value": "Gaming"} app?
+    - Can you create a [social app]{"entity": "category", "value": "Social Networking"}?
+    - Do you develop [news and media]{"entity": "category", "value": "News and Media"} apps?
+    - Can you help with an [sports and recreation]{"entity": "category", "value": "Sports and Recreation"} app?
+    - I need assistance with an [entertainment]{"entity": "category", "value": "Entertainment"} app
+    - Can you create an [music and audio]{"entity": "category", "value": "Music and Audio"} app?
+- synonym: Social Networking
+  examples: |
+    - social networking
+    - social app
+    - social apps
+    - social network app
+- synonym: Education
+  examples: |
+    - education
+- synonym: Productivity
+  examples: |
+    - productivity
+- synonym: Health and Fitness
+  examples: |
+    - health and fitness
+- synonym: Gaming
+  examples: |
+    - gaming
+- synonym: Travel and Tourism
+  examples: |
+    - travel and tourism
+- synonym: Entertainment
+  examples: |
+    - entertainment
+- synonym: News and Media
+  examples: |
+    - news and media
+- synonym: Utilities
+  examples: |
+    - utilities
+- synonym: Finance and Banking
+  examples: |
+    - finance and banking
+- synonym: Food and Beverage
+  examples: |
+    - food and beverage
+- synonym: Music and Audio
+  examples: |
+    - music and audio
+- synonym: Sports and Recreation
+  examples: |
+    - sports and recreation
+- synonym: Business
+  examples: |
+    - business
+- synonym: E-commerce
+  examples: |
+    - e-commerce
+    - shopping
+    - ecommerce
+- synonym: Web Development
+  examples: |
+    - web
+- synonym: Mobile Development
+  examples: |
+    - mobile
+    - mobile app
+- synonym: Flutter
+  examples: |
+    - flutter
+- synonym: Android
+  examples: |
+    - android
+- synonym: Full-stack
+  examples: |
+    - full-stack
+- synonym: Front-end Development
+  examples: |
+    - front-end
+- synonym: Backend Development
+  examples: |
+    - backend project
+    - backend
+- synonym: Machine Learning
+  examples: |
+    - machine learning
+- synonym: DevOps
+  examples: |
+    - DevOps engineer
+- synonym: Game Development
+  examples: |
+    - game
+- synonym: Kotlin
+  examples: |
+    - kotlin
+- synonym: ASP.NET
+  examples: |
+    - .net
+    - dot net
+    - .NET
+    - Dot Net
+- synonym: Node.js
+  examples: |
+    - node.js
+    - node js
+- synonym: PHP
+  examples: |
+    - php
+- synonym: Laravel
+  examples: |
+    - laravel
+- synonym: React
+  examples: |
+    - React JS
+    - react.js
+    - react js
+    - react
+- synonym: Angular
+  examples: |
+    - angular.js
+- synonym: Personal
+  examples: |
+    - personal
+- synonym: News
+  examples: |
+    - news
+- synonym: Blogs
+  examples: |
+    - blogs
+- synonym: Social Media
+  examples: |
+    - social media
+- synonym: Educational
+  examples: |
+    - educational
+- synonym: Government
+  examples: |
+    - government

@@ -1,0 +1,44 @@
+version: "3.1"
+
+nlu:
+
+  - intent: blogs
+    examples: |
+      - Show me blogs.
+      - Your blog posts?
+      - Blog examples.
+      - Could you please provide me with a list of your blog articles?
+      - I'm interested in reading your blog content. Can you share some of your recent posts?
+      - Is there a collection of blog posts I can explore on your website?
+      - Can you show me your Blogs?
+      - Please share your blog articles.
+      - blog posts display
+      - I want to read your blog.
+      - What topics do your blog posts cover?
+      - Could you give me some insights into your blog content?
+      - I'm looking for informative articles. Can you direct me to your blog?
+      - Do you have any recent blog posts I can read?
+      - Share some details about the blogs you've published.
+      - I'd like to see examples of your blog articles.
+      - Can you provide a list of your popular blog posts?
+      - Where can I find your blog section on the website?
+      - What are some interesting topics covered in your blog?
+      - I'm interested in your blog. How can I access it?
+      - article on mobile development
+      - article on android development
+      - article on web development 
+      - show me article on development
+      - Show me articles.
+      - Your articles?
+      - Article examples.
+      - Could you please provide me with a list of your articles?
+      - I'm interested in reading your article content. Can you share some of your recent articles?
+      - Is there a collection of articles I can explore on your website?
+      - Can you show me your Articles?
+      - Please share your articles.
+      - article posts display
+      - I want to read your articles.
+      - Can you provide a list of your popular articles?
+      - Where can I find your article section on the website?
+      - What are some interesting topics covered in your articles?
+      - I'm interested in your articles. How can I access them?

@@ -1,0 +1,238 @@
+version: "3.1"
+
+nlu:
+  - intent: greet
+    examples: |
+      - hey
+      - hy
+      - heya
+      - hello
+      - hi
+      - hie
+      - howdy
+      - hola
+      - hiiii
+      - heyyyyy
+      - kem choo
+      - kem chee
+      - hello there
+      - good morning
+      - good evening
+      - moin
+      - hey there
+      - let's go
+      - hey dude
+      - goodmorning
+      - goodevening
+      - good afternoon
+
+  - intent: goodbye
+    examples: |
+      - cu
+      - good by
+      - cee you later
+      - good night
+      - bye
+      - goodbye
+      - have a nice day
+      - see you around
+      - bye bye
+      - see you later
+
+#  - intent: affirm
+#    examples: |
+#      - yes
+#      - y
+#      - indeed
+#      - of course
+#      - that sounds good
+#      - correct
+#
+#  - intent: deny
+#    examples: |
+#      - no
+#      - n
+#      - never
+#      - I don't think so
+#      - don't like that
+#      - no way
+#      - not really
+
+  - intent: not_sure
+    examples: |
+      - i am not sure
+      - not sure
+      - not sure yet
+      - i dont know
+      - not clear yet
+      - NOT SURE
+      - I AM NOT SURE
+      - DONT KNOW YET
+      - dont know yet
+      - don't know
+      - i'm not sure
+      - not sure about that
+      - any one you like
+      - you decide
+      - i am confused
+      - confused about that
+      - not sure you decide
+
+  - intent: bot_challenge
+    examples: |
+      - are you a bot?
+      - are you a human?
+      - am I talking to a bot?
+      - am I talking to a human?
+      - who are you
+      - what is you name
+      - are you a AI
+
+
+  - intent: free_trial
+    examples: |
+      - i want a free trial
+      - i want to know about the free trial 
+      - is there any free trial 
+      - can i use it for free ?
+      - free trial 
+
+  - intent: pricing
+    examples: |
+      - i want to know the price
+      - whats the pricing 
+      - do i have to pay for this  
+      - pricing 
+
+  - intent: main_menu
+    examples: |
+      - Go back to main menu
+      - main menu
+      - back to menu
+
+  - intent: how_are_you
+    examples: |
+      - How are you today?
+      - How are you?
+      - What's up?
+      - How's it going?
+      - How are you feeling?
+      - What's new?
+      - You good?
+      - How's it?
+      - Everything okay?
+      - How are you?
+      - What's going on?
+
+  - intent: who_made_you
+    examples: |
+      - Who created you?
+      - Who made you?
+      - What's your origin?
+      - Who's your creator?
+      - How were you made?
+      - By whom were you developed?
+      - What's the story behind your creation?
+      - Who's responsible for making you?
+      - Who brought you into existence?
+      - What genius is behind your design?
+      - Can you tell me who made you?
+
+  - intent: give_information
+    examples: |
+      - What kind of information do you have?
+      - What info do you have?
+      - What can you do
+      - Tell me what you know.
+      - what can i ask you.
+      - What sort of details can you provide?
+      - Give me some information, please.
+      - What's in your knowledge base?
+      - Share some facts or details with me.
+      - Can you provide me with information on [specific topic]?
+      - Tell me something useful or interesting.
+      - Give me some insights or data.
+      - I'm curious—can you share some info with me?
+      - I'm in learning mode. What kind of details can you throw my way?
+      - Spill the beans! What information do you have in your virtual brain?
+      - Let's chat! What information do you have that might pique my interest?
+
+  - intent: contact_us
+    examples: |
+      - How can I contact you guys.
+      - how to contact you.
+      - i want to connect with your company
+      - can you connect me with support
+      - customer support 
+      - contact us
+      - how can I reach to head
+      - i want to talk to expert
+      - how can I reach out
+      - what is you contact info
+      - contact information
+      - can you give me your contact details so I can call the company
+      - I need to get in touch with your team.
+      - Please provide me with your contact information.
+      - How do I contact customer service?
+      - I'd like to speak with someone from your company.
+      - What's the best way to reach your support team?
+      - I have a question; how can I reach out to you?
+      - I'm looking for your contact details.
+      - Could you share the contact info for your company?
+      - I want to connect with a representative.
+      - How can I get in contact with your sales department?
+      - I need assistance, how can I contact you?
+      - What are the available channels for customer support?
+      - I'm interested in your services; how can I contact you?
+      - Can you provide me with the contact details of your head office?
+      - I'd like to schedule a meeting; how can I do that?
+      - I need help, what's the best way to reach your team?
+      - Please share your contact details so I can get in touch.
+      - How can I talk to a specialist or expert from your company?
+      - I have an inquiry; can you give me your contact info?
+      - I want to reach out to your technical support team.
+
+  - intent: submit_form
+    examples: |
+      - Yes that's correct
+      - yes submit
+      - yes
+      - y
+      - indeed
+      - of course
+      - that sounds good
+      - correct   
+      - submit
+      - submit form
+      - yes send it 
+      - send it
+
+  - intent: restart_form
+    examples: |
+      - No
+      - Restart
+      - No I want to restart
+      - No that's incorrect
+      - incorrect
+      - restart
+      - resubmit
+      - no, restart  
+      - try again
+      - retry
+      - no, retry
+
+
+  - intent: provided_email
+    examples: |
+      - my email is test@gmail.com
+      - abc@gmail.com
+      - john@yahoo.com
+      - sure, here is my email natty@hotmail.com
+      - okay, 123.kt77@gmail.com
+      - my email is jonny@digimonksolutions.com
+      - email: bravo@hotmail.com
+      - vijay@digimonk.in
+      - my email is test@xyz.abc
+      - here is my email abds@efg.qwe
+
+    

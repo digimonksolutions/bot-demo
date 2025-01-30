@@ -1,0 +1,133 @@
+version: "3.1"
+
+nlu:
+
+  - intent: provided_website_category
+    examples: |
+      - I'm looking to create an [personal]{"entity":"website_category","value":"Personal"} website
+      - Can you help me with an [personal]{"entity":"website_category","value":"Personal"} website?
+      - I need assistance with an [personal]{"entity":"website_category","value":"Personal"} website
+      - Is it possible to create an [personal]{"entity":"website_category","value":"Personal"} website?
+      - I want to build an [personal]{"entity":"website_category","value":"Personal"} website
+      - Do you develop [personal]{"entity":"website_category","value":"Personal"} websites?
+      - Can you create an [personal]{"entity":"website_category","value":"Personal"} website?
+      - I'm interested in an [personal]{"entity":"website_category","value":"Personal"} website
+      - Could you build an [personal]{"entity":"website_category","value":"Personal"} website?
+      - I want to develop an [personal]{"entity":"website_category","value":"Personal"} website
+      - Is it possible to create an [personal]{"entity":"website_category","value":"Personal"} website?
+      - Can you help with an [personal]{"entity":"website_category","value":"Personal"} website?
+      - I'm interested in an [personal]{"entity":"website_category","value":"Personal"} website
+      - How about an [personal]{"entity":"website_category","value":"Personal"} website?
+      - [personal]{"entity":"website_category","value":"Personal"} website
+      
+      - I'm looking to create an [business]{"entity":"website_category","value":"Business"} website
+      - Can you help me with an [business]{"entity":"website_category","value":"Business"} website?
+      - I need assistance with an [business]{"entity":"website_category","value":"Business"} website
+      - Is it possible to create an [business]{"entity":"website_category","value":"Business"} website?
+      - I want to build an [business]{"entity":"website_category","value":"Business"} website
+      - Do you develop [business]{"entity":"website_category","value":"Business"} websites?
+      - Can you create an [business]{"entity":"website_category","value":"Business"} website?
+      - I'm interested in an [business]{"entity":"website_category","value":"Business"} website
+      - Could you build an [business]{"entity":"website_category","value":"Business"} website?
+      - I want to develop an [business]{"entity":"website_category","value":"Business"} website
+      - Is it possible to create an [business]{"entity":"website_category","value":"Business"} website?
+      - Can you help with an [business]{"entity":"website_category","value":"Business"} website?
+      - I'm interested in an [business]{"entity":"website_category","value":"Business"} website
+      - How about an [business]{"entity":"website_category","value":"Business"} website?
+      - [business]{"entity":"website_category","value":"Business"} website
+      
+      - I'm looking to create an [news]{"entity":"website_category","value":"News"} website
+      - Can you help me with an [news]{"entity":"website_category","value":"News"} website?
+      - I need assistance with an [news]{"entity":"website_category","value":"News"} website
+      - Is it possible to create an [news]{"entity":"website_category","value":"News"} website?
+      - I want to build an [news]{"entity":"website_category","value":"News"} website
+      - Do you develop [news]{"entity":"website_category","value":"News"} websites?
+      - Can you create an [news]{"entity":"website_category","value":"News"} website?
+      - I'm interested in an [news]{"entity":"website_category","value":"News"} website
+      - Could you build an [news]{"entity":"website_category","value":"News"} website?
+      - I want to develop an [news]{"entity":"website_category","value":"News"} website
+      - Is it possible to create an [news]{"entity":"website_category","value":"News"} website?
+      - Can you help with an [news]{"entity":"website_category","value":"News"} website?
+      - I'm interested in an [news]{"entity":"website_category","value":"News"} website
+      - How about an [news]{"entity":"website_category","value":"News"} website?
+      - [news]{"entity":"website_category","value":"News"} website
+      
+      - I'm looking to create an [blogs]{"entity":"website_category","value":"Blogs"} website
+      - Can you help me with an [blogs]{"entity":"website_category","value":"Blogs"} website?
+      - I need assistance with an [blogs]{"entity":"website_category","value":"Blogs"} website
+      - Is it possible to create an [blogs]{"entity":"website_category","value":"Blogs"} website?
+      - I want to build an [blogs]{"entity":"website_category","value":"Blogs"} website
+      - Do you develop [blogs]{"entity":"website_category","value":"Blogs"} websites?
+      - Can you create an [blogs]{"entity":"website_category","value":"Blogs"} website?
+      - I'm interested in an [blogs]{"entity":"website_category","value":"Blogs"} website
+      - Could you build an [blogs]{"entity":"website_category","value":"Blogs"} website?
+      - I want to develop an [blogs]{"entity":"website_category","value":"Blogs"} website
+      - Is it possible to create an [blogs]{"entity":"website_category","value":"Blogs"} website?
+      - Can you help with an [blogs]{"entity":"website_category","value":"Blogs"} website?
+      - I'm interested in an [blogs]{"entity":"website_category","value":"Blogs"} website
+      - How about an [blogs]{"entity":"website_category","value":"Blogs"} website?
+      - [blogs]{"entity":"website_category","value":"Blogs"} website
+      
+      - I'm looking to create an [social media]{"entity":"website_category","value":"Social Media"} website
+      - Can you help me with an [social media]{"entity":"website_category","value":"Social Media"} website?
+      - I need assistance with an [social media]{"entity":"website_category","value":"Social Media"} website
+      - Is it possible to create an [social media]{"entity":"website_category","value":"Social Media"} website?
+      - I want to build an [social media]{"entity":"website_category","value":"Social Media"} website
+      - Do you develop [social media]{"entity":"website_category","value":"Social Media"} websites?
+      - Can you create an [social media]{"entity":"website_category","value":"Social Media"} website?
+      - I'm interested in an [social media]{"entity":"website_category","value":"Social Media"} website
+      - Could you build an [social media]{"entity":"website_category","value":"Social Media"} website?
+      - I want to develop an [social media]{"entity":"website_category","value":"Social Media"} website
+      - Is it possible to create an [social media]{"entity":"website_category","value":"Social Media"} website?
+      - Can you help with an [social media]{"entity":"website_category","value":"Social Media"} website?
+      - I'm interested in an [social media]{"entity":"website_category","value":"Social Media"} website
+      - How about an [social media]{"entity":"website_category","value":"Social Media"} website?
+      - [social media]{"entity":"website_category","value":"Social Media"} website
+      
+      - I'm looking to create an [educational]{"entity":"website_category","value":"Educational"} website
+      - Can you help me with an [educational]{"entity":"website_category","value":"Educational"} website?
+      - I need assistance with an [educational]{"entity":"website_category","value":"Educational"} website
+      - Is it possible to create an [educational]{"entity":"website_category","value":"Educational"} website?
+      - I want to build an [educational]{"entity":"website_category","value":"Educational"} website
+      - Do you develop [educational]{"entity":"website_category","value":"Educational"} websites?
+      - Can you create an [educational]{"entity":"website_category","value":"Educational"} website?
+      - I'm interested in an [educational]{"entity":"website_category","value":"Educational"} website
+      - Could you build an [educational]{"entity":"website_category","value":"Educational"} website?
+      - I want to develop an [educational]{"entity":"website_category","value":"Educational"} website
+      - Is it possible to create an [educational]{"entity":"website_category","value":"Educational"} website?
+      - Can you help with an [educational]{"entity":"website_category","value":"Educational"} website?
+      - I'm interested in an [educational]{"entity":"website_category","value":"Educational"} website
+      - How about an [educational]{"entity":"website_category","value":"Educational"} website?
+      - [educational]{"entity":"website_category","value":"Educational"} website
+      
+      - I'm looking to create an [government]{"entity":"website_category","value":"Government"} website
+      - Can you help me with an [government]{"entity":"website_category","value":"Government"} website?
+      - I need assistance with an [government]{"entity":"website_category","value":"Government"} website
+      - Is it possible to create an [government]{"entity":"website_category","value":"Government"} website?
+      - I want to build an [government]{"entity":"website_category","value":"Government"} website
+      - Do you develop [government]{"entity":"website_category","value":"Government"} websites?
+      - Can you create an [government]{"entity":"website_category","value":"Government"} website?
+      - I'm interested in an [government]{"entity":"website_category","value":"Government"} website
+      - Could you build an [government]{"entity":"website_category","value":"Government"} website?
+      - I want to develop an [government]{"entity":"website_category","value":"Government"} website
+      - Is it possible to create an [government]{"entity":"website_category","value":"Government"} website?
+      - Can you help with an [government]{"entity":"website_category","value":"Government"} website?
+      - I'm interested in an [government]{"entity":"website_category","value":"Government"} website
+      - How about an [government]{"entity":"website_category","value":"Government"} website?
+      - [government]{"entity":"website_category","value":"Government"} website
+      
+      - I'm looking to create an [e-commerce]{"entity":"website_category","value":"E-commerce"} website
+      - Can you help me with an [e-commerce]{"entity":"website_category","value":"E-commerce"} website?
+      - I need assistance with an [e-commerce]{"entity":"website_category","value":"E-commerce"} website
+      - Is it possible to create an [e-commerce]{"entity":"website_category","value":"E-commerce"} website?
+      - I want to build an [e-commerce]{"entity":"website_category","value":"E-commerce"} website
+      - Do you develop [e-commerce]{"entity":"website_category","value":"E-commerce"} websites?
+      - Can you create an [e-commerce]{"entity":"website_category","value":"E-commerce"} website?
+      - I'm interested in an [e-commerce]{"entity":"website_category","value":"E-commerce"} website
+      - Could you build an [e-commerce]{"entity":"website_category","value":"E-commerce"} website?
+      - I want to develop an [e-commerce]{"entity":"website_category","value":"E-commerce"} website
+      - Is it possible to create an [e-commerce]{"entity":"website_category","value":"E-commerce"} website?
+      - Can you help with an [e-commerce]{"entity":"website_category","value":"E-commerce"} website?
+      - I'm interested in an [e-commerce]{"entity":"website_category","value":"E-commerce"} website
+      - How about an [e-commerce]{"entity":"website_category","value":"E-commerce"} website?
+      - [e-commerce]{"entity":"website_category","value":"E-commerce"} website

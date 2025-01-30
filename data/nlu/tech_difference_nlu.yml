@@ -1,0 +1,163 @@
+version: "3.1"
+
+nlu:
+  - intent: native_vs_cross_platform
+    examples: |
+      - what is the difference between native and cross platform apps
+      - which one is better native app or a cross platform app
+      - Can you explain the distinctions between native and cross platform applications?
+      - I'm a bit confused about native and cross platform apps. Could you help me understand the differences?
+      - What are the pros and cons of choosing a native app over a cross platform one?
+      - Could you provide some insights into the strengths and weaknesses of native and cross platform mobile development?
+      - I'm trying to decide between a native app and a cross platform app for my project. What factors should I consider?
+      - Which type of app is generally more cost-effective – native or cross platform?
+      - What considerations should I keep in mind when choosing between a native and cross platform solution for my mobile app?
+      - I've heard native apps offer better performance, but cross platform apps seem more convenient. Can you elaborate on these points?
+      - What are the key factors that make native development preferable in certain situations compared to cross platform development?
+      - Is there a significant difference in user experience between native and cross platform mobile applications?
+      - When should I opt for a native app, and when is it better to go for a cross platform solution?
+      - In terms of development time, are there noticeable discrepancies between native and cross platform app development?
+      - What impact does the choice between native and cross platform have on app maintenance and updates?
+      - Can you highlight scenarios where a native app is a clear choice over a cross platform app, and vice versa?
+      - How do native and cross platform apps differ in terms of accessing device features and APIs?
+      - Are there specific industries or use cases where one should lean more towards native development or cross platform development?
+      - I've heard about cross platform frameworks like Flutter and React Native. How do they compare to native development in terms of performance and user experience?
+      - Are there any notable success stories or case studies that showcase the advantages of either native or cross platform app development?
+      - What factors should I weigh when making the decision between native and cross platform app development?
+      - Can you provide guidance on selecting the right approach – native or cross platform – based on the project's long-term goals?
+      - I'm exploring options for my mobile app. Could you share insights on whether native or cross platform development aligns better with scalability requirements?
+      - When considering the development of a new app, how do I determine whether a native or cross platform approach is more suitable?
+      - In terms of future-proofing my app, should I lean towards native development or opt for a cross platform solution?
+      - As a developer, how do I assess whether the specific features I need are better implemented in a native or cross platform context?
+      - When aiming for a seamless user experience, does the choice between native and cross platform significantly impact the overall design and feel of the app?
+      - I want to make sure my app integrates smoothly with various devices. Does native development or a cross platform approach offer better compatibility?
+      - Considering market trends, are there any indicators that suggest a preference for native or cross platform apps in certain regions or industries?
+      - For a startup with limited resources, would you recommend prioritizing native development or opting for the efficiency of cross platform development?
+      - Native or cross platform?
+      - Which is better, native or cross platform?
+      - Pros and cons of native vs. cross platform?
+      - Choosing between native and cross platform?
+      - Native app or cross platform app?
+      - Native vs. cross platform for my project?
+      - Thoughts on native vs. cross platform?
+      - Factors for native or cross platform?
+      - Native or cross platform for startup?
+      - Differences: native or cross platform?
+
+  - intent: flutter_vs_react_native
+    examples: |
+      - what is the difference between flutter apps and react native apps
+      - What distinguishes Flutter apps from React Native apps?
+      - Can you explain the differences between Flutter and React Native development?
+      - When deciding between Flutter and React Native, what factors should I consider?
+      - Are there specific advantages of using Flutter over React Native or vice versa?
+      - I'm exploring cross-platform frameworks. What sets Flutter apart from React Native in terms of development?
+      - In terms of performance, how do Flutter and React Native compare?
+      - What are the key considerations when choosing between Flutter and React Native for mobile app development?
+      - Can you provide insights into the community support and ecosystem for Flutter versus React Native?
+      - Are there any notable apps or companies that have successfully used Flutter or React Native?
+      - What is the learning curve like for Flutter compared to React Native?
+      - Are there situations where Flutter is a better fit than React Native, and vice versa?
+      - What are the differences in terms of UI/UX capabilities between Flutter and React Native?
+      - For a developer familiar with JavaScript, does React Native offer any advantages over Flutter?
+      - How do hot reload features in Flutter and React Native impact the development workflow?
+      - In terms of third-party library support, do Flutter and React Native differ significantly?
+      - What kind of projects are better suited for Flutter, and which ones are better suited for React Native?
+      - What are the performance implications of using Flutter or React Native for resource-intensive applications?
+      - Can you provide a brief comparison of the development tools and IDE support for Flutter and React Native?
+      - How do Flutter and React Native handle native module integrations and accessing device features?
+      - Flutter vs. React Native?
+      - Differences between Flutter and React Native?
+      - Flutter or React Native for cross-platform?
+      - Pros and cons: Flutter vs. React Native?
+      - Choosing Flutter or React Native?
+      - React Native or Flutter for mobile apps?
+      - Flutter versus React Native?
+      - Performance: Flutter or React Native?
+      - Quick comparison: Flutter vs. React Native?
+      - Which is better: Flutter or React Native?
+      - Flutter and React Native differences?
+      - Considerations: Flutter or React Native?
+      - Flutter or React Native for beginners?
+      - React Native or Flutter learning curve?
+      - Flutter or React Native for UI design?
+      - Native integrations: Flutter vs. React Native?
+      - Development tools: Flutter or React Native?
+      - React Native or Flutter community support?
+      - App examples: Flutter vs. React Native?
+      - Flutter or React Native for small projects?
+      - I'm a developer exploring cross-platform options. Can you help me understand the real-world differences between Flutter and React Native?
+      - I've heard good things about both Flutter and React Native. How do I decide which one is the better fit for my mobile app project?
+      - As someone new to mobile app development, I'm curious about Flutter and React Native. Can you break down their strengths and weaknesses for me?
+      - I'm working on a startup project, and I'm torn between Flutter and React Native. What considerations should I keep in mind when making a choice?
+      - I've been using React Native for a while, but Flutter seems intriguing. What advantages does Flutter offer that might make it worth switching?
+      - Performance is a crucial factor for my app. Can you provide insights into how Flutter and React Native compare in terms of speed and efficiency?
+      - I'm a UI/UX designer looking to understand the impact of choosing Flutter or React Native on the overall design process. Any insights?
+      - What success stories or case studies can you share about apps developed with Flutter or React Native?
+      - How does the developer community play a role in the decision between Flutter and React Native? Is one more supportive than the other?
+      - I'm concerned about future updates and support. Are there any historical trends that suggest one framework is more future-proof than the other?
+      - Considering my background in JavaScript, would React Native be a more seamless transition for me, or is Flutter equally accessible?
+      - I'm looking for a framework that offers smooth integrations with native modules. Can you shed light on how Flutter and React Native handle this aspect?
+      - I've heard Flutter has a hot reload feature. How does it compare to React Native's hot reload, and what impact does it have on development efficiency?
+      - As a solo developer, I'm interested in the learning curve of both Flutter and React Native. Which one is more beginner-friendly?
+      - What kind of projects or industries are particularly well-suited for Flutter, and which ones might benefit more from using React Native?
+
+  - intent: wordpress_vs_shopify
+    examples: |
+      - which one is better for online store: wordpress or shopify?
+      - I'm setting up an online store, and I'm torn between WordPress and Shopify. Any advice on which one is better suited for my needs?
+      - For an e-commerce website, should I go with WordPress or Shopify? What are the key differences between the two?
+      - I've heard about WordPress and Shopify for online stores. Can you help me understand which one offers better features and flexibility?
+      - Considering ease of use, would you recommend WordPress or Shopify for a beginner looking to start an online business?
+      - I'm looking to migrate my online store to a new platform. What advantages does WordPress have over Shopify, and vice versa?
+      - As a small business owner, which platform, WordPress or Shopify, is more cost-effective for managing and growing my online store?
+      - I need to integrate a variety of plugins for my online store. Does WordPress or Shopify provide better support and compatibility for third-party extensions?
+      - Are there any notable examples of successful online stores using WordPress or Shopify that I can look at for inspiration?
+      - When it comes to customization options, can you explain how WordPress and Shopify differ for creating a unique online store experience?
+      - I've read about the importance of SEO for online businesses. Between WordPress and Shopify, which one is more SEO-friendly?
+      - For a non-technical person, which platform, WordPress or Shopify, offers a more straightforward setup process for launching an online store?
+      - What are the ongoing maintenance and security considerations when choosing between WordPress and Shopify for an online store?
+      - Are there specific industries or types of products that are better suited for a WordPress-based online store compared to a Shopify one, and vice versa?
+      - I've heard about the scalability challenges with some e-commerce platforms. How does the scalability of WordPress compare to that of Shopify?
+      - In terms of payment gateways and transaction fees, is there a significant difference between using WordPress and Shopify for an online store?
+      - What role does customer support play in the decision between WordPress and Shopify for managing an online store?
+      - Can you provide insights into the overall user experience for both customers and store owners on WordPress and Shopify?
+      - When it comes to mobile responsiveness and performance, how do WordPress and Shopify stack up for online stores?
+      - I'm currently using WordPress for my blog and considering adding an online store. Should I expand my WordPress site or use Shopify separately?
+      - I'm thinking about starting an online store, and I'm stuck between WordPress and Shopify. Can you help me figure out which one suits my business better?
+      - I'm not super tech-savvy, but I want to sell products online. Between WordPress and Shopify, which one is more user-friendly for someone like me?
+      - I've been researching platforms for my online store, and it seems like WordPress and Shopify are popular choices. Any insights on which one is a better fit?
+      - I'm a small business owner with limited time. Should I invest in WordPress or Shopify for my online store, considering ease of setup and management?
+      - I've heard great things about both WordPress and Shopify, but I'm still unsure which one aligns better with my vision for an online store. Can you provide guidance?
+      - My online store is growing, and I need a platform that scales well. Between WordPress and Shopify, which one is more accommodating for business expansion?
+      - I value customization for my online store. Can you share your thoughts on how flexible WordPress and Shopify are in terms of design and features?
+      - Cost is a factor for me. In your opinion, which platform, WordPress or Shopify, offers better value for money for someone starting an online store?
+      - I'm looking to integrate various tools and plugins into my online store. Is there a platform, WordPress or Shopify, that excels in terms of third-party integrations?
+      - SEO is crucial for my online presence. Between WordPress and Shopify, which one is more SEO-friendly and helps with better search engine rankings?
+      - I'm curious about real-world examples. Can you share success stories or case studies of businesses using WordPress or Shopify for their online stores?
+      - I'm a bit concerned about ongoing maintenance. Could you outline the maintenance responsibilities for managing an online store on WordPress versus Shopify?
+      - Customer support is important to me. How do the customer support services of WordPress and Shopify compare for online store owners?
+      - I've heard about the importance of mobile responsiveness. Can you discuss how well WordPress and Shopify cater to the mobile user experience for online stores?
+      - For a hands-on approach to managing an online store, does one platform, WordPress or Shopify, provide a more intuitive and enjoyable user experience?
+      - I already use WordPress for my blog and thinking about adding an online store. Would it be better to stick with WordPress for consistency, or should I consider Shopify separately?
+      - I want my online store to stand out. How do WordPress and Shopify differ when it comes to creating a unique and visually appealing store?
+      - I'm concerned about transaction fees. Can you shed light on the costs associated with payment processing on WordPress and Shopify for online stores?
+      - WordPress or Shopify for an online store?
+      - Choosing between WordPress and Shopify?
+      - Better for e-commerce: WordPress or Shopify?
+      - WordPress vs. Shopify: pros and cons?
+      - Thoughts on WordPress vs. Shopify?
+      - WordPress or Shopify for beginners?
+      - Online store platform: WordPress or Shopify?
+      - Quick comparison: WordPress vs. Shopify?
+      - WordPress and Shopify differences?
+      - Which is more user-friendly: WordPress or Shopify?
+      - Cost considerations: WordPress vs. Shopify?
+      - SEO-friendly platform: WordPress or Shopify?
+      - Integrations and plugins: WordPress vs. Shopify?
+      - Mobile responsiveness: WordPress or Shopify?
+      - WordPress or Shopify for small business?
+      - Maintenance for online store: WordPress vs. Shopify?
+      - Unique design: WordPress or Shopify?
+      - Customer support: WordPress vs. Shopify?
+      - Transaction fees: WordPress or Shopify?

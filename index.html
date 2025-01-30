@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Document</title>
+</head>
+<body>
+<style>
+
+    .rw-widget-container .rw-conversation-container {
+        margin-bottom: 10px;
+        width: 400px;
+    }
+    .rw-conversation-container .rw-header {
+      background-color: #EF621C;
+    }
+    .rw-carousel-container .rw-carousel-card{
+      min-width: 195px!important;
+    }
+
+    .rw-carousel-container .rw-carousel-card .rw-carousel-card-image{
+      height:120px!important;
+    }
+    .rw-carousel-container .rw-carousel-card .rw-carousel-buttons-container {
+        position: absolute;
+        bottom: 0;
+    }
+
+    .rw-conversation-container .rw-messages-container .rw-message .rw-client {
+      background-color: #EF621C;
+      border-radius: 15px 0px 15px 15px;
+    }
+
+    .rw-launcher {
+      background-color: #EF621C;
+    }
+
+    .rw-conversation-container .rw-messages-container .rw-replies .rw-reply {
+      background-color: #FFFFFF;
+      border: 1px solid #EF621C;
+      color: #EF621C;
+    }
+    .rw-launcher .rw-tooltip-body .rw-reply {
+      background-color: #FFFFFF;
+      border: 1px solid #EF621C;
+      color: #EF621C;
+    }
+    .rw-conversation-container .rw-header.rw-with-subtitle .rw-title {
+        top: 15px;
+    }
+    .rw-conversation-container .rw-header.rw-with-subtitle span.rw-with-avatar {
+        left: 60px;
+        font-size: 13px;
+    }
+
+
+    .rw-conversation-container .rw-send .rw-send-icon-ready {
+        fill: #EF621C;
+    }
+
+    .rw-conversation-container .rw-reply {
+      background-color: #FFFFFF;
+      border: 1px solid #EF621C;
+      color: #EF621C;
+    }
+
+    .rw-conversation-container .rw-messages-container .rw-message{
+     font-size: 13px; /* Adjust the value as per your preference */
+    }
+
+    .rw-conversation-container .rw-messages-container .rw-replies{
+      font-size: 13px; /* Adjust the value as per your preference */
+    }
+
+
+</style>
+<script>!(function () {
+  let e = document.createElement("script"),
+    t = document.head || document.getElementsByTagName("head")[0];
+  (e.src =
+    "https://cdn.jsdelivr.net/npm/rasa-webchat@1.0.1/lib/index.js"),
+    // Replace 1.x.x with the version that you want
+    (e.async = !0),
+    (e.onload = () => {
+      window.WebChat.default(
+        {
+          initPayload:"/start_chat",
+          customData: { language: "en" },
+<!--          socketUrl: "https://rasa-karan-0603.cloud.okteto.net/", // production-->
+<!--          socketUrl: "http://167.86.82.47:5006",// Live-->
+          socketUrl: "http://localhost:5005", //Staging
+          // add other props here
+          title:"DigiBot",
+          tooltipPayload:"/start_chat",
+          subtitle:"Powered by Digimonk Solutions",
+          profileAvatar:"./assets/digimonk_logo.svg",
+          openLauncherImage:"./assets/digimonk_launcher_logo.svg",
+           params: {
+                storage: 'local'
+                },
+        },
+        null
+      );
+    }),
+    t.insertBefore(e, t.firstChild);
+    window.localStorage.clear();
+})();
+
+</script>
+</body>
+</html>

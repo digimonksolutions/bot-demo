@@ -1,0 +1,35 @@
+version: "3.1"
+
+nlu:
+
+  - intent: portfolio
+    examples: |
+      - Show portfolio.
+      - Your work?
+      - Portfolio examples.
+      - Can I see your portfolio?
+      - Portfolio, please.
+      - Your portfolio?
+      - Show me your work.
+      - Share your portfolio.
+      - Any portfolio samples?
+      - Examples of your work?
+      - Could you please provide me with a glimpse of your portfolio?
+      - I would love to explore the projects you've previously worked on.
+      - Is it possible for me to view a collection of your past works?
+      - Can you show me a comprehensive portfolio showcasing your skills and experience?
+      - I'm interested in seeing a variety of projects you've completed. Could you share your portfolio with me?
+      - Do you have a portfolio available that demonstrates your expertise in different areas?
+      - I'm considering your services and would like to assess the quality of your work. Can I access your portfolio?
+      - I'm looking for examples of your past projects to get a better understanding of your capabilities. Can you direct me to your portfolio?
+      - Could you please share some of your successful case studies or portfolio highlights with me?
+      - Can I see your Portfolio?
+      - Please show me your portfolio.
+      - portfolio display
+      - I want to browse your portfolio.
+      - Can you showcase your Portfolio?
+      - Could you show me some examples from your portfolio?
+      - Can I have a look at your work examples?
+      - portfolio samples to review
+      - I'm interested in exploring your portfolio.
+      - Show me your portfolio of projects.

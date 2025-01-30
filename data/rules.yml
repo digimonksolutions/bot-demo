@@ -1,0 +1,312 @@
+version: "3.1"
+
+rules:
+
+  - rule: Hiring Developer
+    steps:
+      - intent: hiring_developers
+      - action: action_set_slot_for_hiring_developer
+      - action: hiring_developer_form
+      - active_loop: hiring_developer_form
+
+  - rule: Say goodbye anytime the user says goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - rule: Greet and ask for information when user greets
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - action: utter_start_chat_ask_for_information
+
+
+  - rule: Say 'I am a bot' anytime the user challenges
+    steps:
+      - intent: bot_challenge
+      - action: utter_iamabot
+
+  - rule: trigger out of scope action_unlikely_intent
+    steps:
+      - action: action_unlikely_intent
+      - action: utter_out_of_scope
+      - action: action_restart
+
+  - rule: trigger out of scope action_default_fallback
+    steps:
+      - action: action_default_fallback
+      - action: utter_out_of_scope
+      - action: action_restart
+
+  - rule: User asks for mobile development
+    steps:
+      - intent: mobile_development
+      - action: utter_mobile_development_desc
+      - action: action_mobile_development
+
+  - rule: Initialize the chat
+    steps:
+      - intent: start_chat
+      - action: utter_start_chat_greet
+      - action: utter_start_chat_ask_for_information
+
+  - rule: User wants to see the portfolio
+    steps:
+      - intent: portfolio
+      - action: utter_portfolio
+      - action: action_show_portfolio
+
+  - rule: User wants to see the blogs
+    steps:
+      - intent: blogs
+      - action: utter_blogs
+      - action: action_show_blogs
+
+  - rule: Asked for app development cost
+    steps:
+      - intent: app_development_cost
+      - action: utter_app_development_cost
+      - action: action_show_app_development_cost
+
+  - rule: Asked for android app development cost
+    steps:
+      - intent: android_development_cost
+      - action: utter_android_development_cost
+      - action: action_show_android_app_development_cost
+
+  - rule: Asked for ios app development cost
+    steps:
+      - intent: ios_development_cost
+      - action: utter_ios_development_cost
+      - action: action_show_ios_app_development_cost
+
+  - rule: Asked for website development cost
+    steps:
+      - intent: web_development_cost
+      - action: utter_web_development_cost
+      - action: action_show_website_development_cost
+
+  - rule: Asked difference between native and cross platform
+    steps:
+      - intent: native_vs_cross_platform
+      - action: utter_native_vs_cross_platform
+      - action: action_show_native_vs_cross_platform
+
+  - rule: Asked difference between flutter and react native
+    steps:
+      - intent: flutter_vs_react_native
+      - action: utter_flutter_vs_react_native
+      - action: action_show_flutter_vs_react_native
+
+  - rule: Asked difference between wordpress and shopify
+    steps:
+      - intent: wordpress_vs_shopify
+      - action: utter_wordpress_vs_shopify
+      - action: action_show_wordpress_vs_shopify
+
+  - rule: Asked for pricing
+    steps:
+      - intent: pricing
+      - action: utter_pricing_plans
+      - action: utter_pricing_discount
+      - action: utter_pricing_redirection
+
+  - rule: Asked for free trial
+    steps:
+      - intent: free_trial
+      - action: utter_free_trial
+
+  - rule: Handel out of scope inputs
+    steps:
+      - intent: out_of_scope
+      - action: utter_out_of_scope
+      - action: action_restart
+
+  - rule: Ask the user to rephrase whenever they send a message with low NLU confidence
+    steps:
+      - intent: nlu_fallback
+      - action: utter_out_of_scope
+
+  - rule: Go back to main menu
+    steps:
+      - intent: main_menu
+      - action: utter_start_chat_ask_for_information
+      - action: action_restart
+
+  - rule: Tell How are you
+    steps:
+      - intent: how_are_you
+      - action: utter_how_are_you
+
+  - rule: Tell who made you
+    steps:
+      - intent: who_made_you
+      - action: utter_who_made_you
+
+  - rule: give information on what bot can do
+    steps:
+      - intent: give_information
+      - action: utter_give_information
+
+  - rule: give contact details
+    steps:
+      - intent: contact_us
+      - action: utter_contact_us
+
+  #- rule: Activate form
+  #  steps:
+  #    - intent: provided_category
+  #    - action: utter_selected_category
+  #    - action: native_development_form
+  #    - active_loop: native_development_form
+  ##
+
+  - rule: Submit Hiring Form
+    condition:
+      # Condition that form is active.
+      - active_loop: hiring_developer_form
+    steps:
+      # Form is deactivated
+      - action: hiring_developer_form
+      - active_loop: null
+      - slot_was_set:
+          - requested_slot: null
+      # The actions we want to run when the form is submitted.
+      - action: utter_form_submission
+
+  - rule: Submit Native Development form
+    condition:
+      # Condition that form is active.
+      - active_loop: native_development_form
+    steps:
+      # Form is deactivated
+      - action: native_development_form
+      - active_loop: null
+      - slot_was_set:
+          - requested_slot: null
+      # The actions we want to run when the form is submitted.
+      - action: utter_confirm_user_info
+      - action: utter_confirm_app_description
+      - action: utter_confirm_submit
+      - intent: submit_form
+      - action: utter_form_submission
+      - action: action_send_details
+
+  - rule: Restart Native Development form
+    condition:
+      # Condition that form is active.
+      - active_loop: native_development_form
+    steps:
+      # Form is deactivated
+      - action: native_development_form
+      - active_loop: null
+      - slot_was_set:
+          - requested_slot: null
+      # The actions we want to run when the form is submitted.
+      - action: utter_confirm_user_info
+      - action: utter_confirm_app_description
+      - action: utter_confirm_submit
+      - intent: restart_form
+      - action: utter_form_restart
+      - action: action_reset_all_slots
+
+  - rule: Submit Web Development form
+    condition:
+      # Condition that form is active.
+      - active_loop: web_development_form
+    steps:
+      # Form is deactivated
+      - action: web_development_form
+      - active_loop: null
+      - slot_was_set:
+          - requested_slot: null
+      # The actions we want to run when the form is submitted.
+      - action: utter_confirm_user_info_web_development
+      - action: utter_confirm_submit
+      - intent: submit_form
+      - action: utter_form_submission
+  #  - action: action_send_details
+
+  - rule: Restart Web Development form
+    condition:
+      # Condition that form is active.
+      - active_loop: web_development_form
+    steps:
+      # Form is deactivated
+      - action: web_development_form
+      - active_loop: null
+      - slot_was_set:
+          - requested_slot: null
+      # The actions we want to run when the form is submitted.
+      - action: utter_confirm_user_info_web_development
+      - action: utter_confirm_submit
+      - intent: restart_form
+      - action: utter_form_restart
+      - action: action_reset_all_slots
+
+  - rule: Submit Website Update Form
+    condition:
+      # Condition that form is active.
+      - active_loop: website_update_form
+    steps:
+      # Form is deactivated
+      - action: website_update_form
+      - active_loop: null
+      - slot_was_set:
+          - requested_slot: null
+      # The actions we want to run when the form is submitted.
+      - action: utter_confirm_user_info_for_update_website
+      - action: utter_confirm_submit
+      - intent: submit_form
+      - action: utter_form_submission
+
+  - rule: Reset Website Update Form
+    condition:
+      # Condition that form is active.
+      - active_loop: website_update_form
+    steps:
+      # Form is deactivated
+      - action: website_update_form
+      - active_loop: null
+      - slot_was_set:
+          - requested_slot: null
+      # The actions we want to run when the form is submitted.
+      - action: utter_confirm_user_info_for_update_website
+      - action: utter_confirm_submit
+      - intent: restart_form
+      - action: utter_form_restart
+      - action: action_reset_all_slots
+
+  - rule: Submit Web Application form
+    condition:
+      # Condition that form is active.
+      - active_loop: web_app_form
+    steps:
+      # Form is deactivated
+      - action: web_app_form
+      - active_loop: null
+      - slot_was_set:
+          - requested_slot: null
+      # The actions we want to run when the form is submitted.
+      - action: utter_confirm_user_info_web_app
+      - action: utter_confirm_submit
+      - intent: submit_form
+      - action: utter_form_submission
+  #  - action: action_send_details
+
+  - rule: Reset Web Application form
+    condition:
+      # Condition that form is active.
+      - active_loop: web_app_form
+    steps:
+      # Form is deactivated
+      - action: web_app_form
+      - active_loop: null
+      - slot_was_set:
+          - requested_slot: null
+      # The actions we want to run when the form is submitted.
+      - action: utter_confirm_user_info_web_app
+      - action: utter_confirm_submit
+      - intent: restart_form
+      - action: utter_form_restart
+      - action: action_reset_all_slots
